@@ -263,8 +263,8 @@ To establish production-grade benchmarks on dedicated NPU silicon, all models we
 
 To validate operational viability on entry-level hardware accessible to Indian MSME facilities, physical on-device telemetry was recorded on a consumer **Samsung Galaxy M21 (SM-M215F)** running an Exynos 9611 processor (4x Cortex-A73 @ 2.3 GHz + 4x Cortex-A53 @ 1.7 GHz, 6GB LPDDR4X RAM).
 
-![Figure 2: Real-time on-device edge quality control terminal interface](assets/pcb_terminal_ui.jpg)
-*Figure 2: Real-time on-device edge quality control terminal interface demonstrating Tier 1 optical localization (Short Circuit at 94.2% and Hole Break at 98.1%) coupled with Tier 2 IPC-A-610 automated rework directives executing locally on ARM Mali-G72 silicon at 118 ms latency.*
+![Figure 3: Real-time on-device edge quality control terminal interface](assets/pcb_terminal_ui.jpg)
+*Figure 3: Real-time on-device edge quality control terminal interface demonstrating Tier 1 optical localization (Short Circuit at 94.2% and Hole Break at 98.1%) coupled with Tier 2 IPC-A-610 automated rework directives executing locally on ARM Mali-G72 silicon at 118 ms latency.*
 
 ### 7.1 Tri-Engine Vision Evaluation on Physical Silicon
 
