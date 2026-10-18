@@ -390,49 +390,43 @@ To progress from this baseline into a production-ready deployment for the challe
 
 The BhAi-SoC dual-engine inspection framework is benchmarked, profiled, and accelerated across a heterogeneous compute matrix spanning edge silicon, mobile SoCs, and enterprise accelerators:
 
-### 12.1 Silicon & Hardware Compute Architectures
-
 <table align="center" style="border: none; background: transparent;">
   <tr style="border: none;">
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://arm.com"><img src="assets/logos/arm.svg" height="40" alt="Arm" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://arm.com"><img src="assets/logos/arm.svg" height="32" alt="Arm" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://aihub.qualcomm.com"><img src="assets/logos/qualcomm.svg" height="40" alt="Qualcomm" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://aihub.qualcomm.com"><img src="assets/logos/qualcomm.svg" height="32" alt="Qualcomm" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://semiconductor.samsung.com"><img src="assets/logos/samsung.svg" height="40" alt="Samsung" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://semiconductor.samsung.com"><img src="assets/logos/samsung.svg" height="32" alt="Samsung" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://nvidia.com"><img src="assets/logos/nvidia.svg" height="40" alt="NVIDIA" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://nvidia.com"><img src="assets/logos/nvidia.svg" height="32" alt="NVIDIA" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://intel.com"><img src="assets/logos/intel.svg" height="40" alt="Intel" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://intel.com"><img src="assets/logos/intel.svg" height="32" alt="Intel" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://amd.com"><img src="assets/logos/amd.svg" height="40" alt="AMD" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://amd.com"><img src="assets/logos/amd.svg" height="32" alt="AMD" /></a>
     </td>
-  </tr>
-</table>
-
-### 12.2 AI Frameworks, Neural Backbones & Edge Runtimes
-
-<table align="center" style="border: none; background: transparent;">
-  <tr style="border: none;">
-    <td align="center" valign="middle" style="border: none; padding: 10px 20px;">
-      <a href="https://ultralytics.com"><img src="assets/logos/tech_yolo.png" height="40" alt="Ultralytics YOLO 11" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://ultralytics.com"><img src="assets/logos/tech_yolo.png" height="32" alt="Ultralytics YOLO 11" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 20px;">
-      <a href="https://ai.meta.com"><img src="assets/logos/org_meta.png" height="40" alt="Meta Llama" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://ai.meta.com"><img src="assets/logos/meta.svg" height="32" alt="Meta" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 20px;">
-      <a href="https://pytorch.org/executorch"><img src="assets/logos/pytorch.svg" height="40" alt="PyTorch ExecuTorch" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://pytorch.org/executorch"><img src="assets/logos/pytorch.svg" height="32" alt="PyTorch ExecuTorch" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 20px;">
-      <a href="https://ai.google.dev/edge/litert"><img src="assets/logos/google.svg" height="40" alt="Google LiteRT" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://www.tensorflow.org/lite"><img src="assets/logos/tensorflow.svg" height="32" alt="TensorFlow Lite" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 20px;">
-      <a href="https://python.org"><img src="assets/logos/python.svg" height="40" alt="Python" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://ai.google.dev/edge/litert"><img src="assets/logos/google.svg" height="32" alt="Google LiteRT" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
+      <a href="https://python.org"><img src="assets/logos/python.svg" height="32" alt="Python" /></a>
     </td>
   </tr>
 </table>
