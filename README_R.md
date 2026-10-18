@@ -1,7 +1,24 @@
-# Edge-Native Dual-Engine Quality Control: High-Throughput PCB Defect Localization and IPC-A-610 Compliant Edge Reasoning on Heterogeneous Arm and Qualcomm Silicon
+# BhAi-SoC: Edge-Native Industrial PCB Inspection
+
+### High-Throughput Defect Localization & IPC-A-610 Automated Edge Reasoning on Arm Silicon
+
+<div align="center">
+
+[![MeitY C2S](https://img.shields.io/badge/MeitY%20C2S-Chips%20to%20Startup-0B4F6C.svg?style=for-the-badge)](https://c2s.gov.in/)
+[![IIT Madras](https://img.shields.io/badge/IIT%20Madras-Lead%20Institution-800000.svg?style=for-the-badge)](https://www.iitm.ac.in)
+[![Arm](https://img.shields.io/badge/Arm-Developer%20Labs-0091BD.svg?style=for-the-badge&logo=arm&logoColor=white)](https://arm.com)
+[![IIT Delhi](https://img.shields.io/badge/IIT%20Delhi-Academic%20Partner-C0392B.svg?style=for-the-badge)](https://home.iitd.ac.in)
+[![UK Government](https://img.shields.io/badge/UK%20Gov-Tech%20Security%20Initiative-012169.svg?style=for-the-badge)](https://www.gov.uk)
+[![Meta](https://img.shields.io/badge/Meta-Llama%203.2%20%7C%20ExecuTorch-0668E1.svg?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com)
+[![Qualcomm](https://img.shields.io/badge/Qualcomm-AI%20Hub%20Verified-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
+
+**Bharat AI-SoC Challenge 2026–27 (2nd Edition) | Problem Statement 5 (PS5)**  
+*Industrial Automated Optical Inspection (AOI) & On-Device Quality-Control Assistant*
+
+</div>
 
 **Authors**: Bharat AI-SoC Project Team  
-**Affiliation**: Indian Institute of Technology (IIT) Madras / Bharat AI-SoC Challenge 2026–27  
+**Affiliation**: Indian Institute of Technology (IIT) Madras  
 **Track**: Problem Statement 5 (PS5) — Real-Time Industrial Defect Detection and Quality-Control Assistant  
 **Organizers**: Ministry of Electronics and Information Technology (MeitY C2S), Arm, IIT Delhi, UK-India TSI, Meta  
 **Repository**: [github.com/KrishnSinghIITM/BhAi_SoC](https://github.com/KrishnSinghIITM/BhAi_SoC)  
@@ -73,8 +90,9 @@ The BhAi_SoC architecture divides inspection workload into two strictly decouple
                         • Equipment Root-Cause Prevention Advisory
 ```
 
-![Figure 2: High-level architectural pipeline of the BhAi_SoC edge inspection system](assets/system_architecture.png)
-*Figure 2: High-level architectural pipeline of the BhAi_SoC edge inspection system, demonstrating the decoupled flow from high-throughput optical capture to on-device reasoning and IPC-A-610 operator advisory.*
+![Figure 2: Architectural Pipeline of the BhAi_SoC Edge Inspection System](assets/system_architecture.png)  
+*Figure 2: Architectural pipeline of the BhAi_SoC edge inspection system, illustrating the decoupled flow from high-throughput optical capture to on-device reasoning and IPC-A-610 operator advisory.*
+
 
 ### 2.1 Event Orchestration Protocol
 
@@ -147,13 +165,6 @@ The primary detection network was trained using the Ultralytics framework initia
 | Spur (`SP`) | 451 | 0.802 | 0.731 | **0.768 (76.8%)** | 0.472 |
 | Mouse Bite (`MB`) | 441 | 0.788 | 0.715 | **0.751 (75.1%)** | 0.461 |
 | Copper-Free (`CFO`) | 445 | 0.721 | 0.648 | **0.701 (70.1%)** | 0.426 |
-
-#### 4.1.1 Qualitative Defect Localization and Micro-Morphological Analysis
-
-To assess the localization fidelity and boundary delineation of the trained YOLO11-Nano architecture on microscopic PCB surface anomalies, Figure 3 presents qualitative detection outputs evaluated on representative validation tiles from the DsPCBSD+ dataset.
-
-![Figure 3: Qualitative PCB Defect Detection and Micro-Morphology Grid](assets/real_defect_inspection_grid.jpg)  
-*Figure 3: Qualitative defect localization on real DsPCBSD+ industrial PCB validation captures: (a) Dataset Ground Truth annotated bounding boxes, (b) YOLO11n Model Prediction with bounding boxes and confidence scores, and (c) 3.5x Magnified Defect Detail highlighting micro-morphological defect signatures for Spur (SP), Solder Mask Flaw (BMFO), and Short Circuit (SH).*
 
 ### 4.2 Full Integer Post-Training Quantization (INT8 PTQ)
 
