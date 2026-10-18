@@ -22,6 +22,11 @@ Automated Optical Inspection (AOI) in electronics manufacturing typically relies
 
 ---
 
+![BhAi_SoC Factory Operational Workflow](assets/operational_workflow.png)
+*Figure: End-to-end edge-native quality control operational workflow across factory floor PCB assembly.*
+
+---
+
 ## 2. System Architecture
 
 ```

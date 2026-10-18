@@ -19,6 +19,11 @@ We evaluate the system across a comprehensive five-tier hardware matrix spanning
 
 ---
 
+![Figure 1: End-to-End Operational Workflow of Edge-Native PCB Quality Control](assets/operational_workflow.png)  
+*Figure 1: Conceptual operational workflow of the BhAi_SoC edge-native quality-control system in industrial manufacturing environments: (1) Defect identification during surface-mount assembly, (2) Sub-150ms optical localization on mobile/edge silicon, (3) On-device IPC-A-610 compliant reasoning and operator rework advisory synthesis, and (4) Rapid standard-compliant defect resolution ensuring line continuity.*
+
+---
+
 ## 1. Introduction and Problem Formulation
 
 Electronics manufacturing in emerging industrial economies is characterized by rapid surface-mount technology (SMT) throughput, dense micro-vias, and fine-pitch conductor tracks. Manual optical inspection (MOI) exhibits fatigue-induced human error rates exceeding $20\%$, while enterprise AOI equipment imposes prohibitive infrastructure costs. Furthermore, conventional edge computer vision models output static bounding boxes without contextual guidance regarding IPC-A-610 defect acceptance criteria, component desoldering protocols, or manufacturing root causes.
@@ -68,8 +73,8 @@ The BhAi_SoC architecture divides inspection workload into two strictly decouple
                         • Equipment Root-Cause Prevention Advisory
 ```
 
-![Figure 1: High-level architectural pipeline of the BhAi_SoC edge inspection system](assets/system_architecture.png)
-*Figure 1: High-level architectural pipeline of the BhAi_SoC edge inspection system, demonstrating the decoupled flow from high-throughput optical capture to on-device reasoning and IPC-A-610 operator advisory.*
+![Figure 2: High-level architectural pipeline of the BhAi_SoC edge inspection system](assets/system_architecture.png)
+*Figure 2: High-level architectural pipeline of the BhAi_SoC edge inspection system, demonstrating the decoupled flow from high-throughput optical capture to on-device reasoning and IPC-A-610 operator advisory.*
 
 ### 2.1 Event Orchestration Protocol
 
@@ -145,10 +150,10 @@ The primary detection network was trained using the Ultralytics framework initia
 
 #### 4.1.1 Qualitative Defect Localization and Micro-Morphological Analysis
 
-To assess the localization fidelity and boundary delineation of the trained YOLO11-Nano architecture on microscopic PCB surface anomalies, Figure 2 presents qualitative detection outputs evaluated on representative validation tiles from the DsPCBSD+ dataset.
+To assess the localization fidelity and boundary delineation of the trained YOLO11-Nano architecture on microscopic PCB surface anomalies, Figure 3 presents qualitative detection outputs evaluated on representative validation tiles from the DsPCBSD+ dataset.
 
-![Figure 2: Qualitative PCB Defect Detection and Micro-Morphology Grid](assets/real_defect_inspection_grid.jpg)  
-*Figure 2: Qualitative defect localization on real DsPCBSD+ industrial PCB validation captures: (a) Dataset Ground Truth annotated bounding boxes, (b) YOLO11n Model Prediction with bounding boxes and confidence scores, and (c) 3.5x Magnified Defect Detail highlighting micro-morphological defect signatures for Spur (SP), Solder Mask Flaw (BMFO), and Short Circuit (SH).*
+![Figure 3: Qualitative PCB Defect Detection and Micro-Morphology Grid](assets/real_defect_inspection_grid.jpg)  
+*Figure 3: Qualitative defect localization on real DsPCBSD+ industrial PCB validation captures: (a) Dataset Ground Truth annotated bounding boxes, (b) YOLO11n Model Prediction with bounding boxes and confidence scores, and (c) 3.5x Magnified Defect Detail highlighting micro-morphological defect signatures for Spur (SP), Solder Mask Flaw (BMFO), and Short Circuit (SH).*
 
 ### 4.2 Full Integer Post-Training Quantization (INT8 PTQ)
 
