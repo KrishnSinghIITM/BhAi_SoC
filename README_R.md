@@ -388,9 +388,9 @@ The BhAi-SoC dual-engine inspection framework is benchmarked, profiled, and acce
   <a href="https://arm.com"><img src="assets/logos/tech_arm.png" height="28" alt="Arm" /></a> &nbsp;&nbsp;
   <a href="https://aihub.qualcomm.com"><img src="assets/logos/tech_qualcomm.png" height="28" alt="Qualcomm" /></a> &nbsp;&nbsp;
   <a href="https://semiconductor.samsung.com"><img src="assets/logos/tech_samsung.png" height="28" alt="Samsung" /></a> &nbsp;&nbsp;
-  <a href="https://nvidia.com"><img src="assets/logos/tech_nvidia.png" height="28" alt="NVIDIA" /></a> &nbsp;&nbsp;
+  <a href="https://nvidia.com"><img src="assets/logos/tech_nvidia_green.png" height="28" alt="NVIDIA" /></a> &nbsp;&nbsp;
   <a href="https://intel.com"><img src="assets/logos/tech_intel.png" height="28" alt="Intel" /></a> &nbsp;&nbsp;
-  <a href="https://amd.com"><img src="assets/logos/tech_amd.png" height="28" alt="AMD" /></a> &nbsp;&nbsp;
+  <a href="https://amd.com"><img src="assets/logos/tech_amd_white.png" height="28" alt="AMD" /></a> &nbsp;&nbsp;
   <a href="https://ultralytics.com"><img src="assets/logos/tech_yolo.png" height="28" alt="Ultralytics YOLO 11" /></a> &nbsp;&nbsp;
   <a href="https://ai.meta.com"><img src="assets/logos/tech_meta.png" height="28" alt="Meta" /></a> &nbsp;&nbsp;
   <a href="https://pytorch.org/executorch"><img src="assets/logos/tech_pytorch.png" height="28" alt="PyTorch ExecuTorch" /></a> &nbsp;&nbsp;
