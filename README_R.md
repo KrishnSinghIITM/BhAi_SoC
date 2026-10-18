@@ -392,62 +392,29 @@ The BhAi-SoC dual-engine inspection framework is benchmarked, profiled, and acce
 
 ### 12.1 Silicon & Hardware Compute Architectures
 
-<table align="center" style="border: none; background: transparent;">
-  <tr style="border: none;">
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://arm.com"><img src="assets/logos/arm.svg" height="28" alt="Arm" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://aihub.qualcomm.com"><img src="assets/logos/qualcomm.svg" height="34" alt="Qualcomm" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://semiconductor.samsung.com"><img src="assets/logos/samsung.svg" height="22" alt="Samsung" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://nvidia.com"><img src="assets/logos/nvidia.svg" height="30" alt="NVIDIA" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://intel.com"><img src="assets/logos/intel.svg" height="26" alt="Intel" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
-      <a href="https://amd.com"><img src="assets/logos/amd.svg" height="22" alt="AMD" /></a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+[![Arm Silicon](https://img.shields.io/badge/Arm-Cortex--A73%20%7C%20Mali--G72%20MP3-0091BD.svg?style=for-the-badge&logo=arm&logoColor=white)](https://arm.com)
+[![Qualcomm Hexagon](https://img.shields.io/badge/Qualcomm-Snapdragon%20HTP%20NPU-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
+[![Samsung Exynos](https://img.shields.io/badge/Samsung-Exynos%209611%20Mobile%20SoC-1428A0.svg?style=for-the-badge&logo=samsung&logoColor=white)](https://semiconductor.samsung.com)
+[![NVIDIA GPU](https://img.shields.io/badge/NVIDIA-RTX%206000%20%7C%20RTX%203050-76B900.svg?style=for-the-badge&logo=nvidia&logoColor=white)](https://nvidia.com)
+[![Intel Architecture](https://img.shields.io/badge/Intel-Core%20i5--12450H%20(12th%20Gen)-0071C5.svg?style=for-the-badge&logo=intel&logoColor=white)](https://intel.com)
+[![AMD EPYC](https://img.shields.io/badge/AMD-Threadripper%20PRO%207975WX-ED1C24.svg?style=for-the-badge&logo=amd&logoColor=white)](https://amd.com)
+
+</div>
 
 ### 12.2 AI Frameworks, Neural Backbones & Edge Runtimes
 
-<table align="center" style="border: none; background: transparent;">
-  <tr style="border: none;">
-    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
-      <a href="https://ultralytics.com"><img src="assets/logos/tech_yolo.png" height="36" alt="Ultralytics YOLO 11" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
-      <a href="https://ai.meta.com"><img src="assets/logos/org_meta.png" height="36" alt="Meta Llama" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
-      <a href="https://pytorch.org/executorch"><img src="assets/logos/pytorch.svg" height="36" alt="PyTorch ExecuTorch" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
-      <a href="https://www.tensorflow.org/lite"><img src="assets/logos/tensorflow.svg" height="36" alt="TensorFlow Lite" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
-      <a href="https://ai.google.dev/edge/litert"><img src="assets/logos/google.svg" height="36" alt="Google LiteRT" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
-      <a href="https://opencv.org"><img src="assets/logos/opencv.svg" height="36" alt="OpenCV" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
-      <a href="https://huggingface.co"><img src="assets/logos/huggingface.svg" height="36" alt="Hugging Face" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
-      <a href="https://developer.android.com"><img src="assets/logos/android.svg" height="36" alt="Android" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
-      <a href="https://python.org"><img src="assets/logos/python.svg" height="36" alt="Python" /></a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+[![Ultralytics YOLO11](https://img.shields.io/badge/Ultralytics-YOLO11--Nano%20Vision-00FFFF.svg?style=for-the-badge&logo=yolo&logoColor=black)](https://ultralytics.com)
+[![Meta Llama 3.2](https://img.shields.io/badge/Meta-Llama%203.2%201B--Instruct-0668E1.svg?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com)
+[![PyTorch ExecuTorch](https://img.shields.io/badge/PyTorch-ExecuTorch%20Edge%20Runtime-EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/executorch)
+[![Google LiteRT](https://img.shields.io/badge/Google-LiteRT%20INT8%20PTQ-4285F4.svg?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/edge/litert)
+[![Qualcomm AI Hub](https://img.shields.io/badge/Qualcomm-AI%20Hub%20Laboratory-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
+[![Python 3.11](https://img.shields.io/badge/Python-3.11%20Environment-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+
+</div>
 
 | Technology / Component | Classification | Role in BhAi-SoC Framework | Hardware Target / Execution Engine |
 | :--- | :--- | :--- | :--- |
