@@ -8,22 +8,22 @@
 <table align="center" style="border: none; background: transparent;">
   <tr style="border: none;">
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
-      <a href="https://www.meity.gov.in"><img src="assets/logos/org_meity.png" height="48" alt="MeitY" /></a>
+      <a href="https://www.meity.gov.in"><img src="assets/logos/org_meity.png" height="46" alt="MeitY" /></a>
     </td>
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
-      <a href="https://c2s.gov.in/"><img src="assets/logos/org_c2s.png" height="44" alt="C2S" /></a>
+      <a href="https://c2s.gov.in/"><img src="assets/logos/org_c2s.png" height="46" alt="C2S" /></a>
     </td>
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
-      <a href="https://arm.com"><img src="assets/logos/org_arm.png" height="40" alt="Arm" /></a>
+      <a href="https://arm.com"><img src="assets/logos/org_arm.png" height="46" alt="Arm" /></a>
     </td>
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
-      <a href="https://home.iitd.ac.in"><img src="assets/logos/org_iitd.png" height="48" alt="IIT Delhi" /></a>
+      <a href="https://home.iitd.ac.in"><img src="assets/logos/org_iitd.png" height="46" alt="IIT Delhi" /></a>
     </td>
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
-      <a href="https://www.gov.uk"><img src="assets/logos/org_ukgov.png" height="42" alt="UK Government" /></a>
+      <a href="https://www.gov.uk"><img src="assets/logos/org_ukgov.png" height="46" alt="UK Government" /></a>
     </td>
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
-      <a href="https://ai.meta.com"><img src="assets/logos/org_meta.png" height="36" alt="Meta" /></a>
+      <a href="https://ai.meta.com"><img src="assets/logos/org_meta.png" height="46" alt="Meta" /></a>
     </td>
   </tr>
 </table>
