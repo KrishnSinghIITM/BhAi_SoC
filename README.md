@@ -100,6 +100,13 @@ We benchmark on **DsPCBSD+ (Dataset of Printed Circuit Board Surface Defects)**,
 | **Copper-Free (CFO)** | 423 | 0.667 | 0.643 | **68.1%** | **37.7%** | Major Void |
 | **All Classes Combined** | **4,092** | **0.761** | **0.764** | **80.6%** | **45.2%** | **SOTA Edge Benchmark** |
 
+### Qualitative Defect Inspection Grid (Real DsPCBSD+ Inference)
+
+The trained YOLO11n model demonstrates sharp boundary localization across fine-pitch copper traces, solder mask bridges, and micro-voids:
+
+![Qualitative PCB Defect Inspection Grid](assets/real_defect_inspection_grid.jpg)  
+*Figure: Real DsPCBSD+ industrial PCB validation captures comparing: (a) Dataset Ground Truth, (b) YOLO11n Model Prediction with bounding boxes and confidence scores, and (c) 3.5x Magnified Defect Detail.*
+
 ---
 
 ## 4. Cross-Platform Hardware Benchmarking Matrix

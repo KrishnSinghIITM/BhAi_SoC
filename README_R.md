@@ -143,6 +143,13 @@ The primary detection network was trained using the Ultralytics framework initia
 | Mouse Bite (`MB`) | 441 | 0.788 | 0.715 | **0.751 (75.1%)** | 0.461 |
 | Copper-Free (`CFO`) | 445 | 0.721 | 0.648 | **0.701 (70.1%)** | 0.426 |
 
+#### 4.1.1 Qualitative Defect Localization and Micro-Morphological Analysis
+
+To assess the localization fidelity and boundary delineation of the trained YOLO11-Nano architecture on microscopic PCB surface anomalies, Figure 2 presents qualitative detection outputs evaluated on representative validation tiles from the DsPCBSD+ dataset.
+
+![Figure 2: Qualitative PCB Defect Detection and Micro-Morphology Grid](assets/real_defect_inspection_grid.jpg)  
+*Figure 2: Qualitative defect localization on real DsPCBSD+ industrial PCB validation captures: (a) Dataset Ground Truth annotated bounding boxes, (b) YOLO11n Model Prediction with bounding boxes and confidence scores, and (c) 3.5x Magnified Defect Detail highlighting micro-morphological defect signatures for Spur (SP), Solder Mask Flaw (BMFO), and Short Circuit (SH).*
+
 ### 4.2 Full Integer Post-Training Quantization (INT8 PTQ)
 
 To enable execution on edge integer vector units (Arm NEON and Qualcomm Hexagon Tensor Processor), the floating-point network was calibrated into static symmetric INT8 precision (W8A8) using representative samples from 2,051 industrial images.
