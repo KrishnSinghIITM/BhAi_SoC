@@ -14,13 +14,13 @@
       <a href="https://c2s.gov.in/"><img src="assets/logos/org_c2s.png" height="44" alt="C2S" /></a>
     </td>
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
-      <a href="https://arm.com"><img src="assets/logos/org_arm.png" height="34" alt="Arm" /></a>
+      <a href="https://arm.com"><img src="assets/logos/org_arm.png" height="40" alt="Arm" /></a>
     </td>
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
       <a href="https://home.iitd.ac.in"><img src="assets/logos/org_iitd.png" height="48" alt="IIT Delhi" /></a>
     </td>
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
-      <a href="https://www.gov.uk"><img src="assets/logos/org_ukgov.png" height="34" alt="UK Government" /></a>
+      <a href="https://www.gov.uk"><img src="assets/logos/org_ukgov.png" height="42" alt="UK Government" /></a>
     </td>
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
       <a href="https://ai.meta.com"><img src="assets/logos/org_meta.png" height="36" alt="Meta" /></a>
