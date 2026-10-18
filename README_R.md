@@ -42,9 +42,9 @@
 
 ## Abstract
 
-Automated Optical Inspection (AOI) within printed circuit board (PCB) assembly lines remains constrained by high capital expenditure ($>\$10,000$ per workstation), persistent cloud latency dependencies, and the absence of actionable domain intelligence for factory floor operators. Conventional edge vision systems identify bounding coordinates but fail to provide standards-compliant rework procedures, leaving micro, small, and medium enterprise (MSME) fabrication units vulnerable to costly line stoppages. 
+Automated Optical Inspection (AOI) within printed circuit board (PCB) assembly lines remains constrained by high capital expenditure (> $10,000 per workstation), persistent cloud latency dependencies, and the absence of actionable domain intelligence for factory floor operators. Conventional edge vision systems identify bounding coordinates but fail to provide standards-compliant rework procedures, leaving micro, small, and medium enterprise (MSME) fabrication units vulnerable to costly line stoppages. 
 
-This document introduces **BhAi_SoC**, an offline, edge-native dual-engine inspection framework deployed directly on consumer and industrial Arm and Qualcomm silicon architectures. The framework couples a high-throughput, sub-150ms optical localization engine (**YOLO11-Nano**) trained on 10,259 industrial PCB captures from the **DsPCBSD+** benchmark with an on-device reasoning engine (**Meta Llama 3.2 1B-Instruct**) quantized to 4-bit integer precision. Tier 1 executes single-pass inference yielding an overall $\text{mAP}_{50}$ of $80.6\%$ ($98.4\%$ on critical hole breakouts). Upon detecting anomalous features ($\tau \ge 0.80$), structured telemetry triggers Tier 2 to synthesize deterministic IPC-A-610 rework directives entirely on-device.
+This document introduces **BhAi_SoC**, an offline, edge-native dual-engine inspection framework deployed directly on consumer and industrial Arm and Qualcomm silicon architectures. The framework couples a high-throughput, sub-150ms optical localization engine (**YOLO11-Nano**) trained on 10,259 industrial PCB captures from the **DsPCBSD+** benchmark with an on-device reasoning engine (**Meta Llama 3.2 1B-Instruct**) quantized to 4-bit integer precision. Tier 1 executes single-pass inference yielding an overall $\text{mAP}_{50}$ of 80.6% (98.4% on critical hole breakouts). Upon detecting anomalous features ($\tau \ge 0.80$), structured telemetry triggers Tier 2 to synthesize deterministic IPC-A-610 rework directives entirely on-device.
 
 We evaluate the system across a comprehensive five-tier hardware matrix spanning datacenter servers, mobile workstations, cloud-hosted NPU hardware, and a physical consumer smartphone. On physical silicon via the **Qualcomm AI Hub**, the quantized vision model achieves complete zero-fallback Hexagon NPU delegation (387 of 387 operators), executing in **1.40 ms (693.1 FPS)** on a Snapdragon 8 Gen 3 with a peak memory allocation of 151.6 MB. On physical budget Arm silicon (**Samsung Galaxy M21 / Exynos 9611**), full integer quantization achieves **114.03 ms peak latency (8.77 FPS)** on an integrated ARM Mali-G72 GPU and **133.17 ms peak latency** on Cortex-A73 CPU cores with an overall memory footprint of just 45.09 MB. Continuous three-minute dual-engine load testing on physical hardware verified thermal equilibrium ($\Delta T = 0.0 °C$ at $36.3 °C$) with zero thermal throttling and $0\%$ battery depletion. The resulting architecture establishes the empirical feasibility of sub-second, enterprise-grade inspection terminals operating on sub-$150 consumer hardware.
 
@@ -332,7 +332,7 @@ Tier 2 (Llama 3.2 1B-Instruct, 4-bit integer weights) was executed locally on th
 
 ### 9.1 Energy per Inspection and Carbon Footprint
 
-Applying empirical power sensor baselines across industrial inspection shifts ($10,000$ boards inspected per 8-hour line shift):
+Applying empirical power sensor baselines across industrial inspection shifts (10,000 boards inspected per 8-hour line shift):
 
 $$E_{\text{inference}} = P_{\text{watts}} \times \left(\frac{t_{\text{total}}}{1000}\right) \quad (\text{Joules})$$
 
@@ -384,55 +384,23 @@ To progress from this baseline into a production-ready deployment for the challe
 
 The BhAi-SoC dual-engine inspection framework is benchmarked, profiled, and accelerated across a heterogeneous compute matrix spanning edge silicon, mobile SoCs, and enterprise accelerators:
 
-<table align="center" style="border: none; background: transparent;">
-  <tr style="border: none;">
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://arm.com"><img src="assets/logos/arm.svg" height="30" alt="Arm" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://aihub.qualcomm.com"><img src="assets/logos/qualcomm.svg" height="30" alt="Qualcomm" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://semiconductor.samsung.com"><img src="assets/logos/samsung.svg" height="30" alt="Samsung" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://nvidia.com"><img src="assets/logos/nvidia.svg" height="30" alt="NVIDIA" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://intel.com"><img src="assets/logos/intel.svg" height="30" alt="Intel" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://amd.com"><img src="assets/logos/amd.svg" height="30" alt="AMD" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://ultralytics.com"><img src="assets/logos/tech_yolo.png" height="30" alt="Ultralytics YOLO 11" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://ai.meta.com"><img src="assets/logos/meta.svg" height="30" alt="Meta" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://pytorch.org/executorch"><img src="assets/logos/pytorch.svg" height="30" alt="PyTorch ExecuTorch" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://www.tensorflow.org/lite"><img src="assets/logos/tensorflow.svg" height="30" alt="TensorFlow Lite" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://ai.google.dev/edge/litert"><img src="assets/logos/google.svg" height="30" alt="Google LiteRT" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://opencv.org"><img src="assets/logos/opencv.svg" height="30" alt="OpenCV" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://huggingface.co"><img src="assets/logos/huggingface.svg" height="30" alt="Hugging Face" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://developer.android.com"><img src="assets/logos/android.svg" height="30" alt="Android" /></a>
-    </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
-      <a href="https://python.org"><img src="assets/logos/python.svg" height="30" alt="Python" /></a>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://arm.com"><img src="assets/logos/tech_arm.png" height="28" alt="Arm" /></a> &nbsp;&nbsp;
+  <a href="https://aihub.qualcomm.com"><img src="assets/logos/tech_qualcomm.png" height="28" alt="Qualcomm" /></a> &nbsp;&nbsp;
+  <a href="https://semiconductor.samsung.com"><img src="assets/logos/tech_samsung.png" height="28" alt="Samsung" /></a> &nbsp;&nbsp;
+  <a href="https://nvidia.com"><img src="assets/logos/tech_nvidia.png" height="28" alt="NVIDIA" /></a> &nbsp;&nbsp;
+  <a href="https://intel.com"><img src="assets/logos/tech_intel.png" height="28" alt="Intel" /></a> &nbsp;&nbsp;
+  <a href="https://amd.com"><img src="assets/logos/tech_amd.png" height="28" alt="AMD" /></a> &nbsp;&nbsp;
+  <a href="https://ultralytics.com"><img src="assets/logos/tech_yolo.png" height="28" alt="Ultralytics YOLO 11" /></a> &nbsp;&nbsp;
+  <a href="https://ai.meta.com"><img src="assets/logos/tech_meta.png" height="28" alt="Meta" /></a> &nbsp;&nbsp;
+  <a href="https://pytorch.org/executorch"><img src="assets/logos/tech_pytorch.png" height="28" alt="PyTorch ExecuTorch" /></a> &nbsp;&nbsp;
+  <a href="https://www.tensorflow.org/lite"><img src="assets/logos/tech_tensorflow.png" height="28" alt="TensorFlow Lite" /></a> &nbsp;&nbsp;
+  <a href="https://ai.google.dev/edge/litert"><img src="assets/logos/tech_google.png" height="28" alt="Google LiteRT" /></a> &nbsp;&nbsp;
+  <a href="https://opencv.org"><img src="assets/logos/tech_opencv.png" height="28" alt="OpenCV" /></a> &nbsp;&nbsp;
+  <a href="https://huggingface.co"><img src="assets/logos/tech_huggingface.png" height="28" alt="Hugging Face" /></a> &nbsp;&nbsp;
+  <a href="https://developer.android.com"><img src="assets/logos/tech_android.png" height="28" alt="Android" /></a> &nbsp;&nbsp;
+  <a href="https://python.org"><img src="assets/logos/tech_python.png" height="28" alt="Python" /></a>
+</p>
 
 | Technology / Component | Classification | Role in BhAi-SoC Framework | Hardware Target / Execution Engine |
 | :--- | :--- | :--- | :--- |
