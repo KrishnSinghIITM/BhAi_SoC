@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Top Red Ring -->
+  <circle cx="50" cy="30" r="18" fill="none" stroke="#EE2C2C" stroke-width="10"/>
+  <!-- Bottom-Left Green Ring -->
+  <circle cx="32" cy="68" r="18" fill="none" stroke="#00EE00" stroke-width="10"/>
+  <!-- Bottom-Right Blue Ring -->
+  <circle cx="68" cy="68" r="18" fill="none" stroke="#2C2CEE" stroke-width="10"/>
+</svg>

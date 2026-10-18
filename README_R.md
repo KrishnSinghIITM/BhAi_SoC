@@ -4,15 +4,29 @@
 
 <div align="center">
 
-<!-- Organizing Bodies, Partners & Participating Institutions -->
-[![MeitY C2S](https://img.shields.io/badge/MeitY%20C2S-Chips%20to%20Startup-0B4F6C.svg?style=for-the-badge)](https://c2s.gov.in/)
-[![Arm](https://img.shields.io/badge/Arm-Developer%20Labs-0091BD.svg?style=for-the-badge&logo=arm&logoColor=white)](https://arm.com)
-[![IIT Delhi](https://img.shields.io/badge/IIT%20Delhi-Challenge%20Co--Host-C0392B.svg?style=for-the-badge)](https://home.iitd.ac.in)
-[![UK Government](https://img.shields.io/badge/UK%20Gov-Tech%20Security%20Initiative-012169.svg?style=for-the-badge)](https://www.gov.uk)
-[![Meta](https://img.shields.io/badge/Meta-Llama%20Impact%20Partner-0668E1.svg?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com)
-[![IIT Madras](https://img.shields.io/badge/IIT%20Madras-Participating%20Team-800000.svg?style=for-the-badge)](https://www.iitm.ac.in)
-
-<br/>
+<!-- Organizing Bodies & Challenge Partners -->
+<table align="center" style="border: none; background: transparent;">
+  <tr style="border: none;">
+    <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
+      <a href="https://www.meity.gov.in"><img src="assets/logos/org_meity.png" height="48" alt="MeitY" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
+      <a href="https://c2s.gov.in/"><img src="assets/logos/org_c2s.png" height="44" alt="C2S" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
+      <a href="https://arm.com"><img src="assets/logos/org_arm.png" height="34" alt="Arm" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
+      <a href="https://home.iitd.ac.in"><img src="assets/logos/org_iitd.png" height="48" alt="IIT Delhi" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
+      <a href="https://www.gov.uk"><img src="assets/logos/org_ukgov.png" height="34" alt="UK Government" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
+      <a href="https://ai.meta.com"><img src="assets/logos/org_meta.png" height="36" alt="Meta" /></a>
+    </td>
+  </tr>
+</table>
 
 **Bharat AI-SoC Challenge 2026–27 (2nd Edition) | Problem Statement 5 (PS5)**  
 *Industrial Automated Optical Inspection (AOI) & On-Device Quality-Control Assistant*
@@ -341,7 +355,7 @@ $$\text{Carbon} = E_{\text{total}} \times 0.708\text{ kg CO}_2\text{e/kWh (India
 
 ---
 
-## 10. Conclusion and Phase 2 Optimization Roadmap
+## 10. Conclusion and Ongoing Work
 
 This research establishes the empirical feasibility of an edge-native, dual-engine automated optical inspection architecture operating entirely within the computational and thermal constraints of consumer-grade mobile silicon. By pairing an INT8-quantized YOLO11-Nano optical localization engine with a 4-bit quantized Llama 3.2 1B reasoning co-pilot, the proposed framework eliminates datacenter latency, cloud subscription overheads, and proprietary layout exfiltration risks for electronics manufacturing facilities.
 
@@ -351,7 +365,7 @@ Empirical evaluation across five silicon tiers demonstrates:
 3. **On-Device Standards-Compliant Reasoning**: Generating deterministic IPC-A-610 rework procedures at 9.8 tokens/sec prefill and 1.8–2.5 tokens/sec decode directly on budget smartphone application cores.
 4. **Thermal and Energy Stability**: Sustaining thermal equilibrium ($\Delta T = 0.0 °C$ at $36.3 °C$) with zero thermal throttling over continuous multi-minute stress testing, slashing daily inspection electrical energy consumption by up to $99.8\%$ compared to datacenter GPU servers.
 
-### 10.1 Phase 2 Implementation Roadmap
+### 10.1 Ongoing Work
 To progress from this baseline into a production-ready deployment for the challenge finals:
 1. **Quantization-Aware Training (QAT)**: Integrating fake-quantization nodes into the PyTorch backward pass to eliminate the remaining $5\text{--}8\%$ precision gap between FP32 and INT8 weights.
 2. **Arm KleidiAI Micro-kernel Compilation**: Integrating Arm's open-source KleidiAI primitives to accelerate CPU matrix multiplication on Cortex-A cores, targeting $>5\text{ tok/s}$ decoding speed on entry-level handsets.
@@ -378,29 +392,62 @@ The BhAi-SoC dual-engine inspection framework is benchmarked, profiled, and acce
 
 ### 12.1 Silicon & Hardware Compute Architectures
 
-<div align="center">
-
-[![Arm Silicon](https://img.shields.io/badge/Arm-Cortex--A73%20%7C%20Mali--G72%20MP3-0091BD.svg?style=for-the-badge&logo=arm&logoColor=white)](https://arm.com)
-[![Qualcomm Hexagon](https://img.shields.io/badge/Qualcomm-Snapdragon%20HTP%20NPU-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
-[![Samsung Exynos](https://img.shields.io/badge/Samsung-Exynos%209611%20Mobile%20SoC-1428A0.svg?style=for-the-badge&logo=samsung&logoColor=white)](https://semiconductor.samsung.com)
-[![NVIDIA GPU](https://img.shields.io/badge/NVIDIA-RTX%206000%20%7C%20RTX%203050-76B900.svg?style=for-the-badge&logo=nvidia&logoColor=white)](https://nvidia.com)
-[![Intel Architecture](https://img.shields.io/badge/Intel-Core%20i5--12450H%20(12th%20Gen)-0071C5.svg?style=for-the-badge&logo=intel&logoColor=white)](https://intel.com)
-[![AMD EPYC](https://img.shields.io/badge/AMD-Threadripper%20PRO%207975WX-ED1C24.svg?style=for-the-badge&logo=amd&logoColor=white)](https://amd.com)
-
-</div>
+<table align="center" style="border: none; background: transparent;">
+  <tr style="border: none;">
+    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
+      <a href="https://arm.com"><img src="assets/logos/arm.svg" height="28" alt="Arm" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
+      <a href="https://aihub.qualcomm.com"><img src="assets/logos/qualcomm.svg" height="34" alt="Qualcomm" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
+      <a href="https://semiconductor.samsung.com"><img src="assets/logos/samsung.svg" height="22" alt="Samsung" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
+      <a href="https://nvidia.com"><img src="assets/logos/nvidia.svg" height="30" alt="NVIDIA" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
+      <a href="https://intel.com"><img src="assets/logos/intel.svg" height="26" alt="Intel" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 18px;">
+      <a href="https://amd.com"><img src="assets/logos/amd.svg" height="22" alt="AMD" /></a>
+    </td>
+  </tr>
+</table>
 
 ### 12.2 AI Frameworks, Neural Backbones & Edge Runtimes
 
-<div align="center">
-
-[![Ultralytics YOLO11](https://img.shields.io/badge/Ultralytics-YOLO11--Nano%20Vision-00FFFF.svg?style=for-the-badge&logo=yolo&logoColor=black)](https://ultralytics.com)
-[![Meta Llama 3.2](https://img.shields.io/badge/Meta-Llama%203.2%201B--Instruct-0668E1.svg?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com)
-[![PyTorch ExecuTorch](https://img.shields.io/badge/PyTorch-ExecuTorch%20Edge%20Runtime-EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/executorch)
-[![Google LiteRT](https://img.shields.io/badge/Google-LiteRT%20INT8%20PTQ-4285F4.svg?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/edge/litert)
-[![Qualcomm AI Hub](https://img.shields.io/badge/Qualcomm-AI%20Hub%20Laboratory-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
-[![Python 3.11](https://img.shields.io/badge/Python-3.11%20Environment-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-
-</div>
+<table align="center" style="border: none; background: transparent;">
+  <tr style="border: none;">
+    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
+      <a href="https://ultralytics.com"><img src="assets/logos/tech_yolo.png" height="36" alt="Ultralytics YOLO 11" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
+      <a href="https://ai.meta.com"><img src="assets/logos/org_meta.png" height="36" alt="Meta Llama" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
+      <a href="https://pytorch.org/executorch"><img src="assets/logos/pytorch.svg" height="36" alt="PyTorch ExecuTorch" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
+      <a href="https://www.tensorflow.org/lite"><img src="assets/logos/tensorflow.svg" height="36" alt="TensorFlow Lite" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
+      <a href="https://ai.google.dev/edge/litert"><img src="assets/logos/google.svg" height="36" alt="Google LiteRT" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
+      <a href="https://opencv.org"><img src="assets/logos/opencv.svg" height="36" alt="OpenCV" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
+      <a href="https://huggingface.co"><img src="assets/logos/huggingface.svg" height="36" alt="Hugging Face" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
+      <a href="https://developer.android.com"><img src="assets/logos/android.svg" height="36" alt="Android" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 10px 14px;">
+      <a href="https://python.org"><img src="assets/logos/python.svg" height="36" alt="Python" /></a>
+    </td>
+  </tr>
+</table>
 
 | Technology / Component | Classification | Role in BhAi-SoC Framework | Hardware Target / Execution Engine |
 | :--- | :--- | :--- | :--- |
@@ -410,7 +457,11 @@ The BhAi-SoC dual-engine inspection framework is benchmarked, profiled, and acce
 | **Meta Llama 3.2 1B-Instruct** | Reasoning SLM | Tier 2 IPC-A-610 automated rework directive copilot | 4-bit groupwise quantized (8da4w) |
 | **PyTorch ExecuTorch** | Edge Runtime | On-device transformer execution engine | Arm XNNPACK / KleidiAI micro-kernels |
 | **Ultralytics YOLO11n** | Vision Backbone | Tier 1 real-time PCB surface defect localization | 2.61M parameters, 8.7 GFLOPs @ 640x640 |
-| **Google LiteRT (TFLite)** | Vector Runtime | Integer quantization & post-training calibration (PTQ) | Symmetric INT8 (W8A8) mobile deployment |
+| **TensorFlow / TF-Lite** | Quantization Engine | Graph optimization, INT8 quantization & edge delegation | Symmetric INT8 (W8A8) mobile deployment |
+| **Google LiteRT (TFLite)** | Vector Runtime | High-throughput mobile inference engine | NPU / GPU / CPU hardware acceleration |
+| **OpenCV Industrial** | Computer Vision | High-speed optical frame acquisition & image rectification | Real-time multi-threading vision pipeline |
+| **Hugging Face Hub** | Model Repository | Model weight distribution, tokenizer & configuration management | Open-source reproducible artifact repository |
+| **Android OS / NDK** | Mobile OS | Native handheld application host environment | Android 12 / Arm64-v8a native runtime |
 | **NVIDIA RTX 6000 / 3050** | Datacenter & Laptop GPU | Model training, scaling ablations, and throughput profiling | CUDA / TensorRT baseline |
 | **Intel Core i5-12450H** | Workstation CPU | Industrial PC gateway benchmark reference | 8 Cores (12 Threads) x86 baseline |
 | **AMD Threadripper 7975WX** | Multi-Core CPU | Datacenter CPU throughput benchmark reference | 32 Cores (64 Threads) server baseline |
