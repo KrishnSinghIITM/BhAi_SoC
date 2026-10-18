@@ -4,19 +4,12 @@
 
 <div align="center">
 
-<!-- Core Silicon & Runtime Technologies -->
-[![Arm](https://img.shields.io/badge/Arm-Cortex--A73%20%7C%20Mali--G72-0091BD.svg?style=for-the-badge&logo=arm&logoColor=white)](https://arm.com)
-[![Qualcomm](https://img.shields.io/badge/Qualcomm-Snapdragon%20NPU%20(1.4ms)-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
-[![Samsung](https://img.shields.io/badge/Samsung-Exynos%209611%20Mobile-1428A0.svg?style=for-the-badge&logo=samsung&logoColor=white)](https://semiconductor.samsung.com)
-[![Meta](https://img.shields.io/badge/Meta-Llama%203.2%20%7C%20ExecuTorch-0668E1.svg?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com)
-[![Google LiteRT](https://img.shields.io/badge/Google-LiteRT%20INT8-4285F4.svg?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/edge/litert)
-
-<br/>
-
-<!-- Organizing Bodies & Participating Team -->
+<!-- Organizing Bodies, Partners & Participating Institutions -->
 [![MeitY C2S](https://img.shields.io/badge/MeitY%20C2S-Chips%20to%20Startup-0B4F6C.svg?style=for-the-badge)](https://c2s.gov.in/)
+[![Arm](https://img.shields.io/badge/Arm-Developer%20Labs-0091BD.svg?style=for-the-badge&logo=arm&logoColor=white)](https://arm.com)
 [![IIT Delhi](https://img.shields.io/badge/IIT%20Delhi-Challenge%20Co--Host-C0392B.svg?style=for-the-badge)](https://home.iitd.ac.in)
 [![UK Government](https://img.shields.io/badge/UK%20Gov-Tech%20Security%20Initiative-012169.svg?style=for-the-badge)](https://www.gov.uk)
+[![Meta](https://img.shields.io/badge/Meta-Llama%20Impact%20Partner-0668E1.svg?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com)
 [![IIT Madras](https://img.shields.io/badge/IIT%20Madras-Participating%20Team-800000.svg?style=for-the-badge)](https://www.iitm.ac.in)
 
 <br/>
@@ -376,3 +369,48 @@ To progress from this baseline into a production-ready deployment for the challe
 6. **Qualcomm AI Hub**: Qualcomm Technologies, Inc., *"Qualcomm AI Hub: On-Device Model Optimization and Deployment Laboratory,"* 2024. [Online]. Available: `https://aihub.qualcomm.com`.
 7. **IPC Standards**: IPC Association Connecting Electronics Industries, *"IPC-A-610H: Acceptability of Electronic Assemblies,"* Bannockburn, IL: IPC, 2020.
 8. **LiteRT Framework**: Google AI Edge Team, *"Google LiteRT: High-Performance Cross-Platform On-Device Machine Learning Runtime,"* Google AI Edge, 2024. [Online]. Available: `https://ai.google.dev/edge/litert`.
+
+---
+
+## 12. Hardware Silicon & Technology Stack Ecosystem
+
+The BhAi-SoC dual-engine inspection framework is benchmarked, profiled, and accelerated across a heterogeneous compute matrix spanning edge silicon, mobile SoCs, and enterprise accelerators:
+
+### 12.1 Silicon & Hardware Compute Architectures
+
+<div align="center">
+
+[![Arm Silicon](https://img.shields.io/badge/Arm-Cortex--A73%20%7C%20Mali--G72%20MP3-0091BD.svg?style=for-the-badge&logo=arm&logoColor=white)](https://arm.com)
+[![Qualcomm Hexagon](https://img.shields.io/badge/Qualcomm-Snapdragon%20HTP%20NPU-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
+[![Samsung Exynos](https://img.shields.io/badge/Samsung-Exynos%209611%20Mobile%20SoC-1428A0.svg?style=for-the-badge&logo=samsung&logoColor=white)](https://semiconductor.samsung.com)
+[![NVIDIA GPU](https://img.shields.io/badge/NVIDIA-RTX%206000%20%7C%20RTX%203050-76B900.svg?style=for-the-badge&logo=nvidia&logoColor=white)](https://nvidia.com)
+[![Intel Architecture](https://img.shields.io/badge/Intel-Core%20i5--12450H%20(12th%20Gen)-0071C5.svg?style=for-the-badge&logo=intel&logoColor=white)](https://intel.com)
+[![AMD EPYC](https://img.shields.io/badge/AMD-Threadripper%20PRO%207975WX-ED1C24.svg?style=for-the-badge&logo=amd&logoColor=white)](https://amd.com)
+
+</div>
+
+### 12.2 AI Frameworks, Neural Backbones & Edge Runtimes
+
+<div align="center">
+
+[![Ultralytics YOLO11](https://img.shields.io/badge/Ultralytics-YOLO11--Nano%20Vision-00FFFF.svg?style=for-the-badge&logo=yolo&logoColor=black)](https://ultralytics.com)
+[![Meta Llama 3.2](https://img.shields.io/badge/Meta-Llama%203.2%201B--Instruct-0668E1.svg?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com)
+[![PyTorch ExecuTorch](https://img.shields.io/badge/PyTorch-ExecuTorch%20Edge%20Runtime-EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/executorch)
+[![Google LiteRT](https://img.shields.io/badge/Google-LiteRT%20INT8%20PTQ-4285F4.svg?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/edge/litert)
+[![Qualcomm AI Hub](https://img.shields.io/badge/Qualcomm-AI%20Hub%20Laboratory-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
+[![Python 3.11](https://img.shields.io/badge/Python-3.11%20Environment-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+
+</div>
+
+| Technology / Component | Classification | Role in BhAi-SoC Framework | Hardware Target / Execution Engine |
+| :--- | :--- | :--- | :--- |
+| **Arm Cortex-A & Mali GPU** | Edge Silicon | Primary target for low-cost handheld factory inspection | 4x Cortex-A73 + 3-core Mali-G72 (OpenCL) |
+| **Qualcomm Hexagon HTP** | On-Device NPU | Ultra-low latency edge tensor processing | 387/387 operators delegated (1.40 ms / 693 FPS) |
+| **Samsung Exynos 9611** | Mobile SoC | Physical validation hardware platform | Samsung Galaxy M21 Handset |
+| **Meta Llama 3.2 1B-Instruct** | Reasoning SLM | Tier 2 IPC-A-610 automated rework directive copilot | 4-bit groupwise quantized (8da4w) |
+| **PyTorch ExecuTorch** | Edge Runtime | On-device transformer execution engine | Arm XNNPACK / KleidiAI micro-kernels |
+| **Ultralytics YOLO11n** | Vision Backbone | Tier 1 real-time PCB surface defect localization | 2.61M parameters, 8.7 GFLOPs @ 640x640 |
+| **Google LiteRT (TFLite)** | Vector Runtime | Integer quantization & post-training calibration (PTQ) | Symmetric INT8 (W8A8) mobile deployment |
+| **NVIDIA RTX 6000 / 3050** | Datacenter & Laptop GPU | Model training, scaling ablations, and throughput profiling | CUDA / TensorRT baseline |
+| **Intel Core i5-12450H** | Workstation CPU | Industrial PC gateway benchmark reference | 8 Cores (12 Threads) x86 baseline |
+| **AMD Threadripper 7975WX** | Multi-Core CPU | Datacenter CPU throughput benchmark reference | 32 Cores (64 Threads) server baseline |
