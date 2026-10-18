@@ -1,0 +1,22 @@
+{
+    "timestamp": "2026-10-18 11:07:08 UTC",
+    "tier1_vision": {
+        "defect_class": "Board Mask Flaw",
+        "defect_code": "BMFO",
+        "confidence": 0.33914288878440857,
+        "bbox_pixels": [
+            208,
+            415,
+            280,
+            471
+        ],
+        "surface_layer": "Outer Solder Resist Mask",
+        "inference_latency_ms": 407.72
+    },
+    "tier2_reasoning": {
+        "engine": "Meta Llama 3.2 1B via ExecuTorch (8da4w)",
+        "tokens_per_second": 22.4,
+        "latency_seconds": 0.35,
+        "ipc_a_610_advisory": "- Severity & IPC Class: Class 3 (Critical Defect)\n- Operator Action: Quarantine PCB. Apply RMA flux and 0.8mm wick at 350\u00b0C to wick bridge.\n- Root Cause: Solder bridge during wave process or photolithography misalignment."
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "device_telemetry": {
+    "device": "Samsung Galaxy M21",
+    "chipset": "Exynos 9611 (universal9611)",
+    "architecture": "4x Cortex-A73 @ 2.3 GHz + 4x Cortex-A53 @ 1.7 GHz",
+    "gpu": "ARM Mali-G72 MP3",
+    "total_ram_mb": 5572,
+    "start_timestamp": "2026-10-18 20:18:40",
+    "end_timestamp": "2026-10-18 20:21:41",
+    "total_execution_seconds": 182
+  },
+  "thermal_and_power": {
+    "temperature_start_c": 36.3,
+    "temperature_end_c": 36.3,
+    "thermal_delta_c": 0.0,
+    "thermal_throttling_triggered": false,
+    "battery_level_start_percent": 55,
+    "battery_level_end_percent": 55,
+    "battery_voltage_mv": 3967
+  },
+  "memory_footprint": {
+    "mem_available_start_mb": 3198,
+    "mem_available_end_mb": 3823,
+    "runtime_memory_delta_mb": -625
+  },
+  "cpu_frequencies_mhz": {
+    "cortex_a53_little_cluster_mhz": 1534,
+    "cortex_a73_big_cluster_mhz": 936
+  },
+  "vision_inference_tier1": {
+    "gpu_mali_g72_avg_latency_us": 118039,
+    "gpu_mali_g72_min_latency_us": 114030,
+    "cpu_cortex_a73_avg_latency_us": 137846,
+    "cpu_cortex_a73_min_latency_us": 133173,
+    "gpu_delegation": "100% (387/387 operators)"
+  },
+  "reasoning_inference_tier2": {
+    "model": "Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+    "quantization": "4-Bit (Q4_K_M)",
+    "target_hardware": "4-Thread Cortex-A73 Big Cluster",
+    "prompt_eval_throughput_tps": 7.8,
+    "decode_throughput_tps": 1.9,
+    "cases_evaluated": ["Short Circuit (SH)", "Hole Break (HB)", "Open Circuit (OP)"]
+  }
+}

@@ -1,0 +1,18 @@
+# DsPCBSD+ Dataset Configuration for YOLO11 Training
+# Nature Scientific Data (2024) Benchmark
+
+path: /mnt/storage/krishn/ptd/dataset_raw/Data_YOLO
+train: images/train
+val: images/val
+
+# 9 Industrial Defect Classes (COCO IDs 1-9 -> YOLO IDs 0-8)
+names:
+  0: SH
+  1: SP
+  2: SC
+  3: OP
+  4: MB
+  5: HB
+  6: CS
+  7: CFO
+  8: BMFO

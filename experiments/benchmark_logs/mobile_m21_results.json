@@ -1,0 +1,79 @@
+{
+  "benchmark_metadata": {
+    "device_name": "Samsung Galaxy M21",
+    "device_model": "SM-M215F",
+    "chipset": "Samsung Exynos 9611 (universal9611)",
+    "cpu_architecture": "8-core (4x Cortex-A73 @ 2.3 GHz + 4x Cortex-A53 @ 1.7 GHz)",
+    "gpu": "ARM Mali-G72 MP3 (OpenCL-accelerated)",
+    "operating_system": "Android (Linux Kernel, 64-bit arm64-v8a)",
+    "benchmark_environment": "Native Physical Device via ADB Shell",
+    "runtime": "TensorFlow Lite 2.x Nightly (aarch64)",
+    "test_timestamp": "2026-10-18T19:47:00+05:30",
+    "evaluator": "Physical Empirical On-Device Tri-Engine Test (CPU vs GPU vs NNAPI)"
+  },
+  "model_details": {
+    "model_name": "best_int8.tflite",
+    "task": "PCB Defect Detection (YOLOv8/11 Nano INT8 PTQ)",
+    "file_size_mb": 3.06279,
+    "quantization": "INT8 (Full Integer Post-Training Quantization)",
+    "total_operators": 387
+  },
+  "empirical_hardware_execution_comparisons": {
+    "gpu_mali_g72_opencl": {
+      "execution_engine": "TfLiteGpuDelegateV2 (OpenCL Backend)",
+      "delegated_operators": "387 / 387 (100.0% Complete Graph Delegation)",
+      "graph_partitions": 1,
+      "warmup_runs": 5,
+      "timed_runs": 20,
+      "session_init_latency_ms": 2982.06,
+      "warmup_avg_latency_ms": 135.48,
+      "inference_avg_latency_ms": 130.36,
+      "inference_min_latency_ms": 113.67,
+      "inference_median_latency_ms": 132.03,
+      "inference_p95_latency_ms": 145.67,
+      "inference_max_latency_ms": 145.67,
+      "std_dev_ms": 9.08,
+      "throughput_avg_fps": 7.67,
+      "throughput_peak_fps": 8.80,
+      "memory_footprint_init_mb": 97.82,
+      "memory_footprint_overall_mb": 102.90,
+      "verdict": "FASTEST on-device execution on Exynos 9611. 100% graph mapped to Mali-G72 GPU shaders."
+    },
+    "cpu_cortex_a73_xnnpack_4threads": {
+      "execution_engine": "TfLiteXNNPackDelegate (Arm NEON Vectorized CPU)",
+      "delegated_operators": "381 / 387 (98.5%)",
+      "graph_partitions": 13,
+      "num_threads": 4,
+      "warmup_runs": 10,
+      "timed_runs": 50,
+      "session_init_latency_ms": 79.49,
+      "warmup_avg_latency_ms": 145.18,
+      "inference_avg_latency_ms": 147.00,
+      "inference_min_latency_ms": 131.57,
+      "inference_median_latency_ms": 141.04,
+      "inference_p95_latency_ms": 186.36,
+      "inference_max_latency_ms": 284.05,
+      "std_dev_ms": 22.87,
+      "throughput_avg_fps": 6.80,
+      "throughput_peak_fps": 7.60,
+      "memory_footprint_init_mb": 33.32,
+      "memory_footprint_overall_mb": 45.09,
+      "verdict": "LEAST MEMORY (45 MB) and fastest cold startup (79 ms). Ideal for low-power continuous edge worker."
+    },
+    "nnapi_reference_fallback": {
+      "execution_engine": "TFLite NNAPI Delegate (nnapi-reference fallback)",
+      "delegated_operators": "0 / 387 (Driver rejected, fell back to reference CPU)",
+      "session_init_latency_ms": 88.26,
+      "inference_avg_latency_ms": 374.33,
+      "inference_min_latency_ms": 373.65,
+      "throughput_avg_fps": 2.67,
+      "memory_footprint_overall_mb": 45.72,
+      "verdict": "Standard Android NNAPI lacks proprietary vendor driver on Exynos 9611 for INT8 ops; direct OpenCL GPU or XNNPACK CPU is required."
+    }
+  },
+  "comparative_insights": {
+    "gpu_vs_cpu_delta": "Mali-G72 GPU delivers 11.3% lower latency (130.36 ms vs 147.00 ms) and higher peak frame rate (8.8 FPS vs 7.6 FPS).",
+    "memory_tradeoff": "CPU consumes less than half the RAM of GPU (45.09 MB vs 102.90 MB) with instant cold boot (79 ms vs 2982 ms).",
+    "production_deployment_recommendation": "For battery-constrained handheld terminals, deploy CPU XNNPACK (45 MB RAM). For fixed inspection jigs with continuous power, deploy Mali-G72 GPU OpenCL (130 ms / 8.8 FPS)."
+  }
+}

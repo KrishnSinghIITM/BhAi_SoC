@@ -1,0 +1,36 @@
+{
+    "source_weights": "runs/detect/experiments/baseline_yolo11n_dspcbsd/train_run/weights/best.pt",
+    "input_resolution": [
+        640,
+        640
+    ],
+    "formats": {
+        "onnx": {
+            "path": "runs/detect/experiments/baseline_yolo11n_dspcbsd/train_run/weights/best.onnx",
+            "size_mb": 10.18
+        },
+        "litert_fp32": {
+            "path": "runs/detect/experiments/baseline_yolo11n_dspcbsd/train_run/weights/best.tflite",
+            "size_mb": 10.20
+        },
+        "litert_int8": {
+            "path": "runs/detect/experiments/baseline_yolo11n_dspcbsd/train_run/weights/best_int8.tflite",
+            "size_mb": 2.92,
+            "compression_ratio": "3.5x",
+            "calibration_samples": 2051
+        },
+        "pytorch_pt": {
+            "path": "runs/detect/experiments/baseline_yolo11n_dspcbsd/train_run/weights/best.pt",
+            "size_mb": 5.26
+        },
+        "tier2_reasoning_executorch": {
+            "model": "meta-llama/Llama-3.2-1B-Instruct",
+            "format": "ExecuTorch .pte",
+            "quantization": "8da4w (4-bit groupwise weights, 8-bit dynamic activations)",
+            "backend": "Arm XNNPACK / KleidiAI",
+            "activation_memory_bytes": 26107712,
+            "activation_memory_mb": 24.89,
+            "path": "models/Llama-3.2-1B-Instruct/llama3_2_1b_q4.pte"
+        }
+    }
+}

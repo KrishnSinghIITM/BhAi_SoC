@@ -1,0 +1,11 @@
+{
+    "timestamp": "2026-10-17T14:56:32Z",
+    "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python_version": "3.14.7 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 10:21:40) [GCC 14.3.0]",
+    "pytorch_version": "2.14.1+cu130",
+    "cuda_available": true,
+    "cuda_version": "13.0",
+    "device_count": 2,
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "gpu_vram_gb": 95.01
+}

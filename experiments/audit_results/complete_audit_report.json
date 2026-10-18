@@ -1,0 +1,61 @@
+{
+    "timestamp": "2026-10-18T06:36:49Z",
+    "model_weights": "runs/detect/experiments/baseline_yolo11n_dspcbsd/train_run/weights/best.pt",
+    "device": "1",
+    "visual_inspections_path": "experiments/audit_results/visual_inspected_pcbs",
+    "batch_scaling_ablation": {
+        "batch_1": {
+            "batch_size": 1,
+            "total_batch_latency_ms": 14.73,
+            "latency_per_image_ms": 14.73,
+            "throughput_fps": 67.87
+        },
+        "batch_4": {
+            "batch_size": 4,
+            "total_batch_latency_ms": 20.35,
+            "latency_per_image_ms": 5.09,
+            "throughput_fps": 196.56
+        },
+        "batch_8": {
+            "batch_size": 8,
+            "total_batch_latency_ms": 35.79,
+            "latency_per_image_ms": 4.47,
+            "throughput_fps": 223.54
+        },
+        "batch_16": {
+            "batch_size": 16,
+            "total_batch_latency_ms": 59.54,
+            "latency_per_image_ms": 3.72,
+            "throughput_fps": 268.73
+        },
+        "batch_32": {
+            "batch_size": 32,
+            "total_batch_latency_ms": 124.83,
+            "latency_per_image_ms": 3.9,
+            "throughput_fps": 256.34
+        },
+        "batch_64": {
+            "batch_size": 64,
+            "total_batch_latency_ms": 235.75,
+            "latency_per_image_ms": 3.68,
+            "throughput_fps": 271.48
+        }
+    },
+    "resolution_scaling_ablation": {
+        "res_320x320": {
+            "resolution": "320x320",
+            "latency_ms": 14.6,
+            "fps": 68.51
+        },
+        "res_640x640": {
+            "resolution": "640x640",
+            "latency_ms": 15.04,
+            "fps": 66.49
+        },
+        "res_1024x1024": {
+            "resolution": "1024x1024",
+            "latency_ms": 14.65,
+            "fps": 68.26
+        }
+    }
+}

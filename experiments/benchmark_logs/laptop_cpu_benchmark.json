@@ -1,0 +1,36 @@
+{
+    "timestamp": "2026-10-18T06:41:30Z",
+    "platform_tier": "laptop",
+    "os": "Windows-10-10.0.26200-SP0",
+    "vision_benchmarks": {
+        "device": "cpu",
+        "device_name": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "input_resolution": "640x640",
+        "iterations": 100,
+        "throughput_fps": 5.84,
+        "total_latency_ms": {
+            "mean": 171.38,
+            "std": 11.13,
+            "median": 169.31,
+            "p95": 196.52,
+            "p99": 208.79
+        },
+        "breakdown_ms": {
+            "preprocess_mean": 4.75,
+            "inference_mean": 164.66,
+            "postprocess_mean": 1.2
+        },
+        "memory": {
+            "peak_ram_mb": 376.55,
+            "peak_vram_mb": 0.0
+        },
+        "thermals_and_energy": {
+            "starting_temp_c": null,
+            "ending_temp_c": null,
+            "temp_delta_c": null,
+            "avg_power_draw_watts": null,
+            "energy_per_inference_joules": null,
+            "silicon_efficiency_fps_per_watt": null
+        }
+    }
+}

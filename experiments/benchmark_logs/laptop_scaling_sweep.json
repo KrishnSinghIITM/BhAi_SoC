@@ -1,0 +1,10 @@
+{
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU (DirectML)",
+    "resolution_sweep": {},
+    "batch_sweep": {
+        "batch_1": {
+            "latency_per_image_ms": 6.81,
+            "throughput_fps": 146.8
+        }
+    }
+}

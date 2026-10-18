@@ -1,0 +1,972 @@
+[18/Oct/2026:13:16:43 +00:00: profiler/info] -=- Tungsten Initializing -=-
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.board.platform = kalama
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.boot.hardware = qcom
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.boot.hardware.platform = 
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.system.build.id = TP1A.220624.014
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.system.build.version.release = 13
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.hardware = qcom
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.hardware.chipname = 
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.product.board = kalama
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.product.brand = samsung
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.product.device = dm1q
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.product.build.fingerprint = samsung/dm1quew/qssi:13/TP1A.220624.014/S911U1UES1AWIF:user/release-keys
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.product.manufacturer = samsung
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.product.model = SM-S911U1
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.product.name = dm1quew
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.soc.manufacturer = QTI
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Android system property: ro.soc.model = SM8550
+[18/Oct/2026:13:16:43 +00:00: profiler/info] [tflite] Loaded OpenCL library with dlopen.
+[18/Oct/2026:13:16:43 +00:00: profiler/info] OpenCL Version: OpenCL C 3.0 Adreno(TM) 740
+[18/Oct/2026:13:16:43 +00:00: profiler/info] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 121 for domain 3
+[18/Oct/2026:13:16:43 +00:00: profiler/info] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 121 on domain 3
+[18/Oct/2026:13:16:43 +00:00: profiler/info] Detected Qualcomm SOC=SM8550. SOC Model=43, Hexagon arch=73, supports QNN=true, unsigned PDs=true, fp16=true, QNN flavor=default.
+[18/Oct/2026:13:16:43 +00:00: profiler/info] This device type has up to 1 HTP cores but this may not reflect the current device's configuration.
+[18/Oct/2026:13:16:43 +00:00: profiler/info] -=- Tungsten running task: compiling -=-
+[18/Oct/2026:13:16:43 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Status Successfully Compiled with t = 0 us and usage: before = 0.0 kB; peakBefore = 0.0 kB; mallocUnusedBefore = 0.0 kB; after = 0.0 kB; peakAfter = 0.0 kB; mallocUnusedAfter = 0.0 kB; increase = 0.0-0.0 kB; peak = 0.0-0.0 kB
+[18/Oct/2026:13:16:43 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Saving results to /sdcard/Downloads/Results/job_jgd6krnlp/job_jgd6krnlp_results.bin
+[18/Oct/2026:13:16:44 +00:00: profiler/info] -=- Tungsten running task: loading -=-
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loading previously saved results in /sdcard/Downloads/Results/job_jgd6krnlp/job_jgd6krnlp_results.bin
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loading tflite model Models/model.tflite
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size before: 20364.0 kB, allocated: 19082.9 kB, slack: 1281.1 kB.
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Current memory baseline range: 82698.9-83980.0 kB.
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded LiteRT version 1.4.2 (which is TF Lite version 2.19.0). Loading model from Models/model.tflite.
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Asset model.tflite not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.tflite.
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found asset Models/model.tflite in /sdcard/Downloads/Models/model.tflite.
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded model. Minimum TF Lite version = 2.3.0.
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Asset model.tflite not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.tflite.
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found asset Models/model.tflite in /sdcard/Downloads/Models/model.tflite.
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] No delegates specified; using compute unit=all.
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [tflite] Initialized TensorFlow Lite runtime.
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found QNN interface provider with API version 2.39.
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded QNN Delegate, API version=0.24.0, QNN version=v2.50.0.260828221209, capabilities: DSP=false, HTP/int8=true, HTP/fp16=true.
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Enabling delegate cache in dir=/data/user/0/ai.tetra.tungsten/cache/tungsten.cache/model.tflite_8945450969824422876_1792329390000/qnn.
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:182: set up allocator 0xb400007b38c69800 for DMA buf heap system, ION heap system, heap mask 0x2000000, flags 0x1, legacy flags 0x1
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:304: Reading configuration file: ai.tetra.tungsten.debugconfig
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:335: fastrpc_config_init: Couldn't find file ai.tetra.tungsten.debugconfig, errno (No such file or directory) at /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.50.0/aarch64-android, /vendor/lib/rfsa/adsp, 
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3722: fastrpc_apps_user_init done  with default domain:3 and &fastrpc_trace:0x7adcffaf3c
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3836: multidsplib_env_init: libcdsprpc.so loaded
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> Specified config SOC, ignoring on real target
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2177: Error 0xe: remote_handle_control_domain failed for request ID 2 on domain 3 (errno Permission denied)
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2950: open_device_node: no access to default device of domain 3, open thru HAL, (sess_id 0)
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 125 for domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2980: close_device_node: close device 125 thru HAL on domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 125 on domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2188: Error 0xe: remote_handle_control failed for request ID 2 (errno Success)
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2950: open_device_node: no access to default device of domain 3, open thru HAL, (sess_id 0)
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 125 for domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2980: close_device_node: close device 125 thru HAL on domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 125 on domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2439: remote_session_control Unsigned PD enable 1 request for domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2422: remote_session_control DSP info request for domain 3, thread priority -1, stack size 17408
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2950: open_device_node: no access to default device of domain 3, open thru HAL, (sess_id 0)
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 125 for domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3153: Error 0xd: open_shell failed for domain 3 search paths used are /dsp/, /vendor/dsp/, /vendor/dsp/xdsp/ (errno Permission denied)
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3229: Created user PD on domain 3, debug_trace 0x0, enabled attr=> RPC timeout:0, Debug Mode:N, CRC check:N, Unsigned:Y, Signed:N, Adapt QOS:N, PD dump: (Config:N, Debug:N), Perf: (Kernel:N, DSP:N), Iregion:N, QTF Tracing:N, UAF heap:N
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:609: Successfully set remote user thread priority to 192 and stack size to 17408 for domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/listener_android.c:116: listener thread starting
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 128, addr 0x7aaa419000, length 0x100000, domain 3, flags 0x0, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3501: open_dev: persist_buf created 128
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:576:Error : Unable to add watcher for folder /vendor/lib/rfsa/adsp : errno is Permission denied
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_perf.c:273: fastrpc_perf_init: enabled systrace 0x0 and RPC traces (kernel 0, dsp 0) with frequency 1000
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:348: file_watcher_thread starting for domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:358:file_watcher_thread: Couldn't find file ai.tetra.tungsten.farf, errno (No such file or directory)
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:708: open_mod_table_open_from_static: reverse module apps_std opened with handle 0xdcffd130 (idx 0)
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1007: Successfully opened file libQnnHtpV73Skel.so
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:708: open_mod_table_open_from_static: reverse module apps_mem opened with handle 0xdcffd230 (idx 1)
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1020: Warning: apps_std_fopen_with_env failed with 0x2 for libc++.so.1 (No such file or directory)
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:864: Error 0x2: open_mod_table_handle_invoke failed for handle:0xdcffd130, sc:0x13050100
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1020: Warning: apps_std_fopen_with_env failed with 0x2 for libc++abi.so.1 (No such file or directory)
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:864: Error 0x2: open_mod_table_handle_invoke failed for handle:0xdcffd130, sc:0x13050100
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1542: remote_handle64_open: Successfully opened handle 0xb400007ac73218f0 (remote handle 0xeb2600) for file:///libQnnHtpV73Skel.so?qnn_2_50_0_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 133, addr 0x7bf6789000, length 0x38, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1542: remote_handle64_open: Successfully opened handle 0xb400007ac7321da0 (remote handle 0xeb23e0) for file:///libdspqueue_rpc_skel.so?dspqueue_rpc_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:83: fastrpc_notif_domain_init: FastRPC notification worker thread launched
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1850: get_remote_notif_response: received status notification 0 for domain 3, session 0
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 137, addr 0x7bf677b000, length 0x400, domain 3, flags 0x2, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 139, addr 0x7bf6728000, length 0x700, domain 3, flags 0x2, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1361: Error 0x80000414: remote_handle64_invoke failed for handle 0xb400007ac7321da0, method 3 on domain 3 (sc 0x3010100) (errno Success)
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:593: dspqueue_create: created Queue 0, 0xb400007ac731f280, DSP 0x00000000 for domain 3
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1701: manage_poll_qos: poll mode updated to 3 for domain 3, handle 0xb400007ac73218f0 for timeout 9999
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2135: remote_handle_control_domain: requested QOS 3, latency 9999 for domain 3 handle 0xb400007ac73218f0
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_latency.c:97: fastrpc_latency_thread_handler started for QoS with activity window 100 ms
+[18/Oct/2026:13:16:44 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2135: remote_handle_control_domain: requested QOS 1, latency 0 for domain 3 handle 0xb400007ac73218f0
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> PrepareLibLoader Loading libQnnHtpPrepare.so
+[18/Oct/2026:13:16:44 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [tflite] Replacing 387 out of 387 node(s) with delegate (TfLiteQnnDelegate) node, yielding 1 partitions for subgraph 0 (main).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> Sanitizing the value for hvx_threads and setting to default
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tcm_migration.cc:2215:WARNING:no properties registered for q::Add_flat
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 495e0000007c (q::ConvLayer_SpaceToDepth_stride2) does not have a valid splitting rule. Defaulting to original dim size (82).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 495f0000007c (q::ConvLayer_stride2) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 4960000000cc (q::ConvLayer_SpaceToDepth_stride2) does not have a valid splitting rule. Defaulting to original dim size (42).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 4961000000cc (q::ConvLayer_stride2) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 497300000126 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 497300000126 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (40).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=3, but 497300000126 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (64).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 496200000156 (q::ConvLayer_SpaceToDepth_stride2) does not have a valid splitting rule. Defaulting to original dim size (22).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 496300000156 (q::ConvLayer_stride2) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 4976000001b0 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 4976000001b0 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (20).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=3, but 4976000001b0 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (128).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 40bf0000023e (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 40bf0000023e (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (8).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 40bf0000023e (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (8).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 40c40000023e (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 40c40000023e (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (8).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 40c40000023e (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (8).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 40b300000232 (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 40b300000232 (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (8).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 40b300000232 (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (50).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 40b600000232 (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 40b600000232 (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 40b600000232 (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (400).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 40b800000232 (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 40b800000232 (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (8).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 40b800000232 (q::Reshape_to_h8) does not have a valid splitting rule. Defaulting to original dim size (50).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 40bb00000232 (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 40bb00000232 (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 40bb00000232 (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (400).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=1 to dim=0, but 479500000237 (q::Reshape) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 479500000237 (q::Reshape) does not have a valid splitting rule. Defaulting to original dim size (16).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 479500000237 (q::Reshape) does not have a valid splitting rule. Defaulting to original dim size (50).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=1 to dim=0, but 479700000237 (q::Reshape) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 479700000237 (q::Reshape) does not have a valid splitting rule. Defaulting to original dim size (2).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 479700000237 (q::Reshape) does not have a valid splitting rule. Defaulting to original dim size (400).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 40c20000023e (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 40c20000023e (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 40c20000023e (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (64).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 40c70000023e (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=1, but 40c70000023e (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 40c70000023e (q::Reshape_to_h1) does not have a valid splitting rule. Defaulting to original dim size (64).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 49790000027a (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 49790000027a (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (20).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=3, but 49790000027a (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (256).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 497c00000290 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 497c00000290 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (40).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=3, but 497c00000290 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (384).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 497f000002dc (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 497f000002dc (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (80).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=3, but 497f000002dc (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (256).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 496400000329 (q::ConvLayer_SpaceToDepth_stride2) does not have a valid splitting rule. Defaulting to original dim size (42).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 496500000329 (q::ConvLayer_stride2) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 498200000331 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 498200000331 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (40).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=3, but 498200000331 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (192).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 49660000037e (q::ConvLayer_SpaceToDepth_stride2) does not have a valid splitting rule. Defaulting to original dim size (22).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 49670000037e (q::ConvLayer_stride2) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 498500000386 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 498500000386 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (20).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=3, but 498500000386 (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (384).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=0, but 4988000003dd (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (1).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 4988000003dd (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (20).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=3, but 4988000003dd (q::Concat_tile_height) does not have a valid splitting rule. Defaulting to original dim size (128).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=0 to dim=2, but 421e0000051d (q::Reshape) does not have a valid splitting rule. Defaulting to original dim size (16).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 548600000058 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (160).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 409500000065 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (48).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 4096000000b5 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (96).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 40980000013f (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (192).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 409a000001c9 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (384).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 409b000001f0 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (512).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 409e000002c6 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (192).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 40a000000312 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (96).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 40a200000367 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (192).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 40a5000003f6 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (384).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 40a600000472 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (8400).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=2, but 40a80000053f (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (4).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=2, but 40a90000054a (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (13).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 544900000012 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (640).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 59ba0000021b (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (400).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 5da600000237 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (16).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 603100000057 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (160).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 610e00000071 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (160).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 61db000000c1 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (80).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 6240000000d0 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (40).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 6264000000db (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (40).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 62d50000014b (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (40).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 63090000015a (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (20).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 631f00000165 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (20).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 64090000031e (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (80).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 65a70000022d (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (400).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 66730000007c (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (81).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 66cc000000cc (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (41).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 671400000156 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (21).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 674300000329 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (41).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=1, but 67730000037e (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (21).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 68e700000232 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (400).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] tiling.h:284:WARNING:Tried to assign requirement of chunk=-1 to dim=3, but 68fa00000232 (q::Concat) does not have a valid splitting rule. Defaulting to original dim size (400).
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe1e60000023e 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe1fc00000232 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe20c00000237 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe24400000053 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe280000000a3 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe294000000f3 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe2a80000010a 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe2b200000115 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe2ce0000019f 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe324000003aa 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe3ac0000001d 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe3fc0000002c 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe4240000007c 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe450000000cc 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe48000000156 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe49800000329 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe4da00000469 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe57e00000057 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe61e00000071 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe66e000000c1 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe6be000000d0 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe6d2000000db 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe6e60000014b 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe70e0000015a 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe71a00000165 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe7260000031e 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe7760000008d 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe79e000000dd 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe7b200000167 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe7be00000209 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe83c0000024f 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe83e0000024f 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe87c00000258 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] op_registry_prepare.cc:129:WARNING:No registered op found for 0xe8ac0000003d 'q::crouton_to_vtcm' (registries searched: core,test)
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8d90000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8db0000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8dd0000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8df0000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8e10000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8e30000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8e50000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8e70000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8e90000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8eb0000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8ed0000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8ef0000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8f10000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8f30000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8f50000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8f70000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8f90000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8fb0000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8fd0000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] concat_opts.cc:201:WARNING:Disabling in place concat 0xe8ff0000006d ... dim 3 of input 1 not a multiple of 32
+[18/Oct/2026:13:16:44 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] memory_format_convert_opts.cc:128:WARNING:non-free ForceFormat crouton->crouton 0xe1e30000023e
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] graph_prepare.cc:2353:WARNING:remote-weight rewrite scaffold: 0 exact candidate op(s) identified; 0 tagged remote-weight op(s); 98 exact target op(s); 0 exact target op(s) have nsp_id; 0 exact target op(s) have ddr_cluster; 0 have coherent op_map/graphdeps state; 0 are safe for proto-roundtrip validation; 0 replacement-path validations succeeded; 0 clone-equivalent replacements committed; 0 have constructible `_free` fallback forms; 0 have `_free` fallback output-block matches; 0 have `_free` fallback outp
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 142, addr 0x7a75c6f000, length 0x4b0100, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 145, addr 0x7bde3cb000, length 0x6aac0, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 146, addr 0x7bf66e0000, length 0x1cd8, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 147, addr 0x7c04edc000, length 0x48, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> gpe_serialize: not a GPE program, falling back to hexagon_nn_serialize
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> gpe_serialize: not a GPE program, falling back to hexagon_nn_serialize
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 148, addr 0x7a75571000, length 0x400000, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> setInferenceBufferForHtpExtensionSkel: not supported for DeviceId 0 coreId 0 pdId 0
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> setInferenceBufferForHtpExtensionSkel not supported on this platform
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Applied 1 delegates: QNN/HTP. Model is fully delegated=true.
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Saving delegate selection for subsequent steps.
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size after: 93348.0 kB, allocated: 82871.5 kB, slack: 10476.5 kB.
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Status Successfully Loaded Cold with t = 923483 us and usage: before = 83980.0 kB; peakBefore = 83980.0 kB; mallocUnusedBefore = 1281.1 kB; after = 143636.0 kB; peakAfter = 143624.0 kB; mallocUnusedAfter = 10476.5 kB; increase = 49179.5-50460.6 kB; peak = 59644.0-60925.1 kB
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found QNN interface provider with API version 2.39.
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found QNN interface provider with API version 2.39.
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Saving results to /sdcard/Downloads/Results/job_jgd6krnlp/job_jgd6krnlp_results.bin
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:49::error: 12: AEE_SUCCESS == (nErr = get_remote_notif_response(domain, &notif_res))
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:54:Error 0xc: notif_fastrpc_thread FastRPC notification worker thread exited for domain 3 (errno Success)
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 125 on domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> PrepareLibLoader Unloading libQnnHtpPrepare.so
+[18/Oct/2026:13:16:45 +00:00: profiler/info] -=- Tungsten running task: loading -=-
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loading previously saved results in /sdcard/Downloads/Results/job_jgd6krnlp/job_jgd6krnlp_results.bin
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loading tflite model Models/model.tflite
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size before: 61116.0 kB, allocated: 27249.4 kB, slack: 33866.6 kB.
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Current memory baseline range: 94233.4-128100.0 kB.
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded LiteRT version 1.4.2 (which is TF Lite version 2.19.0). Loading model from Models/model.tflite.
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Asset model.tflite not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.tflite.
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found asset Models/model.tflite in /sdcard/Downloads/Models/model.tflite.
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded model. Minimum TF Lite version = 2.3.0.
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Asset model.tflite not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.tflite.
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found asset Models/model.tflite in /sdcard/Downloads/Models/model.tflite.
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found QNN interface provider with API version 2.39.
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded QNN Delegate, API version=0.24.0, QNN version=v2.50.0.260828221209, capabilities: DSP=false, HTP/int8=true, HTP/fp16=true.
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Enabling delegate cache in dir=/data/user/0/ai.tetra.tungsten/cache/tungsten.cache/model.tflite_8945450969824422876_1792329390000/qnn.
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> Specified config SOC, ignoring on real target
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2177: Error 0xe: remote_handle_control_domain failed for request ID 2 on domain 3 (errno Permission denied)
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2188: Error 0xe: remote_handle_control failed for request ID 2 (errno Permission denied)
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2950: open_device_node: no access to default device of domain 3, open thru HAL, (sess_id 0)
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 117 for domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2980: close_device_node: close device 117 thru HAL on domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 117 on domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2439: remote_session_control Unsigned PD enable 1 request for domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2422: remote_session_control DSP info request for domain 3, thread priority -1, stack size 17408
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2950: open_device_node: no access to default device of domain 3, open thru HAL, (sess_id 0)
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 117 for domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3153: Error 0xd: open_shell failed for domain 3 search paths used are /dsp/, /vendor/dsp/, /vendor/dsp/xdsp/ (errno Permission denied)
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3229: Created user PD on domain 3, debug_trace 0x0, enabled attr=> RPC timeout:0, Debug Mode:N, CRC check:N, Unsigned:Y, Signed:N, Adapt QOS:N, PD dump: (Config:N, Debug:N), Perf: (Kernel:N, DSP:N), Iregion:N, QTF Tracing:N, UAF heap:N
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:609: Successfully set remote user thread priority to 192 and stack size to 17408 for domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/listener_android.c:116: listener thread starting
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:576:Error : Unable to add watcher for folder /vendor/lib/rfsa/adsp : errno is Permission denied
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:348: file_watcher_thread starting for domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:358:file_watcher_thread: Couldn't find file ai.tetra.tungsten.farf, errno (No such file or directory)
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:83: fastrpc_notif_domain_init: FastRPC notification worker thread launched
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1850: get_remote_notif_response: received status notification 0 for domain 3, session 0
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_perf.c:273: fastrpc_perf_init: enabled systrace 0x0 and RPC traces (kernel 0, dsp 0) with frequency 1000
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 128, addr 0x7aaa419000, length 0x100000, domain 3, flags 0x0, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:708: open_mod_table_open_from_static: reverse module apps_std opened with handle 0xdcffd130 (idx 0)
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1007: Successfully opened file libQnnHtpV73Skel.so
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:708: open_mod_table_open_from_static: reverse module apps_mem opened with handle 0xdcffd230 (idx 1)
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1020: Warning: apps_std_fopen_with_env failed with 0x2 for libc++.so.1 (No such file or directory)
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:864: Error 0x2: open_mod_table_handle_invoke failed for handle:0xdcffd130, sc:0x13050100
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1020: Warning: apps_std_fopen_with_env failed with 0x2 for libc++abi.so.1 (No such file or directory)
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:864: Error 0x2: open_mod_table_handle_invoke failed for handle:0xdcffd130, sc:0x13050100
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1542: remote_handle64_open: Successfully opened handle 0xb400007ac7322400 (remote handle 0xeb24f0) for file:///libQnnHtpV73Skel.so?qnn_2_50_0_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 133, addr 0x7bf6800000, length 0x38, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1542: remote_handle64_open: Successfully opened handle 0xb400007ac7322af0 (remote handle 0xeb1ac0) for file:///libdspqueue_rpc_skel.so?dspqueue_rpc_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 140, addr 0x7bf6789000, length 0x400, domain 3, flags 0x2, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 141, addr 0x7bf677b000, length 0x700, domain 3, flags 0x2, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1361: Error 0x80000414: remote_handle64_invoke failed for handle 0xb400007ac7322af0, method 3 on domain 3 (sc 0x3010100) (errno Success)
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:593: dspqueue_create: created Queue 0, 0xb400007ac72c1280, DSP 0x00000000 for domain 3
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 143, addr 0x7aa616e000, length 0x4b0100, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 144, addr 0x7bde3cb000, length 0x6aac0, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 145, addr 0x7bf66df000, length 0x21b8, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 146, addr 0x7bf6728000, length 0x48, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 147, addr 0x7aa5d6e000, length 0x400000, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> setInferenceBufferForHtpExtensionSkel: not supported for DeviceId 0 coreId 0 pdId 0
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> setInferenceBufferForHtpExtensionSkel not supported on this platform
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1701: manage_poll_qos: poll mode updated to 3 for domain 3, handle 0xb400007ac7322400 for timeout 9999
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2135: remote_handle_control_domain: requested QOS 3, latency 9999 for domain 3 handle 0xb400007ac7322400
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_latency.c:97: fastrpc_latency_thread_handler started for QoS with activity window 100 ms
+[18/Oct/2026:13:16:45 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2135: remote_handle_control_domain: requested QOS 1, latency 0 for domain 3 handle 0xb400007ac7322400
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [tflite] Replacing 387 out of 387 node(s) with delegate (TfLiteQnnDelegate) node, yielding 1 partitions for subgraph 0 (main).
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Applied 1 delegates: QNN/HTP. Model is fully delegated=true.
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size after: 52820.0 kB, allocated: 38460.5 kB, slack: 14359.5 kB.
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Status Successfully Loaded Warm with t = 211385 us and usage: before = 128100.0 kB; peakBefore = 128100.0 kB; mallocUnusedBefore = 33866.6 kB; after = 114732.0 kB; peakAfter = 128112.0 kB; mallocUnusedAfter = 14359.5 kB; increase = 0.0-6139.1 kB; peak = 12.0-33878.6 kB
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Saving results to /sdcard/Downloads/Results/job_jgd6krnlp/job_jgd6krnlp_results.bin
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:49::error: 12: AEE_SUCCESS == (nErr = get_remote_notif_response(domain, &notif_res))
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:54:Error 0xc: notif_fastrpc_thread FastRPC notification worker thread exited for domain 3 (errno Success)
+[18/Oct/2026:13:16:45 +00:00: profiler/info] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 117 on domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/info] -=- Tungsten running task: performing inference -=-
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loading previously saved results in /sdcard/Downloads/Results/job_jgd6krnlp/job_jgd6krnlp_results.bin
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Starting profiler
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loading tflite model Models/model.tflite
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size before: 35416.0 kB, allocated: 27663.6 kB, slack: 7752.4 kB.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Current memory baseline range: 96935.6-104688.0 kB.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded LiteRT version 1.4.2 (which is TF Lite version 2.19.0). Loading model from Models/model.tflite.
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Asset model.tflite not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.tflite.
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found asset Models/model.tflite in /sdcard/Downloads/Models/model.tflite.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded model. Minimum TF Lite version = 2.3.0.
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Asset model.tflite not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.tflite.
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found asset Models/model.tflite in /sdcard/Downloads/Models/model.tflite.
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found QNN interface provider with API version 2.39.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded QNN Delegate, API version=0.24.0, QNN version=v2.50.0.260828221209, capabilities: DSP=false, HTP/int8=true, HTP/fp16=true.
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Enabling delegate cache in dir=/data/user/0/ai.tetra.tungsten/cache/tungsten.cache/model.tflite_8945450969824422876_1792329390000/qnn.
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> Specified config SOC, ignoring on real target
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2177: Error 0xe: remote_handle_control_domain failed for request ID 2 on domain 3 (errno Permission denied)
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2188: Error 0xe: remote_handle_control failed for request ID 2 (errno Permission denied)
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2950: open_device_node: no access to default device of domain 3, open thru HAL, (sess_id 0)
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 117 for domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2980: close_device_node: close device 117 thru HAL on domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 117 on domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2439: remote_session_control Unsigned PD enable 1 request for domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2422: remote_session_control DSP info request for domain 3, thread priority -1, stack size 17408
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2950: open_device_node: no access to default device of domain 3, open thru HAL, (sess_id 0)
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 117 for domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3153: Error 0xd: open_shell failed for domain 3 search paths used are /dsp/, /vendor/dsp/, /vendor/dsp/xdsp/ (errno Permission denied)
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3229: Created user PD on domain 3, debug_trace 0x0, enabled attr=> RPC timeout:0, Debug Mode:N, CRC check:N, Unsigned:Y, Signed:N, Adapt QOS:N, PD dump: (Config:N, Debug:N), Perf: (Kernel:N, DSP:N), Iregion:N, QTF Tracing:N, UAF heap:N
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:609: Successfully set remote user thread priority to 192 and stack size to 17408 for domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/listener_android.c:116: listener thread starting
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:576:Error : Unable to add watcher for folder /vendor/lib/rfsa/adsp : errno is Permission denied
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:83: fastrpc_notif_domain_init: FastRPC notification worker thread launched
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:348: file_watcher_thread starting for domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:358:file_watcher_thread: Couldn't find file ai.tetra.tungsten.farf, errno (No such file or directory)
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_perf.c:273: fastrpc_perf_init: enabled systrace 0x0 and RPC traces (kernel 0, dsp 0) with frequency 1000
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1850: get_remote_notif_response: received status notification 0 for domain 3, session 0
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 128, addr 0x7aaa419000, length 0x100000, domain 3, flags 0x0, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:708: open_mod_table_open_from_static: reverse module apps_std opened with handle 0xdcffd130 (idx 0)
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1007: Successfully opened file libQnnHtpV73Skel.so
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:708: open_mod_table_open_from_static: reverse module apps_mem opened with handle 0xdcffd230 (idx 1)
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1020: Warning: apps_std_fopen_with_env failed with 0x2 for libc++.so.1 (No such file or directory)
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:864: Error 0x2: open_mod_table_handle_invoke failed for handle:0xdcffd130, sc:0x13050100
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1020: Warning: apps_std_fopen_with_env failed with 0x2 for libc++abi.so.1 (No such file or directory)
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:864: Error 0x2: open_mod_table_handle_invoke failed for handle:0xdcffd130, sc:0x13050100
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1542: remote_handle64_open: Successfully opened handle 0xb400007ac7322d00 (remote handle 0xeb24f0) for file:///libQnnHtpV73Skel.so?qnn_2_50_0_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 139, addr 0x7c04edc000, length 0x38, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1542: remote_handle64_open: Successfully opened handle 0xb400007a793cc030 (remote handle 0xeb1ac0) for file:///libdspqueue_rpc_skel.so?dspqueue_rpc_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 142, addr 0x7bf9aba000, length 0x400, domain 3, flags 0x2, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 145, addr 0x7bf9ab9000, length 0x700, domain 3, flags 0x2, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1361: Error 0x80000414: remote_handle64_invoke failed for handle 0xb400007a793cc030, method 3 on domain 3 (sc 0x3010100) (errno Success)
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:593: dspqueue_create: created Queue 0, 0xb400007ac72fe080, DSP 0x00000000 for domain 3
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 146, addr 0x7aa6247000, length 0x4b0100, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 147, addr 0x7bde3cb000, length 0x6aac0, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 148, addr 0x7bf66df000, length 0x21b8, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 149, addr 0x7bf9ab8000, length 0x48, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 150, addr 0x7aa5e47000, length 0x400000, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> setInferenceBufferForHtpExtensionSkel: not supported for DeviceId 0 coreId 0 pdId 0
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> setInferenceBufferForHtpExtensionSkel not supported on this platform
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1701: manage_poll_qos: poll mode updated to 3 for domain 3, handle 0xb400007ac7322d00 for timeout 9999
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2135: remote_handle_control_domain: requested QOS 3, latency 9999 for domain 3 handle 0xb400007ac7322d00
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_latency.c:97: fastrpc_latency_thread_handler started for QoS with activity window 100 ms
+[18/Oct/2026:13:16:46 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2135: remote_handle_control_domain: requested QOS 1, latency 0 for domain 3 handle 0xb400007ac7322d00
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [tflite] Replacing 387 out of 387 node(s) with delegate (TfLiteQnnDelegate) node, yielding 1 partitions for subgraph 0 (main).
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Applied 1 delegates: QNN/HTP. Model is fully delegated=true.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size after: 41688.0 kB, allocated: 38992.3 kB, slack: 2695.7 kB.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Status Successfully Loaded Warm with t = 205963 us and usage: before = 104688.0 kB; peakBefore = 104688.0 kB; mallocUnusedBefore = 7752.4 kB; after = 105768.0 kB; peakAfter = 105696.0 kB; mallocUnusedAfter = 2695.7 kB; increase = 0.0-6136.8 kB; peak = 1008.0-8760.4 kB
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size before: 41732.0 kB, allocated: 39105.9 kB, slack: 2626.1 kB.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Current memory baseline range: 108017.9-110644.0 kB.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size after: 41732.0 kB, allocated: 39206.6 kB, slack: 2525.4 kB.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Successfully ran model for 100 iterations across 1 batches in 0.209 sec.
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Status Successfully Performed Inference with t = 2034 us and usage: before = 110644.0 kB; peakBefore = 110644.0 kB; mallocUnusedBefore = 2626.1 kB; after = 111096.0 kB; peakAfter = 110656.0 kB; mallocUnusedAfter = 2525.4 kB; increase = 0.0-552.7 kB; peak = 12.0-2638.1 kB
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Saving results to /sdcard/Downloads/Results/job_jgd6krnlp/job_jgd6krnlp_results.bin
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:49::error: 12: AEE_SUCCESS == (nErr = get_remote_notif_response(domain, &notif_res))
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:54:Error 0xc: notif_fastrpc_thread FastRPC notification worker thread exited for domain 3 (errno Success)
+[18/Oct/2026:13:16:46 +00:00: profiler/info] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 117 on domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/info] -=- Tungsten running task: performing inference by layer -=-
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loading previously saved results in /sdcard/Downloads/Results/job_jgd6krnlp/job_jgd6krnlp_results.bin
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Starting profiler
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loading tflite model Models/model.tflite
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size before: 35156.0 kB, allocated: 28490.0 kB, slack: 6666.0 kB.
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Current memory baseline range: 99774.0-106440.0 kB.
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded LiteRT version 1.4.2 (which is TF Lite version 2.19.0). Loading model from Models/model.tflite.
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Asset model.tflite not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.tflite.
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found asset Models/model.tflite in /sdcard/Downloads/Models/model.tflite.
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded model. Minimum TF Lite version = 2.3.0.
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Asset model.tflite not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.tflite.
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found asset Models/model.tflite in /sdcard/Downloads/Models/model.tflite.
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Found QNN interface provider with API version 2.39.
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Loaded QNN Delegate, API version=0.24.0, QNN version=v2.50.0.260828221209, capabilities: DSP=false, HTP/int8=true, HTP/fp16=true.
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Enabling delegate cache in dir=/data/user/0/ai.tetra.tungsten/cache/tungsten.cache/model.tflite_8945450969824422876_1792329390000/qnn.
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> Specified config SOC, ignoring on real target
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2177: Error 0xe: remote_handle_control_domain failed for request ID 2 on domain 3 (errno Permission denied)
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2188: Error 0xe: remote_handle_control failed for request ID 2 (errno Permission denied)
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2950: open_device_node: no access to default device of domain 3, open thru HAL, (sess_id 0)
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 111 for domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2980: close_device_node: close device 111 thru HAL on domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 111 on domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2439: remote_session_control Unsigned PD enable 1 request for domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2422: remote_session_control DSP info request for domain 3, thread priority -1, stack size 17408
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2950: open_device_node: no access to default device of domain 3, open thru HAL, (sess_id 0)
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [dsp-client] DspClient.cpp (132): open_hal_session: opened device fd 111 for domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3153: Error 0xd: open_shell failed for domain 3 search paths used are /dsp/, /vendor/dsp/, /vendor/dsp/xdsp/ (errno Permission denied)
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3229: Created user PD on domain 3, debug_trace 0x0, enabled attr=> RPC timeout:0, Debug Mode:N, CRC check:N, Unsigned:Y, Signed:N, Adapt QOS:N, PD dump: (Config:N, Debug:N), Perf: (Kernel:N, DSP:N), Iregion:N, QTF Tracing:N, UAF heap:N
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:609: Successfully set remote user thread priority to 192 and stack size to 17408 for domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/listener_android.c:116: listener thread starting
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:576:Error : Unable to add watcher for folder /vendor/lib/rfsa/adsp : errno is Permission denied
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:83: fastrpc_notif_domain_init: FastRPC notification worker thread launched
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:348: file_watcher_thread starting for domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:358:file_watcher_thread: Couldn't find file ai.tetra.tungsten.farf, errno (No such file or directory)
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_perf.c:273: fastrpc_perf_init: enabled systrace 0x0 and RPC traces (kernel 0, dsp 0) with frequency 1000
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1850: get_remote_notif_response: received status notification 0 for domain 3, session 0
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 128, addr 0x7aaa419000, length 0x100000, domain 3, flags 0x0, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:708: open_mod_table_open_from_static: reverse module apps_std opened with handle 0xdcffd130 (idx 0)
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1007: Successfully opened file libQnnHtpV73Skel.so
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:708: open_mod_table_open_from_static: reverse module apps_mem opened with handle 0xdcffd230 (idx 1)
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1020: Warning: apps_std_fopen_with_env failed with 0x2 for libc++.so.1 (No such file or directory)
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:864: Error 0x2: open_mod_table_handle_invoke failed for handle:0xdcffd130, sc:0x13050100
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1020: Warning: apps_std_fopen_with_env failed with 0x2 for libc++abi.so.1 (No such file or directory)
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:864: Error 0x2: open_mod_table_handle_invoke failed for handle:0xdcffd130, sc:0x13050100
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1542: remote_handle64_open: Successfully opened handle 0xb400007aadf8af20 (remote handle 0xeb24f0) for file:///libQnnHtpV73Skel.so?qnn_2_50_0_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 132, addr 0x7c04edc000, length 0x38, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1542: remote_handle64_open: Successfully opened handle 0xb400007aadf8bca0 (remote handle 0xeb1ac0) for file:///libdspqueue_rpc_skel.so?dspqueue_rpc_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 145, addr 0x7bf9aba000, length 0x400, domain 3, flags 0x2, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 146, addr 0x7bf9ab9000, length 0x700, domain 3, flags 0x2, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1361: Error 0x80000414: remote_handle64_invoke failed for handle 0xb400007aadf8bca0, method 3 on domain 3 (sc 0x3010100) (errno Success)
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:593: dspqueue_create: created Queue 0, 0xb400007aadf8fc80, DSP 0x00000000 for domain 3
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 148, addr 0x7acb3ec000, length 0x4b0100, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 149, addr 0x7bde3cb000, length 0x6aac0, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 150, addr 0x7bf66df000, length 0x21b8, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 151, addr 0x7bf9ab8000, length 0x48, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_mem.c:477: DEBUG 0x0: fastrpc_mmap mapped buffer fd 152, addr 0x7acafec000, length 0x400000, domain 3, flags 0x3, ioctl ret 0x0, errno Success
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> setInferenceBufferForHtpExtensionSkel: not supported for DeviceId 0 coreId 0 pdId 0
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> setInferenceBufferForHtpExtensionSkel not supported on this platform
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/warning] [job_id: jgd6krnlp] [model.tflite] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1701: manage_poll_qos: poll mode updated to 3 for domain 3, handle 0xb400007aadf8af20 for timeout 9999
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2135: remote_handle_control_domain: requested QOS 3, latency 9999 for domain 3 handle 0xb400007aadf8af20
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_latency.c:97: fastrpc_latency_thread_handler started for QoS with activity window 100 ms
+[18/Oct/2026:13:16:47 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:2135: remote_handle_control_domain: requested QOS 1, latency 0 for domain 3 handle 0xb400007aadf8af20
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] [tflite] Replacing 387 out of 387 node(s) with delegate (TfLiteQnnDelegate) node, yielding 1 partitions for subgraph 0 (main).
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Applied 1 delegates: QNN/HTP. Model is fully delegated=true.
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size after: 46336.0 kB, allocated: 39866.5 kB, slack: 6469.5 kB.
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Status Successfully Loaded Warm with t = 216437 us and usage: before = 106440.0 kB; peakBefore = 106440.0 kB; mallocUnusedBefore = 6666.0 kB; after = 111508.0 kB; peakAfter = 111200.0 kB; mallocUnusedAfter = 6469.5 kB; increase = 0.0-5264.6 kB; peak = 4760.0-11426.0 kB
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size before: 46504.0 kB, allocated: 39946.6 kB, slack: 6557.4 kB.
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Current memory baseline range: 109918.6-116476.0 kB.
+[18/Oct/2026:13:16:47 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Malloc VM size after: 46604.0 kB, allocated: 40000.3 kB, slack: 6603.7 kB.
+[18/Oct/2026:13:16:48 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Successfully ran model for 100 iterations across 1 batches in 0.763 sec.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:386, tag=Dequantize, time=52us, cycles=78135.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:385, tag=Concat, time=2us, cycles=2336.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:384, tag=Convert, time=16us, cycles=23290.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:383, tag=ElementWiseMultiply, time=8us, cycles=12314.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:382, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:381, tag=ElementWiseMultiply, time=14us, cycles=21437.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:380, tag=Concat, time=1us, cycles=1173.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:379, tag=ElementWiseSubtract, time=6us, cycles=9084.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:378, tag=ElementWiseMultiply, time=4us, cycles=5972.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:377, tag=ElementWiseAdd, time=1us, cycles=1910.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:376, tag=ElementWiseAdd, time=2us, cycles=2251.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:375, tag=ElementWiseSubtract, time=15us, cycles=21817.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:374, tag=StridedSlice, time=12us, cycles=17963.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:373, tag=StridedSlice, time=10us, cycles=14961.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:372, tag=Reshape, time=32us, cycles=48342.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:371, tag=Conv2d, time=6us, cycles=9413.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:370, tag=Softmax, time=291us, cycles=436011.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:369, tag=Transpose, time=60us, cycles=90464.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:368, tag=Reshape, time=22us, cycles=32652.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:367, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:366, tag=Convert, time=3us, cycles=4116.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:365, tag=Convert, time=7us, cycles=9904.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:364, tag=Convert, time=22us, cycles=32352.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:363, tag=Reshape, time=1us, cycles=997.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:362, tag=Transpose, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:361, tag=Conv2d, time=1us, cycles=946.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:360, tag=ElementWiseMultiply, time=5us, cycles=6846.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:359, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:358, tag=Conv2d, time=1us, cycles=1106.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:357, tag=ElementWiseMultiply, time=5us, cycles=6942.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:356, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:355, tag=DepthWiseConv2d, time=2us, cycles=2965.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:354, tag=ElementWiseMultiply, time=5us, cycles=7455.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:353, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:352, tag=Conv2d, time=1us, cycles=1750.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:351, tag=ElementWiseMultiply, time=16us, cycles=24321.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:350, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:349, tag=DepthWiseConv2d, time=2us, cycles=3544.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:348, tag=Reshape, time=2us, cycles=3371.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:347, tag=Transpose, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:346, tag=Conv2d, time=1us, cycles=1613.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:345, tag=ElementWiseMultiply, time=15us, cycles=21910.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:344, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:343, tag=Conv2d, time=2us, cycles=2974.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:342, tag=ElementWiseMultiply, time=14us, cycles=21691.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:341, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:340, tag=DepthWiseConv2d, time=3us, cycles=4966.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:339, tag=ElementWiseMultiply, time=16us, cycles=23607.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:338, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:337, tag=Conv2d, time=2us, cycles=3192.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:336, tag=ElementWiseMultiply, time=21us, cycles=32185.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:335, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:334, tag=DepthWiseConv2d, time=4us, cycles=5989.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:333, tag=Reshape, time=13us, cycles=19118.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:332, tag=Transpose, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:331, tag=Conv2d, time=3us, cycles=5046.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:330, tag=ElementWiseMultiply, time=59us, cycles=88017.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:329, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:328, tag=Conv2d, time=6us, cycles=9468.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:327, tag=ElementWiseMultiply, time=60us, cycles=89547.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:326, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:325, tag=DepthWiseConv2d, time=9us, cycles=13196.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:324, tag=ElementWiseMultiply, time=63us, cycles=94606.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:323, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:322, tag=Conv2d, time=6us, cycles=9174.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:321, tag=ElementWiseMultiply, time=50us, cycles=74872.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:320, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:319, tag=DepthWiseConv2d, time=7us, cycles=10246.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:318, tag=Concat, time=6us, cycles=9608.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:317, tag=Convert, time=5us, cycles=7138.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:316, tag=Convert, time=15us, cycles=21833.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:315, tag=Convert, time=48us, cycles=71287.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:314, tag=Reshape, time=4us, cycles=5478.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:313, tag=Transpose, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:312, tag=Conv2d, time=1us, cycles=1122.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:311, tag=ElementWiseMultiply, time=4us, cycles=5668.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:310, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:309, tag=Conv2d, time=2us, cycles=3002.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:308, tag=ElementWiseMultiply, time=3us, cycles=5237.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:307, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:306, tag=Conv2d, time=7us, cycles=10788.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:305, tag=Reshape, time=18us, cycles=26513.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:304, tag=Transpose, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:303, tag=Conv2d, time=1us, cycles=1975.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:302, tag=ElementWiseMultiply, time=10us, cycles=14796.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:301, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:300, tag=Conv2d, time=4us, cycles=6661.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:299, tag=ElementWiseMultiply, time=10us, cycles=14913.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:298, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:297, tag=Conv2d, time=9us, cycles=13244.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:296, tag=Reshape, time=111us, cycles=165782.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:295, tag=Transpose, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:294, tag=Conv2d, time=4us, cycles=5813.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:293, tag=ElementWiseMultiply, time=43us, cycles=63806.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:292, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:291, tag=Conv2d, time=15us, cycles=22639.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:290, tag=ElementWiseMultiply, time=49us, cycles=73161.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:289, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:288, tag=Conv2d, time=15us, cycles=22700.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:287, tag=ElementWiseMultiply, time=12us, cycles=17498.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:286, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:285, tag=Conv2d, time=3us, cycles=5236.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:284, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:283, tag=Convert, time=3us, cycles=4481.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:282, tag=Convert, time=2us, cycles=3410.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:281, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:280, tag=ElementWiseMultiply, time=6us, cycles=9443.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:279, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:278, tag=Conv2d, time=1us, cycles=1582.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:277, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:276, tag=ElementWiseMultiply, time=3us, cycles=4832.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:275, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:274, tag=Conv2d, time=1us, cycles=909.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:273, tag=ElementWiseAdd, time=2us, cycles=2652.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:272, tag=ElementWiseMultiply, time=3us, cycles=4795.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:271, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:270, tag=Conv2d, time=2us, cycles=3160.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:269, tag=ElementWiseMultiply, time=3us, cycles=5213.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:268, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:267, tag=Conv2d, time=2us, cycles=3598.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:266, tag=ElementWiseAdd, time=2us, cycles=2457.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:265, tag=ElementWiseMultiply, time=4us, cycles=5355.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:264, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:263, tag=Conv2d, time=2us, cycles=3111.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:262, tag=ElementWiseMultiply, time=4us, cycles=5291.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:261, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:260, tag=Conv2d, time=2us, cycles=3634.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:259, tag=ElementWiseMultiply, time=3us, cycles=4910.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:258, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:257, tag=Conv2d, time=1us, cycles=1032.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:256, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:255, tag=ElementWiseMultiply, time=13us, cycles=18971.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:254, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:253, tag=Conv2d, time=4us, cycles=5393.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:252, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:251, tag=Convert, time=12us, cycles=18035.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:250, tag=ElementWiseMultiply, time=6us, cycles=8855.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:249, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:248, tag=Conv2d, time=18us, cycles=27653.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:247, tag=Pad, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:246, tag=ElementWiseMultiply, time=20us, cycles=29985.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:245, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:244, tag=Conv2d, time=3us, cycles=4297.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:243, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:242, tag=Convert, time=3us, cycles=5236.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:241, tag=Convert, time=3us, cycles=5051.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:240, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:239, tag=ElementWiseAdd, time=5us, cycles=6981.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:238, tag=ElementWiseMultiply, time=10us, cycles=15150.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:237, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:236, tag=Conv2d, time=2us, cycles=3418.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:235, tag=ElementWiseMultiply, time=5us, cycles=8041.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:234, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:233, tag=Conv2d, time=2us, cycles=3299.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:232, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:231, tag=ElementWiseMultiply, time=20us, cycles=29814.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:230, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:229, tag=Conv2d, time=3us, cycles=4155.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:228, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:227, tag=Convert, time=20us, cycles=29269.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:226, tag=ElementWiseMultiply, time=10us, cycles=15528.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:225, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:224, tag=Conv2d, time=24us, cycles=35992.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:223, tag=Pad, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:222, tag=ElementWiseMultiply, time=53us, cycles=79560.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:221, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:220, tag=Conv2d, time=4us, cycles=6140.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:219, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:218, tag=Convert, time=7us, cycles=10901.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:217, tag=Convert, time=7us, cycles=9767.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:216, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:215, tag=ElementWiseAdd, time=10us, cycles=14658.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:214, tag=ElementWiseMultiply, time=21us, cycles=31720.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:213, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:212, tag=Conv2d, time=3us, cycles=5011.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:211, tag=ElementWiseMultiply, time=21us, cycles=31694.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:210, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:209, tag=Conv2d, time=4us, cycles=5529.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:208, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:207, tag=ElementWiseMultiply, time=41us, cycles=60984.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:206, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:205, tag=Conv2d, time=7us, cycles=10482.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:204, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:203, tag=Convert, time=29us, cycles=43218.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:202, tag=Convert, time=75us, cycles=113008.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:201, tag=ResizeNearestNeighbor, time=21us, cycles=30911.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:200, tag=ElementWiseMultiply, time=19us, cycles=28974.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:199, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:198, tag=Conv2d, time=3us, cycles=3989.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:197, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:196, tag=Convert, time=5us, cycles=7666.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:195, tag=Convert, time=3us, cycles=4815.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:194, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:193, tag=ElementWiseAdd, time=5us, cycles=6876.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:192, tag=ElementWiseMultiply, time=10us, cycles=15520.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:191, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:189, tag=ElementWiseMultiply, time=5us, cycles=8098.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:188, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:187, tag=Conv2d, time=2us, cycles=3177.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:186, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:185, tag=ElementWiseMultiply, time=20us, cycles=29961.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:184, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:183, tag=Conv2d, time=5us, cycles=7180.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:182, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:181, tag=Convert, time=13us, cycles=19616.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:180, tag=Convert, time=19us, cycles=28177.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:179, tag=ResizeNearestNeighbor, time=11us, cycles=17015.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:178, tag=ElementWiseMultiply, time=12us, cycles=17298.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:177, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:176, tag=Conv2d, time=2us, cycles=3684.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:175, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:174, tag=Convert, time=3us, cycles=4235.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:173, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:172, tag=ElementWiseAdd, time=3us, cycles=4591.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:171, tag=Conv2d, time=1us, cycles=2019.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:170, tag=ElementWiseMultiply, time=12us, cycles=17223.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:169, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:168, tag=Conv2d, time=1us, cycles=2177.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:167, tag=ElementWiseAdd, time=3us, cycles=4605.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:166, tag=Conv2d, time=1us, cycles=1459.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:165, tag=Transpose, time=6us, cycles=8248.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:164, tag=ElementWiseAdd, time=5us, cycles=7993.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:163, tag=Transpose, time=6us, cycles=8815.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:162, tag=DepthWiseConv2d, time=3us, cycles=4053.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:161, tag=Transpose, time=6us, cycles=8305.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:160, tag=Reshape, time=7us, cycles=9758.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:159, tag=Reshape, time=5us, cycles=7722.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:158, tag=MatMul, time=158us, cycles=237055.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:157, tag=Reshape, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:156, tag=Reshape, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:155, tag=Transpose, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:154, tag=Softmax, time=148us, cycles=222302.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:153, tag=Reshape, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:152, tag=MatMul, time=75us, cycles=112876.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:151, tag=Reshape, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:150, tag=Reshape, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:149, tag=Transpose, time=19us, cycles=27931.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:148, tag=ElementWiseMultiply, time=7us, cycles=10951.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:147, tag=StridedSlice, time=12us, cycles=17321.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:146, tag=StridedSlice, time=11us, cycles=16490.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:145, tag=StridedSlice, time=3us, cycles=4049.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:144, tag=Reshape, time=22us, cycles=33202.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:143, tag=Transpose, time=14us, cycles=21002.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:142, tag=Conv2d, time=2us, cycles=2299.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:141, tag=StridedSlice, time=0us, cycles=175.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:140, tag=ElementWiseMultiply, time=11us, cycles=16825.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:139, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:138, tag=Conv2d, time=2us, cycles=3481.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:137, tag=ElementWiseMultiply, time=12us, cycles=17555.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:136, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:135, tag=Conv2d, time=4us, cycles=6685.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:134, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:133, tag=PoolMax2d, time=11us, cycles=15932.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:132, tag=PoolMax2d, time=10us, cycles=14914.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:131, tag=PoolMax2d, time=20us, cycles=29514.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:130, tag=ElementWiseMultiply, time=6us, cycles=9126.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:129, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:128, tag=Conv2d, time=1us, cycles=1970.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:127, tag=ElementWiseMultiply, time=12us, cycles=17709.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:126, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:125, tag=Conv2d, time=4us, cycles=5269.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:124, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:123, tag=Convert, time=3us, cycles=4134.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:122, tag=Convert, time=2us, cycles=3519.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:121, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:120, tag=ElementWiseMultiply, time=6us, cycles=9382.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:119, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:118, tag=Conv2d, time=1us, cycles=1347.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:117, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:116, tag=ElementWiseMultiply, time=3us, cycles=4737.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:115, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:114, tag=Conv2d, time=1us, cycles=1349.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:113, tag=ElementWiseAdd, time=2us, cycles=2412.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:112, tag=ElementWiseMultiply, time=3us, cycles=5139.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:111, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:110, tag=Conv2d, time=2us, cycles=3595.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:109, tag=ElementWiseMultiply, time=4us, cycles=5302.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:108, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:107, tag=Conv2d, time=2us, cycles=3680.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:106, tag=ElementWiseAdd, time=2us, cycles=2411.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:105, tag=ElementWiseMultiply, time=3us, cycles=5130.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:104, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:103, tag=Conv2d, time=3us, cycles=4519.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:102, tag=ElementWiseMultiply, time=3us, cycles=5212.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:101, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:100, tag=Conv2d, time=5us, cycles=6962.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:99, tag=ElementWiseMultiply, time=3us, cycles=4991.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:98, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:97, tag=Conv2d, time=1us, cycles=1389.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:96, tag=StridedSlice, time=0us, cycles=176.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:95, tag=ElementWiseMultiply, time=13us, cycles=19452.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:94, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:93, tag=Conv2d, time=2us, cycles=3591.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:92, tag=ElementWiseMultiply, time=13us, cycles=19263.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:91, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:90, tag=Conv2d, time=20us, cycles=30181.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:89, tag=Pad, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:88, tag=ElementWiseMultiply, time=23us, cycles=33892.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:87, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:86, tag=Conv2d, time=3us, cycles=4436.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:85, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:84, tag=Convert, time=4us, cycles=5437.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:83, tag=Convert, time=3us, cycles=4920.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:82, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:81, tag=ElementWiseMultiply, time=10us, cycles=15102.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:80, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:79, tag=Conv2d, time=1us, cycles=2004.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:78, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:77, tag=ElementWiseMultiply, time=6us, cycles=8955.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:76, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:75, tag=Conv2d, time=1us, cycles=1950.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:74, tag=ElementWiseAdd, time=2us, cycles=3572.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:73, tag=ElementWiseMultiply, time=6us, cycles=8430.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:72, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:71, tag=Conv2d, time=2us, cycles=2285.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:70, tag=ElementWiseMultiply, time=6us, cycles=8350.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:69, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:68, tag=Conv2d, time=2us, cycles=2349.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:67, tag=ElementWiseAdd, time=2us, cycles=3663.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:66, tag=ElementWiseMultiply, time=6us, cycles=8829.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:65, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:64, tag=Conv2d, time=1us, cycles=2189.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:63, tag=ElementWiseMultiply, time=6us, cycles=8343.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:62, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:61, tag=Conv2d, time=2us, cycles=2432.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:60, tag=ElementWiseMultiply, time=5us, cycles=8109.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:59, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:58, tag=Conv2d, time=1us, cycles=2057.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:57, tag=StridedSlice, time=0us, cycles=146.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:56, tag=ElementWiseMultiply, time=23us, cycles=35153.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:55, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:54, tag=Conv2d, time=2us, cycles=3244.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:53, tag=ElementWiseMultiply, time=23us, cycles=34127.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:52, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:51, tag=Conv2d, time=52us, cycles=77872.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:50, tag=Pad, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:49, tag=ElementWiseMultiply, time=84us, cycles=126300.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:48, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:47, tag=Conv2d, time=7us, cycles=11042.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:46, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:45, tag=Convert, time=7us, cycles=11149.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:44, tag=Convert, time=8us, cycles=11501.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:43, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:42, tag=ElementWiseAdd, time=10us, cycles=14871.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:41, tag=ElementWiseMultiply, time=21us, cycles=30963.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:40, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:39, tag=Conv2d, time=4us, cycles=6456.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:38, tag=ElementWiseMultiply, time=21us, cycles=31810.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:37, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:36, tag=Conv2d, time=4us, cycles=6265.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:35, tag=StridedSlice, time=0us, cycles=380.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:34, tag=ElementWiseMultiply, time=39us, cycles=57752.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:33, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:32, tag=Conv2d, time=4us, cycles=5555.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:31, tag=ElementWiseMultiply, time=40us, cycles=59690.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:30, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:29, tag=Conv2d, time=75us, cycles=111588.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:28, tag=Pad, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:27, tag=ElementWiseMultiply, time=161us, cycles=240457.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:26, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:25, tag=Conv2d, time=98us, cycles=146742.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:24, tag=Concat, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:23, tag=Convert, time=30us, cycles=44500.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:22, tag=Convert, time=27us, cycles=39723.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:21, tag=StridedSlice, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:20, tag=ElementWiseAdd, time=43us, cycles=63764.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:18, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:17, tag=Conv2d, time=11us, cycles=17199.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:16, tag=ElementWiseMultiply, time=80us, cycles=120267.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:15, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:14, tag=Conv2d, time=13us, cycles=18965.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:13, tag=StridedSlice, time=23us, cycles=34344.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:12, tag=ElementWiseMultiply, time=80us, cycles=120185.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:190, tag=Conv2d, time=2us, cycles=2937.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:387, tag=TfLiteQnnDelegate, time=7385us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:11, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:10, tag=Conv2d, time=7us, cycles=10760.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:9, tag=ElementWiseMultiply, time=81us, cycles=121085.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:8, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:7, tag=Conv2d, time=123us, cycles=184286.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:6, tag=Pad, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:5, tag=ElementWiseMultiply, time=323us, cycles=483361.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:4, tag=Sigmoid, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:3, tag=Conv2d, time=480us, cycles=719155.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:1, tag=Transpose, time=526us, cycles=787911.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:0, tag=Quantize, time=579us, cycles=866908.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:2, tag=Pad, time=0us, cycles=0.
+[18/Oct/2026:13:16:48 +00:00: profiler/debug] [job_id: jgd6krnlp] [model.tflite] Populating InferByLayer results - node=:0:19, tag=ElementWiseMultiply, time=91us, cycles=135558.
+[18/Oct/2026:13:16:48 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Status Successfully Performed Inference By Layer with t = 7398 us and usage: before = 116476.0 kB; peakBefore = 116476.0 kB; mallocUnusedBefore = 6557.4 kB; after = 117256.0 kB; peakAfter = 117248.0 kB; mallocUnusedAfter = 6603.7 kB; increase = 0.0-733.7 kB; peak = 772.0-7329.4 kB
+[18/Oct/2026:13:16:48 +00:00: profiler/info] [job_id: jgd6krnlp] [model.tflite] Saving results to /sdcard/Downloads/Results/job_jgd6krnlp/job_jgd6krnlp_results.bin
+[18/Oct/2026:13:16:48 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:48 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:48 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[18/Oct/2026:13:16:48 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:48 +00:00: profiler/warning] [tflite] WARNING: [Qnn] QnnDsp <W> This META does not have Alloc2 Support
+[18/Oct/2026:13:16:48 +00:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:49::error: 12: AEE_SUCCESS == (nErr = get_remote_notif_response(domain, &notif_res))
+[18/Oct/2026:13:16:48 +00:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:54:Error 0xc: notif_fastrpc_thread FastRPC notification worker thread exited for domain 3 (errno Success)
+[18/Oct/2026:13:16:48 +00:00: profiler/info] [dsp-client] DspClient.cpp (152): close_hal_session: closed device fd 111 on domain 3

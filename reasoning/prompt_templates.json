@@ -1,0 +1,65 @@
+{
+  "system_prompt": "You are an IPC-A-610 certified Senior Quality Control Engineer on an industrial PCB manufacturing line. Your objective is to provide a concise, deterministic operator diagnosis for detected surface defects. Output must be strictly under 50 words and structured.",
+  "response_format": {
+    "severity": "CRITICAL | MAJOR | MINOR | PROCESS_INDICATOR",
+    "ipc_classification": "IPC-A-610 Violation Class",
+    "operator_action": "Immediate handling/rework procedure",
+    "root_cause_hypothesis": "Equipment or chemical process source"
+  },
+  "domain_knowledge_base": {
+    "Short": {
+      "severity": "CRITICAL",
+      "ipc_classification": "IPC-A-610 Class 1/2/3 Defect - Unacceptable",
+      "operator_action": "Isolate PCB immediately. Use microscope with 0.8mm desoldering braid and RMA flux at 350°C to wick excess bridge.",
+      "root_cause_hypothesis": "Over-exposure in photolithography or excessive solder wave depth / flux exhaustion."
+    },
+    "Spur": {
+      "severity": "PROCESS_INDICATOR",
+      "ipc_classification": "IPC-A-610 Class 2/3 Process Indicator (Defect if clearance < 0.1mm)",
+      "operator_action": "Micro-scrape copper nodule using precision scalpel under 10x magnification if conductor spacing is compromised.",
+      "root_cause_hypothesis": "Dry film photoresist pinhole or particulate contamination during laminating."
+    },
+    "Scratch": {
+      "severity": "MAJOR",
+      "ipc_classification": "IPC-A-610 Defect if conductor cross-section reduced by > 20%",
+      "operator_action": "Measure trace width. If reduction < 20%, touch up with UV-curable green mask polymer; otherwise route to scrap.",
+      "root_cause_hypothesis": "Abrasive contact on automated conveyor belts or rough mechanical handling during racking."
+    },
+    "Open_Circuit": {
+      "severity": "CRITICAL",
+      "ipc_classification": "IPC-A-610 Class 1/2/3 Defect - Unacceptable",
+      "operator_action": "Mark trace fault. Apply copper jumper wire (AWG 30) soldered to adjacent through-hole vias if rework permitted, else scrap.",
+      "root_cause_hypothesis": "Over-etching in cupric chloride bath or air bubble blockage during acid etching."
+    },
+    "Mouse_Bite": {
+      "severity": "MAJOR",
+      "ipc_classification": "IPC-A-610 Defect if remaining trace width fails minimum electrical clearance",
+      "operator_action": "Inspect remaining conductor width against CAD layout. If within 80% tolerance, apply conformal coating.",
+      "root_cause_hypothesis": "Developing chemical foaming or photoresist chipping during high-pressure water spray rinse."
+    },
+    "Hole_Break": {
+      "severity": "CRITICAL",
+      "ipc_classification": "IPC-A-610 Class 3 Defect (Annular ring breakout > 90 degrees)",
+      "operator_action": "Reject board for Class 3 aerospace/automotive builds. Quota sample drill batch for tool inspection.",
+      "root_cause_hypothesis": "CNC spindle runout, drill bit eccentricity, or misaligned optical registration targets."
+    },
+    "Conductor_Spacing": {
+      "severity": "MAJOR",
+      "ipc_classification": "IPC-A-610 Process Indicator / Defect depending on voltage insulation requirements",
+      "operator_action": "Measure minimum spacing. Flag for high-voltage dielectric withstand test if spacing < 0.125mm.",
+      "root_cause_hypothesis": "Uneven etching rate due to spray nozzle clogging in the etching chamber."
+    },
+    "Copper_Free": {
+      "severity": "MAJOR",
+      "ipc_classification": "IPC-A-610 Defect if ground plane or critical return path interrupted",
+      "operator_action": "Verify if missing copper affects high-speed impedance traces. If non-functional void, document as waiver.",
+      "root_cause_hypothesis": "Severe localized chemical leaching or base laminate surface oil contamination prior to plating."
+    },
+    "Board_Mask_Flaw": {
+      "severity": "MINOR",
+      "ipc_classification": "IPC-A-610 Class 1/2 Acceptable, Class 3 Process Indicator",
+      "operator_action": "Apply manual UV solder mask touch-up pen and UV cure for 60 seconds before wave soldering.",
+      "root_cause_hypothesis": "Insufficient UV exposure energy or contaminated silkscreen squeegee."
+    }
+  }
+}

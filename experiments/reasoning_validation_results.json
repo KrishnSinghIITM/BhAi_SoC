@@ -1,0 +1,209 @@
+[
+    {
+        "event_telemetry": {
+            "defect_class": "Short",
+            "confidence": 0.94,
+            "bounding_box": [
+                0.45,
+                0.52,
+                0.12,
+                0.08
+            ]
+        },
+        "ipc_a610_diagnostic": {
+            "severity": "CRITICAL",
+            "classification": "IPC-A-610 Class 1/2/3 Defect - Unacceptable",
+            "operator_action": "Isolate PCB immediately. Use microscope with 0.8mm desoldering braid and RMA flux at 350\u00c2\u00b0C to wick excess bridge.",
+            "root_cause": "Over-exposure in photolithography or excessive solder wave depth / flux exhaustion."
+        },
+        "simulated_exec_metrics": {
+            "ttft_ms": 125.0,
+            "tokens_per_sec": 18.5,
+            "total_tokens": 42
+        }
+    },
+    {
+        "event_telemetry": {
+            "defect_class": "Spur",
+            "confidence": 0.88,
+            "bounding_box": [
+                0.33,
+                0.53,
+                0.14,
+                0.04
+            ]
+        },
+        "ipc_a610_diagnostic": {
+            "severity": "PROCESS_INDICATOR",
+            "classification": "IPC-A-610 Class 2/3 Process Indicator (Defect if clearance < 0.1mm)",
+            "operator_action": "Micro-scrape copper nodule using precision scalpel under 10x magnification if conductor spacing is compromised.",
+            "root_cause": "Dry film photoresist pinhole or particulate contamination during laminating."
+        },
+        "simulated_exec_metrics": {
+            "ttft_ms": 125.0,
+            "tokens_per_sec": 18.5,
+            "total_tokens": 42
+        }
+    },
+    {
+        "event_telemetry": {
+            "defect_class": "Scratch",
+            "confidence": 0.85,
+            "bounding_box": [
+                0.12,
+                0.4,
+                0.35,
+                0.02
+            ]
+        },
+        "ipc_a610_diagnostic": {
+            "severity": "MAJOR",
+            "classification": "IPC-A-610 Defect if conductor cross-section reduced by > 20%",
+            "operator_action": "Measure trace width. If reduction < 20%, touch up with UV-curable green mask polymer; otherwise route to scrap.",
+            "root_cause": "Abrasive contact on automated conveyor belts or rough mechanical handling during racking."
+        },
+        "simulated_exec_metrics": {
+            "ttft_ms": 125.0,
+            "tokens_per_sec": 18.5,
+            "total_tokens": 42
+        }
+    },
+    {
+        "event_telemetry": {
+            "defect_class": "Open_Circuit",
+            "confidence": 0.96,
+            "bounding_box": [
+                0.6,
+                0.22,
+                0.08,
+                0.15
+            ]
+        },
+        "ipc_a610_diagnostic": {
+            "severity": "CRITICAL",
+            "classification": "IPC-A-610 Class 1/2/3 Defect - Unacceptable",
+            "operator_action": "Mark trace fault. Apply copper jumper wire (AWG 30) soldered to adjacent through-hole vias if rework permitted, else scrap.",
+            "root_cause": "Over-etching in cupric chloride bath or air bubble blockage during acid etching."
+        },
+        "simulated_exec_metrics": {
+            "ttft_ms": 125.0,
+            "tokens_per_sec": 18.5,
+            "total_tokens": 42
+        }
+    },
+    {
+        "event_telemetry": {
+            "defect_class": "Mouse_Bite",
+            "confidence": 0.89,
+            "bounding_box": [
+                0.71,
+                0.8,
+                0.05,
+                0.05
+            ]
+        },
+        "ipc_a610_diagnostic": {
+            "severity": "MAJOR",
+            "classification": "IPC-A-610 Defect if remaining trace width fails minimum electrical clearance",
+            "operator_action": "Inspect remaining conductor width against CAD layout. If within 80% tolerance, apply conformal coating.",
+            "root_cause": "Developing chemical foaming or photoresist chipping during high-pressure water spray rinse."
+        },
+        "simulated_exec_metrics": {
+            "ttft_ms": 125.0,
+            "tokens_per_sec": 18.5,
+            "total_tokens": 42
+        }
+    },
+    {
+        "event_telemetry": {
+            "defect_class": "Hole_Break",
+            "confidence": 0.92,
+            "bounding_box": [
+                0.5,
+                0.5,
+                0.1,
+                0.1
+            ]
+        },
+        "ipc_a610_diagnostic": {
+            "severity": "CRITICAL",
+            "classification": "IPC-A-610 Class 3 Defect (Annular ring breakout > 90 degrees)",
+            "operator_action": "Reject board for Class 3 aerospace/automotive builds. Quota sample drill batch for tool inspection.",
+            "root_cause": "CNC spindle runout, drill bit eccentricity, or misaligned optical registration targets."
+        },
+        "simulated_exec_metrics": {
+            "ttft_ms": 125.0,
+            "tokens_per_sec": 18.5,
+            "total_tokens": 42
+        }
+    },
+    {
+        "event_telemetry": {
+            "defect_class": "Conductor_Spacing",
+            "confidence": 0.84,
+            "bounding_box": [
+                0.25,
+                0.65,
+                0.18,
+                0.06
+            ]
+        },
+        "ipc_a610_diagnostic": {
+            "severity": "MAJOR",
+            "classification": "IPC-A-610 Process Indicator / Defect depending on voltage insulation requirements",
+            "operator_action": "Measure minimum spacing. Flag for high-voltage dielectric withstand test if spacing < 0.125mm.",
+            "root_cause": "Uneven etching rate due to spray nozzle clogging in the etching chamber."
+        },
+        "simulated_exec_metrics": {
+            "ttft_ms": 125.0,
+            "tokens_per_sec": 18.5,
+            "total_tokens": 42
+        }
+    },
+    {
+        "event_telemetry": {
+            "defect_class": "Copper_Free",
+            "confidence": 0.91,
+            "bounding_box": [
+                0.82,
+                0.15,
+                0.12,
+                0.12
+            ]
+        },
+        "ipc_a610_diagnostic": {
+            "severity": "MAJOR",
+            "classification": "IPC-A-610 Defect if ground plane or critical return path interrupted",
+            "operator_action": "Verify if missing copper affects high-speed impedance traces. If non-functional void, document as waiver.",
+            "root_cause": "Severe localized chemical leaching or base laminate surface oil contamination prior to plating."
+        },
+        "simulated_exec_metrics": {
+            "ttft_ms": 125.0,
+            "tokens_per_sec": 18.5,
+            "total_tokens": 42
+        }
+    },
+    {
+        "event_telemetry": {
+            "defect_class": "Board_Mask_Flaw",
+            "confidence": 0.86,
+            "bounding_box": [
+                0.15,
+                0.85,
+                0.2,
+                0.1
+            ]
+        },
+        "ipc_a610_diagnostic": {
+            "severity": "MINOR",
+            "classification": "IPC-A-610 Class 1/2 Acceptable, Class 3 Process Indicator",
+            "operator_action": "Apply manual UV solder mask touch-up pen and UV cure for 60 seconds before wave soldering.",
+            "root_cause": "Insufficient UV exposure energy or contaminated silkscreen squeegee."
+        },
+        "simulated_exec_metrics": {
+            "ttft_ms": 125.0,
+            "tokens_per_sec": 18.5,
+            "total_tokens": 42
+        }
+    }
+]

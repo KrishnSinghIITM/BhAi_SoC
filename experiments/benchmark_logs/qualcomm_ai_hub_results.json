@@ -1,0 +1,468 @@
+{
+  "timestamp": "2026-10-18T13:26:53.643056Z",
+  "account": "24f3100088@es.study.iitm.ac.in",
+  "benchmark_results": [
+    {
+      "device": "Samsung Galaxy S24",
+      "chipset": "Snapdragon 8 Gen 3 (SM8650)",
+      "model_format": "LiteRT INT8",
+      "precision": "INT8 (PTQ)",
+      "job_id": "jpv281qmg",
+      "job_url": "https://workbench.aihub.qualcomm.com/jobs/jpv281qmg/",
+      "latency_ms": {
+        "median_p50": 1.397,
+        "mean": 1.443,
+        "min": 1.386,
+        "max": 3.746,
+        "p90": 1.432,
+        "p95": 1.46,
+        "p99": 2.528,
+        "std_dev": 0.263
+      },
+      "throughput_fps": 693.1,
+      "iterations_benchmarked": 100,
+      "peak_memory_mb": 151.57,
+      "first_load_ms": 865.51,
+      "warm_load_ms": 164.33,
+      "delegation": {
+        "total_layers": 387,
+        "npu_ops": 387,
+        "gpu_ops": 0,
+        "cpu_ops": 0,
+        "npu_delegation_pct": 100.0
+      },
+      "top_operator_types": {
+        "CONV_2D": 81,
+        "MUL": 81,
+        "LOGISTIC": 78,
+        "QUANTIZE": 31,
+        "SLICE": 23,
+        "CONCATENATION": 21,
+        "ADD": 16,
+        "RESHAPE": 16
+      },
+      "top_latency_layers": [
+        {
+          "name": "serving_default_args_0_quantized",
+          "type": "QUANTIZE",
+          "compute_unit": "NPU",
+          "execution_time_us": 476,
+          "cycles": 877571
+        },
+        {
+          "name": "2",
+          "type": "TRANSPOSE",
+          "compute_unit": "NPU",
+          "execution_time_us": 361,
+          "cycles": 665554
+        },
+        {
+          "name": "4",
+          "type": "CONV_2D",
+          "compute_unit": "NPU",
+          "execution_time_us": 330,
+          "cycles": 608384
+        },
+        {
+          "name": "1",
+          "type": "MUL",
+          "compute_unit": "NPU",
+          "execution_time_us": 237,
+          "cycles": 436081
+        },
+        {
+          "name": "3",
+          "type": "SOFTMAX",
+          "compute_unit": "NPU",
+          "execution_time_us": 232,
+          "cycles": 427096
+        }
+      ]
+    },
+    {
+      "device": "Samsung Galaxy S24",
+      "chipset": "Snapdragon 8 Gen 3 (SM8650)",
+      "model_format": "LiteRT FP32",
+      "precision": "FP32",
+      "job_id": "jp1o9d2l5",
+      "job_url": "https://workbench.aihub.qualcomm.com/jobs/jp1o9d2l5/",
+      "latency_ms": {
+        "median_p50": 3.454,
+        "mean": 3.48,
+        "min": 3.382,
+        "max": 6.556,
+        "p90": 3.511,
+        "p95": 3.533,
+        "p99": 3.65,
+        "std_dev": 0.313
+      },
+      "throughput_fps": 287.3,
+      "iterations_benchmarked": 100,
+      "peak_memory_mb": 209.46,
+      "first_load_ms": 1728.03,
+      "warm_load_ms": 173.1,
+      "delegation": {
+        "total_layers": 355,
+        "npu_ops": 355,
+        "gpu_ops": 0,
+        "cpu_ops": 0,
+        "npu_delegation_pct": 100.0
+      },
+      "top_operator_types": {
+        "CONV_2D": 81,
+        "MUL": 81,
+        "LOGISTIC": 78,
+        "SLICE": 23,
+        "CONCATENATION": 21,
+        "ADD": 16,
+        "RESHAPE": 16,
+        "TRANSPOSE": 14
+      },
+      "top_latency_layers": [
+        {
+          "name": "1",
+          "type": "MUL",
+          "compute_unit": "NPU",
+          "execution_time_us": 1327,
+          "cycles": 2446540
+        },
+        {
+          "name": "3",
+          "type": "SOFTMAX",
+          "compute_unit": "NPU",
+          "execution_time_us": 1017,
+          "cycles": 1873990
+        },
+        {
+          "name": "2",
+          "type": "TRANSPOSE",
+          "compute_unit": "NPU",
+          "execution_time_us": 920,
+          "cycles": 1695759
+        },
+        {
+          "name": "1",
+          "type": "MUL",
+          "compute_unit": "NPU",
+          "execution_time_us": 337,
+          "cycles": 621584
+        },
+        {
+          "name": "22",
+          "type": "ADD",
+          "compute_unit": "NPU",
+          "execution_time_us": 309,
+          "cycles": 569225
+        }
+      ]
+    },
+    {
+      "device": "Samsung Galaxy S23",
+      "chipset": "Snapdragon 8 Gen 2 (SM8550)",
+      "model_format": "LiteRT INT8",
+      "precision": "INT8 (PTQ)",
+      "job_id": "jgd6krnlp",
+      "job_url": "https://workbench.aihub.qualcomm.com/jobs/jgd6krnlp/",
+      "latency_ms": {
+        "median_p50": 2.071,
+        "mean": 2.091,
+        "min": 2.034,
+        "max": 3.419,
+        "p90": 2.124,
+        "p95": 2.146,
+        "p99": 2.411,
+        "std_dev": 0.141
+      },
+      "throughput_fps": 478.2,
+      "iterations_benchmarked": 100,
+      "peak_memory_mb": 108.06,
+      "first_load_ms": 923.48,
+      "warm_load_ms": 211.38,
+      "delegation": {
+        "total_layers": 387,
+        "npu_ops": 387,
+        "gpu_ops": 0,
+        "cpu_ops": 0,
+        "npu_delegation_pct": 100.0
+      },
+      "top_operator_types": {
+        "CONV_2D": 81,
+        "MUL": 81,
+        "LOGISTIC": 78,
+        "QUANTIZE": 31,
+        "SLICE": 23,
+        "CONCATENATION": 21,
+        "ADD": 16,
+        "RESHAPE": 16
+      },
+      "top_latency_layers": [
+        {
+          "name": "serving_default_args_0_quantized",
+          "type": "QUANTIZE",
+          "compute_unit": "NPU",
+          "execution_time_us": 579,
+          "cycles": 866908
+        },
+        {
+          "name": "2",
+          "type": "TRANSPOSE",
+          "compute_unit": "NPU",
+          "execution_time_us": 526,
+          "cycles": 787911
+        },
+        {
+          "name": "4",
+          "type": "CONV_2D",
+          "compute_unit": "NPU",
+          "execution_time_us": 480,
+          "cycles": 719155
+        },
+        {
+          "name": "1",
+          "type": "MUL",
+          "compute_unit": "NPU",
+          "execution_time_us": 323,
+          "cycles": 483361
+        },
+        {
+          "name": "3",
+          "type": "SOFTMAX",
+          "compute_unit": "NPU",
+          "execution_time_us": 291,
+          "cycles": 436011
+        }
+      ]
+    },
+    {
+      "device": "Samsung Galaxy S23",
+      "chipset": "Snapdragon 8 Gen 2 (SM8550)",
+      "model_format": "LiteRT FP32",
+      "precision": "FP32",
+      "job_id": "j5wykd26g",
+      "job_url": "https://workbench.aihub.qualcomm.com/jobs/j5wykd26g/",
+      "latency_ms": {
+        "median_p50": 5.481,
+        "mean": 5.519,
+        "min": 5.417,
+        "max": 6.813,
+        "p90": 5.611,
+        "p95": 5.64,
+        "p99": 5.88,
+        "std_dev": 0.149
+      },
+      "throughput_fps": 181.2,
+      "iterations_benchmarked": 100,
+      "peak_memory_mb": 132.64,
+      "first_load_ms": 1610.08,
+      "warm_load_ms": 225.22,
+      "delegation": {
+        "total_layers": 355,
+        "npu_ops": 355,
+        "gpu_ops": 0,
+        "cpu_ops": 0,
+        "npu_delegation_pct": 100.0
+      },
+      "top_operator_types": {
+        "CONV_2D": 81,
+        "MUL": 81,
+        "LOGISTIC": 78,
+        "SLICE": 23,
+        "CONCATENATION": 21,
+        "ADD": 16,
+        "RESHAPE": 16,
+        "TRANSPOSE": 14
+      },
+      "top_latency_layers": [
+        {
+          "name": "1",
+          "type": "MUL",
+          "compute_unit": "NPU",
+          "execution_time_us": 2315,
+          "cycles": 3467265
+        },
+        {
+          "name": "3",
+          "type": "SOFTMAX",
+          "compute_unit": "NPU",
+          "execution_time_us": 1412,
+          "cycles": 2114125
+        },
+        {
+          "name": "2",
+          "type": "TRANSPOSE",
+          "compute_unit": "NPU",
+          "execution_time_us": 1260,
+          "cycles": 1887077
+        },
+        {
+          "name": "1",
+          "type": "MUL",
+          "compute_unit": "NPU",
+          "execution_time_us": 599,
+          "cycles": 897350
+        },
+        {
+          "name": "1",
+          "type": "RESIZE_NEAREST_NEIGHBOR",
+          "compute_unit": "NPU",
+          "execution_time_us": 380,
+          "cycles": 569413
+        }
+      ]
+    },
+    {
+      "device": "Samsung Galaxy S22 5G",
+      "chipset": "Snapdragon 8 Gen 1 (SM8450)",
+      "model_format": "LiteRT INT8",
+      "precision": "INT8 (PTQ)",
+      "job_id": "jg9or3jlg",
+      "job_url": "https://workbench.aihub.qualcomm.com/jobs/jg9or3jlg/",
+      "latency_ms": {
+        "median_p50": 2.522,
+        "mean": 2.557,
+        "min": 2.393,
+        "max": 3.634,
+        "p90": 2.672,
+        "p95": 2.733,
+        "p99": 3.017,
+        "std_dev": 0.151
+      },
+      "throughput_fps": 391.1,
+      "iterations_benchmarked": 100,
+      "peak_memory_mb": 151.08,
+      "first_load_ms": 831.8,
+      "warm_load_ms": 191.33,
+      "delegation": {
+        "total_layers": 387,
+        "npu_ops": 387,
+        "gpu_ops": 0,
+        "cpu_ops": 0,
+        "npu_delegation_pct": 100.0
+      },
+      "top_operator_types": {
+        "CONV_2D": 81,
+        "MUL": 81,
+        "LOGISTIC": 78,
+        "QUANTIZE": 31,
+        "SLICE": 23,
+        "CONCATENATION": 21,
+        "ADD": 16,
+        "RESHAPE": 16
+      },
+      "top_latency_layers": [
+        {
+          "name": "serving_default_args_0_quantized",
+          "type": "QUANTIZE",
+          "compute_unit": "NPU",
+          "execution_time_us": 632,
+          "cycles": 947050
+        },
+        {
+          "name": "2",
+          "type": "TRANSPOSE",
+          "compute_unit": "NPU",
+          "execution_time_us": 527,
+          "cycles": 788803
+        },
+        {
+          "name": "4",
+          "type": "CONV_2D",
+          "compute_unit": "NPU",
+          "execution_time_us": 485,
+          "cycles": 726954
+        },
+        {
+          "name": "1",
+          "type": "MUL",
+          "compute_unit": "NPU",
+          "execution_time_us": 331,
+          "cycles": 494990
+        },
+        {
+          "name": "3",
+          "type": "SOFTMAX",
+          "compute_unit": "NPU",
+          "execution_time_us": 310,
+          "cycles": 464286
+        }
+      ]
+    },
+    {
+      "device": "Samsung Galaxy A73 5G",
+      "chipset": "Snapdragon 778G (SM7325)",
+      "model_format": "LiteRT INT8",
+      "precision": "INT8 (PTQ)",
+      "job_id": "j5m97wqwg",
+      "job_url": "https://workbench.aihub.qualcomm.com/jobs/j5m97wqwg/",
+      "latency_ms": {
+        "median_p50": 5.675,
+        "mean": 5.733,
+        "min": 5.458,
+        "max": 6.684,
+        "p90": 5.92,
+        "p95": 6.19,
+        "p99": 6.391,
+        "std_dev": 0.195
+      },
+      "throughput_fps": 174.4,
+      "iterations_benchmarked": 100,
+      "peak_memory_mb": 103.97,
+      "first_load_ms": 3004.15,
+      "warm_load_ms": 227.8,
+      "delegation": {
+        "total_layers": 387,
+        "npu_ops": 387,
+        "gpu_ops": 0,
+        "cpu_ops": 0,
+        "npu_delegation_pct": 100.0
+      },
+      "top_operator_types": {
+        "CONV_2D": 81,
+        "MUL": 81,
+        "LOGISTIC": 78,
+        "QUANTIZE": 31,
+        "SLICE": 23,
+        "CONCATENATION": 21,
+        "ADD": 16,
+        "RESHAPE": 16
+      },
+      "top_latency_layers": [
+        {
+          "name": "serving_default_args_0_quantized",
+          "type": "QUANTIZE",
+          "compute_unit": "NPU",
+          "execution_time_us": 735,
+          "cycles": 1058669
+        },
+        {
+          "name": "2",
+          "type": "TRANSPOSE",
+          "compute_unit": "NPU",
+          "execution_time_us": 500,
+          "cycles": 720408
+        },
+        {
+          "name": "4",
+          "type": "CONV_2D",
+          "compute_unit": "NPU",
+          "execution_time_us": 429,
+          "cycles": 617610
+        },
+        {
+          "name": "1",
+          "type": "MUL",
+          "compute_unit": "NPU",
+          "execution_time_us": 401,
+          "cycles": 577911
+        },
+        {
+          "name": "3",
+          "type": "SOFTMAX",
+          "compute_unit": "NPU",
+          "execution_time_us": 318,
+          "cycles": 458638
+        }
+      ]
+    }
+  ]
+}

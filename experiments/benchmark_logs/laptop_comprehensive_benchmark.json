@@ -1,0 +1,82 @@
+{
+    "pytorch_cpu": {
+        "engine": "PyTorch FP32",
+        "device": "CPU",
+        "device_name": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "iterations": 50,
+        "latency_ms": {
+            "mean": 188.89,
+            "std": 43.44,
+            "median": 172.88,
+            "p95": 286.9,
+            "p99": 352.04
+        },
+        "throughput_fps": 5.29,
+        "peak_ram_mb": 387.44,
+        "peak_vram_mb": 0.0,
+        "thermal_delta_c": null,
+        "avg_power_watts": 6.87,
+        "energy_per_inference_joules": 1.2974,
+        "silicon_efficiency_fps_per_watt": 0.77
+    },
+    "onnx_cpu": {
+        "engine": "ONNX Runtime (CPU)",
+        "device": "CPU",
+        "device_name": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "iterations": 50,
+        "latency_ms": {
+            "mean": 587.74,
+            "std": 99.25,
+            "median": 579.59,
+            "p95": 784.16,
+            "p99": 836.96
+        },
+        "throughput_fps": 1.7,
+        "peak_ram_mb": 515.89,
+        "peak_vram_mb": 0.0,
+        "thermal_delta_c": null,
+        "avg_power_watts": 6.76,
+        "energy_per_inference_joules": 3.9725,
+        "silicon_efficiency_fps_per_watt": 0.25
+    },
+    "onnx_directml_gpu": {
+        "engine": "ONNX Runtime (DirectML)",
+        "device": "RTX 3050 (DirectML)",
+        "device_name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "iterations": 50,
+        "latency_ms": {
+            "mean": 7.64,
+            "std": 1.14,
+            "median": 7.56,
+            "p95": 9.73,
+            "p99": 10.98
+        },
+        "throughput_fps": 130.96,
+        "peak_ram_mb": 654.59,
+        "peak_vram_mb": 722.71,
+        "thermal_delta_c": 0.0,
+        "avg_power_watts": 24.13,
+        "energy_per_inference_joules": 0.1843,
+        "silicon_efficiency_fps_per_watt": 5.43
+    },
+    "litert_int8_cpu": {
+        "engine": "LiteRT INT8 (XNNPACK)",
+        "device": "CPU",
+        "device_name": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "iterations": 50,
+        "latency_ms": {
+            "mean": 207.14,
+            "std": 32.96,
+            "median": 198.7,
+            "p95": 272.32,
+            "p99": 329.22
+        },
+        "throughput_fps": 4.83,
+        "peak_ram_mb": 666.93,
+        "peak_vram_mb": 0.0,
+        "thermal_delta_c": null,
+        "avg_power_watts": null,
+        "energy_per_inference_joules": null,
+        "silicon_efficiency_fps_per_watt": null
+    }
+}

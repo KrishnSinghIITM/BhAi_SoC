@@ -1,0 +1,51 @@
+# Git ignore for BhAi_SoC
+# Keeps raw datasets, heavy checkpoints, and local scratch files off GitHub
+
+# Dataset directories
+dataset/
+data/
+*.zip
+*.tar
+*.gz
+*.tar.gz
+
+# Model weights & Checkpoints
+*.pt
+*.pth
+*.bin
+*.pte
+*.onnx
+*.tflite
+*.engine
+*.gguf
+*.tar.gz
+runs/
+weights/
+
+# Python environment
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+.venv/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Android build outputs
+android/.gradle/
+android/app/build/
+android/build/
+*.apk
+*.aab
+
+# Local experiment raw logs (keep summary report only)
+experiments/cache/
+experiments/tmp/

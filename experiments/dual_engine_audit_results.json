@@ -1,0 +1,101 @@
+[
+    {
+        "class_id": 0,
+        "defect_code": "SH",
+        "defect_name": "Short Circuit",
+        "confidence": 0.94,
+        "layer": "Inner Conductive Layer",
+        "tokens_generated": 66,
+        "latency_s": 3.23,
+        "tokens_per_second": 20.4,
+        "llama_advisory": "- Severity & IPC Class: 3.1\n- Component: 2A01 (Airplane)\n- Location: 0010\n- Type: Aircraft Wing\n\nRelevant Documentation:\n* IPC-A-610 Standard for Printed Circuits and PCBs\n* Air Force Instruction, AFII-09-02 \"Designing a Modern Fighter Aircraft\"\n*"
+    },
+    {
+        "class_id": 1,
+        "defect_code": "HB",
+        "defect_name": "Hole Break",
+        "confidence": 0.98,
+        "layer": "Plated Through-Hole (PTH)",
+        "tokens_generated": 63,
+        "latency_s": 2.9,
+        "tokens_per_second": 21.8,
+        "llama_advisory": "- Severity & IPC Class: 3\n- Defect Type: Hole Break (HB)\n- IPC Class 1: PTH\n\n## Step 1: Review the standard for PCB inspection and defect detection.\nThe given document is an IPC-A-610 Standard, which outlines a protocol for inspecting printed circuit boards. This includes steps to detect"
+    },
+    {
+        "class_id": 2,
+        "defect_code": "BMFO",
+        "defect_name": "Board Mask Flaw",
+        "confidence": 0.88,
+        "layer": "Outer Solder Resist Mask",
+        "tokens_generated": 62,
+        "latency_s": 2.86,
+        "tokens_per_second": 21.7,
+        "llama_advisory": "- Severity & IPC Class: 1.2\n- Rework Timeframe: 6 weeks\n\n**Engineering Notes**\n\n* The board mask flaw (BMFO) is detected on the outer solder resist layer.\n* This BMFO requires rework to ensure proper encapsulation of the PCB components.\n* To minimize downtime, it's recommended that"
+    },
+    {
+        "class_id": 3,
+        "defect_code": "OP",
+        "defect_name": "Open Circuit",
+        "confidence": 0.91,
+        "layer": "Signal Trace Layer 1",
+        "tokens_generated": 65,
+        "latency_s": 2.95,
+        "tokens_per_second": 22.1,
+        "llama_advisory": "- Severity & IPC Class: 1.2, 4\n- Defect Type: Open Circuit (OP)\n- IPC Class: A11\n\n## Step 1: Review the standard PCB inspection protocol for detecting open circuits.\nThe given IPC-A-610 Standard is reviewed to understand its requirements and procedures.\n\n## Step 2: Identify the detected defect"
+    },
+    {
+        "class_id": 4,
+        "defect_code": "SC",
+        "defect_name": "Scratch",
+        "confidence": 0.85,
+        "layer": "Surface Copper / Mask",
+        "tokens_generated": 67,
+        "latency_s": 2.95,
+        "tokens_per_second": 22.7,
+        "llama_advisory": "- Severity & IPC Class: 1\n- Defect Type: Scratch (SC)\n- IPC Class: 2A10B\n- Surface Layer: Copper / Mask\n\n## Step 1: Determine the severity and IPC class of the defect.\nThe detected defect is a scratch, which has an engineering rework action plan. The IPC classes are also specified."
+    },
+    {
+        "class_id": 5,
+        "defect_code": "SP",
+        "defect_name": "Spur",
+        "confidence": 0.82,
+        "layer": "Trace Boundary",
+        "tokens_generated": 68,
+        "latency_s": 2.99,
+        "tokens_per_second": 22.8,
+        "llama_advisory": "- Severity & IPC Class: 3\n- Defect Type: Spur (SP)\n- IPC Class: 1A\n\nRecommendation:\nThe spurs on the printed circuit boards need to be reworked. This is a high-priority issue that requires immediate attention.\n\nAction Items:\n\n* Review and approve this report.\n* Confirm with engineering team regarding recommended action plan"
+    },
+    {
+        "class_id": 6,
+        "defect_code": "MB",
+        "defect_name": "Mouse Bite",
+        "confidence": 0.79,
+        "layer": "Trace Edge Geometry",
+        "tokens_generated": 67,
+        "latency_s": 2.94,
+        "tokens_per_second": 22.8,
+        "llama_advisory": "- Severity & IPC Class: 3.1\n- Defect Type: Mouse Bite (MB)\n- IPC Class: 2A10\n\nRecommendations:\n- Remove the affected component from production.\n- Perform a thorough inspection of all PCBs in the assembly lot to ensure compliance with this standard.\n\nVerification and Validation Plan:\n\n* Verification Date: [Insert Date]"
+    },
+    {
+        "class_id": 7,
+        "defect_code": "CS",
+        "defect_name": "Conductor Spacing",
+        "confidence": 0.86,
+        "layer": "High-Voltage Differential Pair",
+        "tokens_generated": 63,
+        "latency_s": 2.83,
+        "tokens_per_second": 22.3,
+        "llama_advisory": "- Severity & IPC Class: 1A\n- Defect Type: Conductor Spacing (CS)\n- IPC Class: 2B\n\n## Step 1: Review the standard PCB inspection protocol for detecting conductor spacing defects.\nThe IPC-A-610 Standard provides a comprehensive framework for inspecting printed circuit boards. The \"Detected Defect"
+    },
+    {
+        "class_id": 8,
+        "defect_code": "CFO",
+        "defect_name": "Copper-Free Error",
+        "confidence": 0.78,
+        "layer": "Ground Return Plane",
+        "tokens_generated": 65,
+        "latency_s": 2.93,
+        "tokens_per_second": 22.2,
+        "llama_advisory": "- Severity & IPC Class: 3\n- Defect Type: CFO (Copper-Free Error)\n- IPC Class 1 and 2:\n    - Severity Level: Medium\n\nEngineering Rework Action Plan Summary:\n\n## Step 1: Review the standard PCB inspection protocol to understand what is being asked.\nThe IPC-A-610 Standard for Printed Circuit Board"
+    }
+]

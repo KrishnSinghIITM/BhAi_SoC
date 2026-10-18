@@ -1,0 +1,117 @@
+{
+  "model_evaluated": "best_int8.tflite",
+  "precision_mode": "Static INT8 (W8A8)",
+  "runtime_delegate": "TensorFlow Lite XNNPACK Delegate (CPU)",
+  "validation_dataset": "DsPCBSD+ (val split)",
+  "total_val_images": 2051,
+  "total_instances": 4092,
+  "speed_telemetry_ms": {
+    "preprocess_ms": 2.1,
+    "inference_ms": 11.8,
+    "loss_ms": 0.0,
+    "postprocess_ms": 0.4,
+    "total_latency_ms": 14.3,
+    "effective_fps": 69.93
+  },
+  "overall_metrics": {
+    "precision": 0.708,
+    "recall": 0.705,
+    "mAP50": 0.696,
+    "mAP50_95": 0.350
+  },
+  "per_class_metrics": {
+    "HB": {
+      "class_name": "Hole Break",
+      "images": 271,
+      "instances": 608,
+      "precision": 0.896,
+      "recall": 0.961,
+      "mAP50": 0.918,
+      "mAP50_95": 0.633
+    },
+    "SH": {
+      "class_name": "Short",
+      "images": 126,
+      "instances": 169,
+      "precision": 0.759,
+      "recall": 0.803,
+      "mAP50": 0.786,
+      "mAP50_95": 0.416
+    },
+    "BMFO": {
+      "class_name": "Board Mask Flaw",
+      "images": 305,
+      "instances": 346,
+      "precision": 0.773,
+      "recall": 0.783,
+      "mAP50": 0.787,
+      "mAP50_95": 0.341
+    },
+    "OP": {
+      "class_name": "Open Circuit",
+      "images": 274,
+      "instances": 338,
+      "precision": 0.631,
+      "recall": 0.819,
+      "mAP50": 0.728,
+      "mAP50_95": 0.360
+    },
+    "SC": {
+      "class_name": "Scratch",
+      "images": 245,
+      "instances": 285,
+      "precision": 0.662,
+      "recall": 0.757,
+      "mAP50": 0.679,
+      "mAP50_95": 0.341
+    },
+    "MB": {
+      "class_name": "Mouse Bite",
+      "images": 391,
+      "instances": 546,
+      "precision": 0.605,
+      "recall": 0.612,
+      "mAP50": 0.602,
+      "mAP50_95": 0.252
+    },
+    "CFO": {
+      "class_name": "Copper-Free",
+      "images": 309,
+      "instances": 423,
+      "precision": 0.705,
+      "recall": 0.560,
+      "mAP50": 0.592,
+      "mAP50_95": 0.284
+    },
+    "SP": {
+      "class_name": "Spur",
+      "images": 430,
+      "instances": 929,
+      "precision": 0.660,
+      "recall": 0.511,
+      "mAP50": 0.587,
+      "mAP50_95": 0.232
+    },
+    "CS": {
+      "class_name": "Conductor Spacing",
+      "images": 279,
+      "instances": 448,
+      "precision": 0.678,
+      "recall": 0.536,
+      "mAP50": 0.583,
+      "mAP50_95": 0.292
+    }
+  },
+  "compression_vs_fp32": {
+    "fp32_size_mb": 10.20,
+    "int8_size_mb": 2.92,
+    "size_reduction_ratio": "3.5x",
+    "size_reduction_percentage": "71.4%",
+    "fp32_mAP50": 0.806,
+    "int8_mAP50": 0.696,
+    "delta_mAP50": 0.110,
+    "fp32_inference_cpu_ms": 25.42,
+    "int8_inference_xnnpack_cpu_ms": 11.8,
+    "cpu_speedup": "2.15x"
+  }
+}
