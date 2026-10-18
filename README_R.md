@@ -4,25 +4,35 @@
 
 <div align="center">
 
-[![MeitY C2S](https://img.shields.io/badge/MeitY%20C2S-Chips%20to%20Startup-0B4F6C.svg?style=for-the-badge)](https://c2s.gov.in/)
-[![IIT Madras](https://img.shields.io/badge/IIT%20Madras-Lead%20Institution-800000.svg?style=for-the-badge)](https://www.iitm.ac.in)
-[![Arm](https://img.shields.io/badge/Arm-Developer%20Labs-0091BD.svg?style=for-the-badge&logo=arm&logoColor=white)](https://arm.com)
-[![IIT Delhi](https://img.shields.io/badge/IIT%20Delhi-Academic%20Partner-C0392B.svg?style=for-the-badge)](https://home.iitd.ac.in)
-[![UK Government](https://img.shields.io/badge/UK%20Gov-Tech%20Security%20Initiative-012169.svg?style=for-the-badge)](https://www.gov.uk)
+<!-- Core Silicon & Runtime Technologies -->
+[![Arm](https://img.shields.io/badge/Arm-Cortex--A73%20%7C%20Mali--G72-0091BD.svg?style=for-the-badge&logo=arm&logoColor=white)](https://arm.com)
+[![Qualcomm](https://img.shields.io/badge/Qualcomm-Snapdragon%20NPU%20(1.4ms)-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
+[![Samsung](https://img.shields.io/badge/Samsung-Exynos%209611%20Mobile-1428A0.svg?style=for-the-badge&logo=samsung&logoColor=white)](https://semiconductor.samsung.com)
 [![Meta](https://img.shields.io/badge/Meta-Llama%203.2%20%7C%20ExecuTorch-0668E1.svg?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com)
-[![Qualcomm](https://img.shields.io/badge/Qualcomm-AI%20Hub%20Verified-3253DC.svg?style=for-the-badge&logo=qualcomm&logoColor=white)](https://aihub.qualcomm.com)
+[![Google LiteRT](https://img.shields.io/badge/Google-LiteRT%20INT8-4285F4.svg?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/edge/litert)
+
+<br/>
+
+<!-- Organizing Bodies & Participating Team -->
+[![MeitY C2S](https://img.shields.io/badge/MeitY%20C2S-Chips%20to%20Startup-0B4F6C.svg?style=for-the-badge)](https://c2s.gov.in/)
+[![IIT Delhi](https://img.shields.io/badge/IIT%20Delhi-Challenge%20Co--Host-C0392B.svg?style=for-the-badge)](https://home.iitd.ac.in)
+[![UK Government](https://img.shields.io/badge/UK%20Gov-Tech%20Security%20Initiative-012169.svg?style=for-the-badge)](https://www.gov.uk)
+[![IIT Madras](https://img.shields.io/badge/IIT%20Madras-Participating%20Team-800000.svg?style=for-the-badge)](https://www.iitm.ac.in)
+
+<br/>
 
 **Bharat AI-SoC Challenge 2026–27 (2nd Edition) | Problem Statement 5 (PS5)**  
 *Industrial Automated Optical Inspection (AOI) & On-Device Quality-Control Assistant*
 
 </div>
 
-**Authors**: Bharat AI-SoC Project Team  
-**Affiliation**: Indian Institute of Technology (IIT) Madras  
+**Document Classification**: Baseline_report_pv1.1  
+**Authors**: Krishn Singh, Gagan Sharma, Aditya Kumar  
+**Affiliation**: Indian Institute of Technology, Madras  
+**Challenge**: Bharat AI-SoC Challenge 2026–27 (2nd Edition)  
 **Track**: Problem Statement 5 (PS5) — Real-Time Industrial Defect Detection and Quality-Control Assistant  
 **Organizers**: Ministry of Electronics and Information Technology (MeitY C2S), Arm, IIT Delhi, UK-India TSI, Meta  
 **Repository**: [github.com/KrishnSinghIITM/BhAi_SoC](https://github.com/KrishnSinghIITM/BhAi_SoC)  
-**Document Classification**: IEEE-Compliant Research and Technical Baseline Report (Phase 1 Qualifying)
 
 ---
 
@@ -32,7 +42,7 @@ Automated Optical Inspection (AOI) within printed circuit board (PCB) assembly l
 
 This paper introduces **BhAi_SoC**, an offline, edge-native dual-engine inspection framework deployed directly on consumer and industrial Arm and Qualcomm silicon architectures. The framework couples a high-throughput, sub-150ms optical localization engine (**YOLO11-Nano**) trained on 10,259 industrial PCB captures from the **DsPCBSD+** benchmark with an on-device reasoning engine (**Meta Llama 3.2 1B-Instruct**) quantized to 4-bit integer precision. Tier 1 executes single-pass inference yielding an overall $\text{mAP}_{50}$ of $80.6\%$ ($98.4\%$ on critical hole breakouts). Upon detecting anomalous features ($\tau \ge 0.80$), structured telemetry triggers Tier 2 to synthesize deterministic IPC-A-610 rework directives entirely on-device.
 
-We evaluate the system across a comprehensive five-tier hardware matrix spanning datacenter servers, mobile workstations, cloud-hosted NPU hardware, and a physical consumer smartphone. On physical silicon via the **Qualcomm AI Hub**, the quantized vision model achieves complete zero-fallback Hexagon NPU delegation (387 of 387 operators), executing in **1.40 ms (693.1 FPS)** on a Snapdragon 8 Gen 3 with a peak memory allocation of 151.6 MB. On physical budget Arm silicon (**Samsung Galaxy M21 / Exynos 9611**), full integer quantization achieves **114.03 ms peak latency (8.77 FPS)** on an integrated ARM Mali-G72 GPU and **133.17 ms peak latency** on Cortex-A73 CPU cores with an overall memory footprint of just 45.09 MB. Continuous three-minute dual-engine load testing on physical hardware verified thermal equilibrium ($\Delta T = 0.0\text{ °C}$ at $36.3\text{ °C}$) with zero thermal throttling and $0\%$ battery depletion. The resulting architecture establishes the empirical feasibility of sub-second, enterprise-grade inspection terminals operating on sub-$150 consumer hardware.
+We evaluate the system across a comprehensive five-tier hardware matrix spanning datacenter servers, mobile workstations, cloud-hosted NPU hardware, and a physical consumer smartphone. On physical silicon via the **Qualcomm AI Hub**, the quantized vision model achieves complete zero-fallback Hexagon NPU delegation (387 of 387 operators), executing in **1.40 ms (693.1 FPS)** on a Snapdragon 8 Gen 3 with a peak memory allocation of 151.6 MB. On physical budget Arm silicon (**Samsung Galaxy M21 / Exynos 9611**), full integer quantization achieves **114.03 ms peak latency (8.77 FPS)** on an integrated ARM Mali-G72 GPU and **133.17 ms peak latency** on Cortex-A73 CPU cores with an overall memory footprint of just 45.09 MB. Continuous three-minute dual-engine load testing on physical hardware verified thermal equilibrium ($\Delta T = 0.0 °C$ at $36.3 °C$) with zero thermal throttling and $0\%$ battery depletion. The resulting architecture establishes the empirical feasibility of sub-second, enterprise-grade inspection terminals operating on sub-$150 consumer hardware.
 
 ---
 
@@ -98,7 +108,7 @@ The BhAi_SoC architecture divides inspection workload into two strictly decouple
 
 The vision engine continuously evaluates incoming frames. When a bounding box prediction exceeds the industrial confidence threshold ($\tau = 0.80$), an event packet is instantiated:
 
-$$\mathcal{E} = \{\text{class\_id}, \text{class\_code}, \text{confidence}, \text{layer\_id}, \text{coordinates}\}$$
+$$\mathcal{E} = \{\text{Class-ID}, \text{Class-Code}, \text{confidence}, \text{Layer-ID}, \text{coordinates}\}$$
 
 The packet is mapped into an IPC-A-610 prefix prompt:
 ```text
@@ -288,7 +298,7 @@ Tier 2 (Llama 3.2 1B-Instruct, 4-bit integer weights) was executed locally on th
 
 ### 7.3 Architectural Findings from Physical Hardware
 1. **GPU Shader Acceleration**: The integrated Mali-G72 GPU compiled 387 of 387 operators into OpenCL kernels, providing an $11.3\%$ throughput advantage over CPU threads while sustaining $8.77\text{ FPS}$.
-2. **Thermal Stability Under Sustained Inference**: Over 182 seconds of continuous vision and transformer decoding execution, thermal dissipation matched heat generation exactly, resulting in $\Delta T = 0.0\text{ °C}$ and proving that handheld edge terminals do not require active cooling in ambient industrial environments.
+2. **Thermal Stability Under Sustained Inference**: Over 182 seconds of continuous vision and transformer decoding execution, thermal dissipation matched heat generation exactly, resulting in $\Delta T = 0.0 °C$ and proving that handheld edge terminals do not require active cooling in ambient industrial environments.
 3. **RAM Efficiency**: The complete dual-engine system operated with more than $2.7\text{ GB}$ of free memory headroom on a consumer handset, demonstrating that MSME facilities do not require dedicated high-RAM computing hardware.
 
 ---
@@ -323,9 +333,9 @@ Tier 2 (Llama 3.2 1B-Instruct, 4-bit integer weights) was executed locally on th
 
 Applying empirical power sensor baselines across industrial inspection shifts ($10,000$ boards inspected per 8-hour line shift):
 
-$$E_{\text{inference}} = P_{\text{watts}} \times \left(\frac{t_{\text{total\_ms}}}{1000}\right) \quad (\text{Joules})$$
+$$E_{\text{inference}} = P_{\text{watts}} \times \left(\frac{t_{\text{total}}}{1000}\right) \quad (\text{Joules})$$
 
-$$\text{Carbon} = E_{\text{total\_kWh}} \times 0.708\text{ kg CO}_2\text{e/kWh (Indian Grid Average)}$$
+$$\text{Carbon} = E_{\text{total}} \times 0.708\text{ kg CO}_2\text{e/kWh (Indian Grid Average)}$$
 
 | Deployment Tier | Hardware Platform | Energy per Insp. (J) | Energy per 10k Shift (kWh) | Daily Carbon Emission | Silicon Efficiency |
 | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -346,7 +356,7 @@ Empirical evaluation across five silicon tiers demonstrates:
 1. **Ultra-Low Latency on Dedicated NPUs**: Achieving 1.40 ms latency (693.1 FPS) with 100% Hexagon NPU delegation on Qualcomm Snapdragon 8 Gen 3 silicon.
 2. **Sub-150ms Industrial Real-Time Execution on Budget Arm Silicon**: Sustaining 114.03 ms peak latency on an integrated ARM Mali-G72 GPU and 133.17 ms peak latency on 4-thread Cortex-A73 CPU cores with an overall memory footprint of just 45.09 MB.
 3. **On-Device Standards-Compliant Reasoning**: Generating deterministic IPC-A-610 rework procedures at 9.8 tokens/sec prefill and 1.8–2.5 tokens/sec decode directly on budget smartphone application cores.
-4. **Thermal and Energy Stability**: Sustaining thermal equilibrium ($\Delta T = 0.0\text{ °C}$ at $36.3\text{ °C}$) with zero thermal throttling over continuous multi-minute stress testing, slashing daily inspection electrical energy consumption by up to $99.8\%$ compared to datacenter GPU servers.
+4. **Thermal and Energy Stability**: Sustaining thermal equilibrium ($\Delta T = 0.0 °C$ at $36.3 °C$) with zero thermal throttling over continuous multi-minute stress testing, slashing daily inspection electrical energy consumption by up to $99.8\%$ compared to datacenter GPU servers.
 
 ### 10.1 Phase 2 Implementation Roadmap
 To progress from this baseline into a production-ready deployment for the challenge finals:
