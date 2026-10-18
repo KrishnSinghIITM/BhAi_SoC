@@ -22,9 +22,6 @@
     <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
       <a href="https://www.gov.uk"><img src="assets/logos/org_ukgov.png" height="46" alt="UK Government" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 14px;">
-      <a href="https://ai.meta.com"><img src="assets/logos/org_meta.png" height="46" alt="Meta" /></a>
-    </td>
   </tr>
 </table>
 
