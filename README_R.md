@@ -392,41 +392,50 @@ The BhAi-SoC dual-engine inspection framework is benchmarked, profiled, and acce
 
 <table align="center" style="border: none; background: transparent;">
   <tr style="border: none;">
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://arm.com"><img src="assets/logos/arm.svg" height="32" alt="Arm" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://arm.com"><img src="assets/logos/arm.svg" height="30" alt="Arm" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://aihub.qualcomm.com"><img src="assets/logos/qualcomm.svg" height="32" alt="Qualcomm" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://aihub.qualcomm.com"><img src="assets/logos/qualcomm.svg" height="30" alt="Qualcomm" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://semiconductor.samsung.com"><img src="assets/logos/samsung.svg" height="32" alt="Samsung" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://semiconductor.samsung.com"><img src="assets/logos/samsung.svg" height="30" alt="Samsung" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://nvidia.com"><img src="assets/logos/nvidia.svg" height="32" alt="NVIDIA" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://nvidia.com"><img src="assets/logos/nvidia.svg" height="30" alt="NVIDIA" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://intel.com"><img src="assets/logos/intel.svg" height="32" alt="Intel" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://intel.com"><img src="assets/logos/intel.svg" height="30" alt="Intel" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://amd.com"><img src="assets/logos/amd.svg" height="32" alt="AMD" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://amd.com"><img src="assets/logos/amd.svg" height="30" alt="AMD" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://ultralytics.com"><img src="assets/logos/tech_yolo.png" height="32" alt="Ultralytics YOLO 11" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://ultralytics.com"><img src="assets/logos/tech_yolo.png" height="30" alt="Ultralytics YOLO 11" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://ai.meta.com"><img src="assets/logos/meta.svg" height="32" alt="Meta" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://ai.meta.com"><img src="assets/logos/meta.svg" height="30" alt="Meta" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://pytorch.org/executorch"><img src="assets/logos/pytorch.svg" height="32" alt="PyTorch ExecuTorch" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://pytorch.org/executorch"><img src="assets/logos/pytorch.svg" height="30" alt="PyTorch ExecuTorch" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://www.tensorflow.org/lite"><img src="assets/logos/tensorflow.svg" height="32" alt="TensorFlow Lite" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://www.tensorflow.org/lite"><img src="assets/logos/tensorflow.svg" height="30" alt="TensorFlow Lite" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://ai.google.dev/edge/litert"><img src="assets/logos/google.svg" height="32" alt="Google LiteRT" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://ai.google.dev/edge/litert"><img src="assets/logos/google.svg" height="30" alt="Google LiteRT" /></a>
     </td>
-    <td align="center" valign="middle" style="border: none; padding: 6px 10px;">
-      <a href="https://python.org"><img src="assets/logos/python.svg" height="32" alt="Python" /></a>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://opencv.org"><img src="assets/logos/opencv.svg" height="30" alt="OpenCV" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://huggingface.co"><img src="assets/logos/huggingface.svg" height="30" alt="Hugging Face" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://developer.android.com"><img src="assets/logos/android.svg" height="30" alt="Android" /></a>
+    </td>
+    <td align="center" valign="middle" style="border: none; padding: 6px 8px;">
+      <a href="https://python.org"><img src="assets/logos/python.svg" height="30" alt="Python" /></a>
     </td>
   </tr>
 </table>
