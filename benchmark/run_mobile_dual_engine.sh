@@ -57,7 +57,8 @@ Detection Confidence: $CONF
 Engineering Rework Action Plan:
 - Severity & IPC Class:"
 
-    echo "$PROMPT" | $LLAMA_BIN -m $MODEL_GGUF -p "$PROMPT" -n 50 -t 4 --temp 0.2 --no-conversation 2>/dev/null
+    # Execute single-pass prompt generation (non-interactive, 40 tokens)
+    $LLAMA_BIN -m $MODEL_GGUF -p "$PROMPT" -n 40 -t 4 --temp 0.2 --simple-io 2>/dev/null
     echo ""
 }
 
