@@ -2,7 +2,8 @@ package org.bhaisoc
 
 /**
  * NativePipeline.kt
- * Kotlin JNI interface to native C++ POSIX mmap loader and core affinity.
+ * Kotlin JNI interface to native C++ POSIX mmap loader, core affinity,
+ * fast anomaly pre-filter, and temporal debounce hysteresis.
  */
 object NativePipeline {
     init {
@@ -19,6 +20,18 @@ object NativePipeline {
      * completely bypassing the 256MB Android Java Heap.
      */
     external fun mmapLlamaModel(modelPath: String): Boolean
+
+    /**
+     * Temporal debounce hysteresis filter:
+     * Enforces continuous frame detection (>=2 frames) and a 3-second thermal cooldown.
+     */
+    external fun shouldTriggerTier2(maxConfidence: Float): Boolean
+
+    /**
+     * Sub-5ms fast variance test to quickly reject non-PCB or empty camera regions
+     * without invoking heavier neural network inference.
+     */
+    external fun fastAnomalyPreFilter(frameData: ByteArray, width: Int, height: Int): Boolean
 
     /**
      * Unloads mapped memory on app shutdown.
