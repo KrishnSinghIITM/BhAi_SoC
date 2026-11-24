@@ -1,0 +1,16 @@
+{
+  "model_name": "llama3_2_1b_q4.pte",
+  "format": "ExecuTorch .pte (Program Tensor Executable)",
+  "memory_planning": {
+    "strategy": "static_greedy_by_size",
+    "activation_pool_size_bytes": 26214400,
+    "max_runtime_heap_allocation_bytes": 0,
+    "zero_heap_mmap_compatible": true
+  },
+  "target_silicon": {
+    "soc": "Samsung Exynos 9611",
+    "cpu_cluster": "4x Cortex-A73 @ 2.3 GHz",
+    "isa_vector": "128-bit Arm NEON SIMD",
+    "backend_delegate": "XNNPACK + KleidiAI"
+  }
+}
