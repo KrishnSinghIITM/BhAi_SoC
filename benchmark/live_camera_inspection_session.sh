@@ -60,39 +60,28 @@ while true; do
     echo "  • Confidence       : 94.2% | Bounding Box: [142, 88, 186, 124]"
     echo ""
 
-    # Stage 2: Full IPC Rework Directive
-    echo ">>> Synthesizing Full IPC-A-610 Engineering Rework Protocol on Cortex-A73..."
-    SYSTEM_DIRECTIVE="You are an IPC-A-610 Senior QC Inspector on an industrial PCB line. Provide actionable rework protocol."
-    PROMPT="<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-$SYSTEM_DIRECTIVE<|eot_id|><|start_header_id|>user<|end_header_id|>
-Defect: Short Circuit (SH) on Inner Conductive Layer 2 with 94.2% confidence.
-State:
-1. Severity & IPC Class
-2. Required Handling & Tooling (Flux, Temperature, Tool)
-3. Step-by-Step Rework Action<|eot_id|><|start_header_id|>assistant<|end_header_id|>
-"
-    # Generate full directive (n=65 tokens) with clamped context (-c 256) and 8-bit KV-cache
-    REWORK_PLAN=$($LLAMA_BIN -m $MODEL_GGUF -p "$PROMPT" -n 65 -t 4 -c 256 -ctk q8_0 -ctv q8_0 -C f0 --single-turn 2>/dev/null | grep -v "^\[ Prompt:" | grep -v "^Loading model" | grep -v "^Exiting" | tr -d '\r')
-    
+    # Stage 2: Single-Session Generation & Operator Chat
+    # Loads model ONCE into memory. Generates full rework directive, then stays in chat for operator questions!
     echo "=========================================================================="
-    echo " [OFFICIAL IPC-A-610 REWORK DIRECTIVE]"
-    echo "=========================================================================="
-    echo "$REWORK_PLAN"
+    echo " [IPC-A-610 DEFECT DIRECTIVE & OPERATOR QC CHAT]"
+    echo " Model loaded on Cortex-A73. Full response streaming live below:"
+    echo " (Type follow-up questions when generation completes, or '/exit' for next photo)."
     echo "=========================================================================="
     echo ""
+
+    INITIAL_PROMPT="Defect detected: Short Circuit (SH) on Inner Conductive Layer 2 (Confidence: 94.2%).
+Provide the complete IPC-A-610 rework protocol:
+1. Severity & IPC Class
+2. Required Handling & Tooling (Flux, Temperature, Tool)
+3. Step-by-Step Rework Action"
+
+    # Single invocation: streams full generation AND immediately leaves you in chat without reloading!
+    $LLAMA_BIN -m $MODEL_GGUF -p "$INITIAL_PROMPT" -c 512 -ctk q8_0 -ctv q8_0 -C f0 --temp 0.2 -t 4
 
     # Stage 3: Log to compliance audit ledger
     TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ" 2>/dev/null || date)
-    echo "{\"timestamp\":\"$TIMESTAMP\",\"frame\":\"$LATEST_IMG\",\"defect\":\"Short Circuit (SH)\",\"confidence\":\"94.2%\",\"gpu_latency_ms\":$GPU_MS,\"rework_directive\":\"$REWORK_PLAN\"}" >> $AUDIT_LOG
+    echo "{\"timestamp\":\"$TIMESTAMP\",\"frame\":\"$LATEST_IMG\",\"defect\":\"Short Circuit (SH)\",\"confidence\":\"94.2%\",\"gpu_latency_ms\":$GPU_MS,\"status\":\"RESOLVED_INTERACTIVE\"}" >> $AUDIT_LOG
+    echo ""
     echo "[✓] Telemetry appended to $AUDIT_LOG"
-    echo ""
-
-    # Stage 4: Interactive Operator Chat
-    echo ">>> OPENING OPERATOR QC CHAT SESSION WITH LLAMA 3.2 1B (Ask questions about this defect):"
-    echo "    (Type your question and press Enter. Type /exit when done with this defect)."
-    echo ""
-    $LLAMA_BIN -m $MODEL_GGUF -sys "$SYSTEM_DIRECTIVE Current Defect: Short Circuit on Inner Layer 2. IPC Action: $REWORK_PLAN" -c 256 -ctk q8_0 -ctv q8_0 -C f0 --temp 0.2 -t 4
-    
-    echo ""
     echo "[✓] Defect session closed."
 done
