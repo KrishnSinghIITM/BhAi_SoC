@@ -53,18 +53,27 @@ run_defect_case() {
     echo " [DEFECT EVENT DETECTED BY TIER 1 VISION]"
     echo " Code: $CODE | Name: $NAME | Confidence: $CONF | Layer: $LAYER | BBox: $BBOX"
     echo " Vision Speed : $GPU_MS ms (100% Mali-G72 GPU OpenCL delegation)"
-    echo " Pinned LLM   : Cortex-A73 (--cpu-mask f0) synthesizing IPC-A-610 action..."
+    echo " Pinned LLM   : Cortex-A73 (--cpu-mask f0) synthesizing Full IPC Directive..."
     echo "--------------------------------------------------------------------------"
     
-    PROMPT="IPC-A-610 Standard PCB Rework Directive for $NAME ($CODE) on $LAYER (Confidence: $CONF): Immediate operator action is to"
+    PROMPT="<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+You are an IPC-A-610 Senior QC Inspector. Provide concise, complete rework instructions under 45 words.<|eot_id|><|start_header_id|>user<|end_header_id|>
+Defect: $NAME ($CODE) on $LAYER.
+State:
+1. Severity & IPC Class
+2. Specific Tool/Action<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+1. Severity & IPC Class:"
+
+    # Run with clamped context (-c 128) and quantized KV cache (-ctk q8_0 -ctv q8_0)
+    # n=50 generates complete, multi-point actionable directives without mid-sentence cut-off
+    REWORK_TEXT=$($LLAMA_BIN -m $MODEL_GGUF -p "$PROMPT" -n 50 -t 4 -c 128 -ctk q8_0 -ctv q8_0 -C f0 --single-turn 2>/dev/null | grep -v "^\[ Prompt:" | grep -v "^Loading model" | grep -v "^Exiting" | tr -d '\r')
     
-    # Run with clamped context (-c 128) and quantized KV cache (-ctk q8_0 -ctv q8_0) for ultra-fast LPDDR4x bandwidth
-    $LLAMA_BIN -m $MODEL_GGUF -p "$PROMPT" -n 25 -t 4 -c 128 -ctk q8_0 -ctv q8_0 -C f0 --single-turn 2>/dev/null
+    echo "1. Severity & IPC Class: $REWORK_TEXT"
     echo ""
     
     # Append structured record to compliance audit log
     TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ" 2>/dev/null || date)
-    echo "{\"timestamp\":\"$TIMESTAMP\",\"defect_code\":\"$CODE\",\"defect_name\":\"$NAME\",\"confidence\":\"$CONF\",\"layer\":\"$LAYER\",\"bbox\":$BBOX,\"vision_latency_ms\":$GPU_MS,\"status\":\"RESOLVED_OFFLINE\"}" >> $AUDIT_LOG
+    echo "{\"timestamp\":\"$TIMESTAMP\",\"defect_code\":\"$CODE\",\"defect_name\":\"$NAME\",\"confidence\":\"$CONF\",\"layer\":\"$LAYER\",\"bbox\":$BBOX,\"vision_latency_ms\":$GPU_MS,\"rework_directive\":\"1. Severity & IPC Class: $REWORK_TEXT\",\"status\":\"RESOLVED_OFFLINE\"}" >> $AUDIT_LOG
 }
 
 # Run 3 Canonical Problem Statement 5 Defect Cases
