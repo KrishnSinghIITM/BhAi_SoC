@@ -75,8 +75,8 @@ Provide the complete IPC-A-610 rework protocol:
 2. Required Handling & Tooling (Flux, Temperature, Tool)
 3. Step-by-Step Rework Action"
 
-    # Single invocation with 1024 context buffer for multi-turn chat without overflow!
-    $LLAMA_BIN -m $MODEL_GGUF -p "$INITIAL_PROMPT" -c 1024 -ctk q8_0 -ctv q8_0 -C f0 --temp 0.2 -t 4
+    # Single invocation with optimal sweet-spot context (-c 1536) for rich multi-turn operator chat
+    $LLAMA_BIN -m $MODEL_GGUF -p "$INITIAL_PROMPT" -c 1536 -ctk q8_0 -ctv q8_0 -C f0 --temp 0.2 -t 4
 
     # Stage 3: Log to compliance audit ledger
     TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ" 2>/dev/null || date)
