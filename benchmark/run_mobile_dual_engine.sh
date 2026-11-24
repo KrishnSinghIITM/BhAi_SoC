@@ -58,8 +58,8 @@ run_defect_case() {
     
     PROMPT="IPC-A-610 Standard PCB Rework Directive for $NAME ($CODE) on $LAYER (Confidence: $CONF): Immediate operator action is to"
     
-    # Run using --single-turn and native CPU mask f0, suppressing loading banner
-    $LLAMA_BIN -m $MODEL_GGUF -p "$PROMPT" -n 25 -t 4 -C f0 --single-turn 2>/dev/null
+    # Run with clamped context (-c 128) to eliminate LPDDR4x memory bus saturation on Exynos 9611
+    $LLAMA_BIN -m $MODEL_GGUF -p "$PROMPT" -n 25 -t 4 -c 128 -C f0 --single-turn 2>/dev/null
     echo ""
     
     # Append structured record to compliance audit log
