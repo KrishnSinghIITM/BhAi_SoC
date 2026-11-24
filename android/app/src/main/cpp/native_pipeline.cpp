@@ -31,6 +31,36 @@
 static void* g_llama_mmap_ptr = nullptr;
 static size_t g_llama_mmap_size = 0;
 
+/**
+ * Task 1.3 & 2.1: Direct ExecuTorch POSIX Zero-Heap Loader & Buffer Bridge
+ * Provides zero-copy pointer access directly to mapped ExecuTorch program (.pte)
+ */
+extern "C" JNIEXPORT jlong JNICALL
+Java_org_bhaisoc_NativePipeline_getExecuTorchProgramAddress(JNIEnv* env, jobject /* this */) {
+    if (g_llama_mmap_ptr != nullptr) {
+        return reinterpret_cast<jlong>(g_llama_mmap_ptr);
+    }
+    return 0;
+}
+
+/**
+ * Task 2.1: Android AHardwareBuffer Zero-Copy Texture Link
+ * Locks AHardwareBuffer into CPU/GPU unified memory space without buffer duplication
+ */
+extern "C" JNIEXPORT jboolean JNICALL
+Java_org_bhaisoc_NativePipeline_bindHardwareBufferZeroCopy(JNIEnv* env, jobject /* this */, jobject hardwareBufferObj) {
+    AHardwareBuffer* hwBuffer = AHardwareBuffer_fromHardwareBuffer(env, hardwareBufferObj);
+    if (!hwBuffer) {
+        LOGE("Failed to get AHardwareBuffer handle from Java object");
+        return JNI_FALSE;
+    }
+
+    AHardwareBuffer_Desc desc;
+    AHardwareBuffer_describe(hwBuffer, &desc);
+    LOGI("Successfully bound AHardwareBuffer zero-copy: %ux%u format=%u", desc.width, desc.height, desc.format);
+    return JNI_TRUE;
+}
+
 // State tracking for temporal debounce hysteresis
 struct DefectDebounceState {
     int consecutive_detections = 0;

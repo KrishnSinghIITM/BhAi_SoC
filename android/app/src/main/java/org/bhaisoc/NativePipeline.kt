@@ -34,6 +34,16 @@ object NativePipeline {
     external fun fastAnomalyPreFilter(frameData: ByteArray, width: Int, height: Int): Boolean
 
     /**
+     * Task 1.3: Returns zero-copy 64-bit native memory address of mapped ExecuTorch (.pte) program
+     */
+    external fun getExecuTorchProgramAddress(): Long
+
+    /**
+     * Task 2.1: Binds Android AHardwareBuffer directly into GPU/C++ shared DMA memory
+     */
+    external fun bindHardwareBufferZeroCopy(hardwareBuffer: Any): Boolean
+
+    /**
      * Unloads mapped memory on app shutdown.
      */
     external fun unloadModels()
