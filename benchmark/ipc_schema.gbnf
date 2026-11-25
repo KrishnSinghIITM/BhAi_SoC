@@ -1,0 +1,4 @@
+root ::= "{" ws "\"severity\":" ws severity "," ws "\"ipc_class\":" ws string "," ws "\"action\":" ws string ws "}"
+severity ::= "\"CRITICAL\"" | "\"MAJOR\"" | "\"MINOR\"" | "\"PROCESS_INDICATOR\""
+string ::= "\"" [^"\\]* "\""
+ws ::= [ \t\n]*
