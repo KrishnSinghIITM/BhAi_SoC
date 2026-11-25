@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.USi" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#171717</item>
+        <item name="android:navigationBarColor">#171717</item>
+        <item name="android:windowBackground">#0d0d0d</item>
+    </style>
+
+    <style name="Theme.USi.Fullscreen" parent="Theme.USi">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+</resources>
