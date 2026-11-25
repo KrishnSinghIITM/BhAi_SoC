@@ -18,6 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.USi"
         android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true"
         android:largeHeap="true">
 
         <activity

@@ -16,7 +16,13 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import java.io.BufferedReader
 import java.io.File
+import java.io.InputStreamReader
+import java.io.OutputStream
+import java.net.HttpURLConnection
+import java.net.URL
+import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
@@ -94,6 +100,40 @@ class MainActivity : AppCompatActivity() {
     }
 
     inner class USiBridgeInterface {
+        @JavascriptInterface
+        fun queryOnDeviceLlama(userPrompt: String): String {
+            return try {
+                val url = URL("http://127.0.0.1:8080/completion")
+                val conn = url.openConnection() as HttpURLConnection
+                conn.requestMethod = "POST"
+                conn.setRequestProperty("Content-Type", "application/json")
+                conn.connectTimeout = 8000
+                conn.readTimeout = 25000
+                conn.doOutput = true
+
+                val payload = JSONObject()
+                payload.put("prompt", userPrompt)
+                payload.put("n_predict", 100)
+                payload.put("temperature", 0.2)
+
+                val os: OutputStream = conn.outputStream
+                os.write(payload.toString().toByteArray())
+                os.flush()
+                os.close()
+
+                val reader = BufferedReader(InputStreamReader(conn.inputStream))
+                val response = StringBuilder()
+                var line: String?
+                while (reader.readLine().also { line = it } != null) {
+                    response.append(line)
+                }
+                reader.close()
+                response.toString()
+            } catch (e: Exception) {
+                "{\"error\": \"${e.localizedMessage}\"}"
+            }
+        }
+
         @JavascriptInterface
         fun getModelStatus(): String {
             val modelDir = File(getExternalFilesDir(null), "models")

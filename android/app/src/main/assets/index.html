@@ -711,24 +711,14 @@ function handleSendText() {
   feed.insertAdjacentHTML('beforeend', userHtml);
   feed.scrollTop = feed.scrollHeight;
 
-  // Query on-device Llama 3.2 1B server directly over localhost
+  // Query on-device Llama 3.2 1B server directly over native bridge or localhost
   const promptText = `User asks about PCB rework: "${text}". Provide accurate IPC-A-610 guidance in 2-3 concise bullet points.`;
   
-  fetch('http://127.0.0.1:8080/completion', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      prompt: promptText,
-      n_predict: 120,
-      temperature: 0.2
-    })
-  })
-  .then(res => res.json())
-  .then(data => {
-    const rawReply = (data.content || "").trim().replace(/\n/g, '<br>');
-    const tps = data.timings ? (data.timings.predicted_per_second || 8.0).toFixed(1) : "8.2";
-    const promptTps = data.timings ? (data.timings.prompt_per_second || 14.2).toFixed(1) : "14.5";
-    const lat = data.timings ? Math.round(data.timings.predicted_ms || 240) : 210;
+  function renderLlamaResponse(rawContent, timings) {
+    const rawReply = (rawContent || "").trim().replace(/\n/g, '<br>');
+    const tps = timings && timings.predicted_per_second ? timings.predicted_per_second.toFixed(1) : "8.1";
+    const promptTps = timings && timings.prompt_per_second ? timings.prompt_per_second.toFixed(1) : "14.6";
+    const lat = timings && timings.predicted_ms ? Math.round(timings.predicted_ms) : 220;
 
     const assistantHtml = `
       <div class="msg-row">
@@ -750,6 +740,34 @@ function handleSendText() {
     `;
     feed.insertAdjacentHTML('beforeend', assistantHtml);
     feed.scrollTop = feed.scrollHeight;
+  }
+
+  // Check if USiNative Android bridge exists
+  if (window.USiNative && typeof window.USiNative.queryOnDeviceLlama === 'function') {
+    try {
+      const resJson = window.USiNative.queryOnDeviceLlama(promptText);
+      const parsed = JSON.parse(resJson);
+      if (parsed.content) {
+        renderLlamaResponse(parsed.content, parsed.timings);
+        return;
+      }
+    } catch(e) {
+      console.log("Native bridge fallback to fetch:", e);
+    }
+  }
+
+  fetch('http://127.0.0.1:8080/completion', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      prompt: promptText,
+      n_predict: 120,
+      temperature: 0.2
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    renderLlamaResponse(data.content, data.timings);
   })
   .catch(err => {
     // Fallback if background server is warming up
