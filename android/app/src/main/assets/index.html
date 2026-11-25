@@ -226,39 +226,43 @@
   .metric-val.amber { color: #fbbf24; }
   .metric-val.cyan { color: #38bdf8; }
 
-  /* Assistant Directive & Guidance Text Box */
-  .assistant-guidance-box {
+  /* Assistant ChatGPT-Style Plain Text Stream */
+  .assistant-chat-text {
     width: 100%;
-    background: #181818;
-    border: 1px solid #282828;
-    border-radius: 12px;
-    padding: 12px 14px;
-    font-size: 12px;
-    line-height: 1.55;
-    color: #d4d4d4;
+    background: transparent;
+    border: none;
+    padding: 4px 2px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #e5e5e5;
   }
-  .assistant-guidance-box strong {
+  .assistant-chat-text strong {
     color: #ffffff;
+    font-weight: 600;
   }
-  .assistant-guidance-box .badge-ipc {
+  .assistant-chat-text p {
+    margin-bottom: 8px;
+  }
+  .assistant-chat-text .badge-ipc {
     display: inline-block;
     background: rgba(244, 63, 94, 0.12);
     color: #fda4af;
     border: 1px solid rgba(244, 63, 94, 0.28);
-    padding: 2px 7px;
+    padding: 2px 8px;
     border-radius: 4px;
-    font-size: 9.5px;
+    font-size: 10px;
     font-weight: 600;
     font-family: ui-monospace, monospace;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     letter-spacing: 0.2px;
   }
-  .guidance-list {
+  .assistant-chat-text ul {
     margin-top: 6px;
-    padding-left: 14px;
+    margin-bottom: 8px;
+    padding-left: 18px;
   }
-  .guidance-list li {
-    margin-bottom: 4px;
+  .assistant-chat-text li {
+    margin-bottom: 5px;
   }
 
   /* Empty Welcome State */
@@ -580,11 +584,11 @@ function processInspection(imageUrl, defectKey) {
             </div>
           </div>
 
-          <div class="assistant-guidance-box">
+          <div class="assistant-chat-text">
             <div class="badge-ipc">${data.ipcBadge}</div>
             <p><strong>Diagnosis:</strong> ${data.diagnosis}</p>
-            <p style="margin-top: 8px;"><strong>Corrective Rework Directive:</strong></p>
-            <ul class="guidance-list">
+            <p><strong>Corrective Rework Directive:</strong></p>
+            <ul>
               ${actionItems}
             </ul>
           </div>
@@ -637,7 +641,7 @@ function handleSendText() {
     const assistantHtml = `
       <div class="msg-row">
         <div class="assistant-msg-container">
-          <div class="assistant-guidance-box">
+          <div class="assistant-chat-text">
             ${reply}
           </div>
         </div>
