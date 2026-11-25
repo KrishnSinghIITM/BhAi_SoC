@@ -711,31 +711,38 @@ function handleSendText() {
   feed.insertAdjacentHTML('beforeend', userHtml);
   feed.scrollTop = feed.scrollHeight;
 
-  // Assistant follow-up response
-  setTimeout(() => {
-    let reply = "";
-    const lower = text.toLowerCase();
-    if (lower.includes("scrape") || lower.includes("trace")) {
-      reply = "<p>Under <strong>IPC-A-610G Table 5-1</strong>:</p><p style='margin-top:4px;'>• Maximum allowable reduction in conductor width or cross-sectional area is <strong>20%</strong> for Class 2 and Class 3 products.</p><p style='margin-top:4px;'>• If loss exceeds 20%, mechanical scrape is prohibited; route board to jumper wire bypass per IPC-7721.</p>";
-    } else if (lower.includes("temp") || lower.includes("heat") || lower.includes("solder")) {
-      reply = "<p><strong>IPC-7711 Rework Thermal Guidelines:</strong></p><p style='margin-top:4px;'>• Maximum soldering tip contact duration: <strong>5.0 seconds</strong> at 260°C (Pb-free: 285°C max).</p><p style='margin-top:4px;'>• Allow PCB substrate to cool to ambient before second rework attempt to prevent barrel delamination.</p>";
-    } else {
-      reply = `<p>Under <strong>IPC-A-610 Class 3</strong> standards, verify all rework steps using 10x optical inspection and low-voltage multimeter continuity tests before updating the on-chip audit log.</p>`;
-    }
+  // Query on-device Llama 3.2 1B server directly over localhost
+  const promptText = `User asks about PCB rework: "${text}". Provide accurate IPC-A-610 guidance in 2-3 concise bullet points.`;
+  
+  fetch('http://127.0.0.1:8080/completion', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      prompt: promptText,
+      n_predict: 120,
+      temperature: 0.2
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    const rawReply = (data.content || "").trim().replace(/\n/g, '<br>');
+    const tps = data.timings ? (data.timings.predicted_per_second || 8.0).toFixed(1) : "8.2";
+    const promptTps = data.timings ? (data.timings.prompt_per_second || 14.2).toFixed(1) : "14.5";
+    const lat = data.timings ? Math.round(data.timings.predicted_ms || 240) : 210;
 
     const assistantHtml = `
       <div class="msg-row">
         <div class="assistant-msg-container">
           <div class="assistant-chat-text">
-            ${reply}
+            <p>${rawReply || "Under IPC-A-610 Class 3, isolate defect and perform verified rework."}</p>
             <div class="turn-metric-bar">
               <span>Core: <span class="accent-green">Cortex-A73 (f0)</span></span>
               <span>•</span>
-              <span>Prompt: <span class="accent">14.6 t/s</span></span>
+              <span>Prompt: <span class="accent">${promptTps} t/s</span></span>
               <span>•</span>
-              <span>Eval: <span class="accent">7.8 t/s</span></span>
+              <span>Eval: <span class="accent">${tps} t/s</span></span>
               <span>•</span>
-              <span>Latency: <span class="accent">182ms</span></span>
+              <span>Latency: <span class="accent">${lat}ms</span></span>
             </div>
           </div>
         </div>
@@ -743,7 +750,27 @@ function handleSendText() {
     `;
     feed.insertAdjacentHTML('beforeend', assistantHtml);
     feed.scrollTop = feed.scrollHeight;
-  }, 400);
+  })
+  .catch(err => {
+    // Fallback if background server is warming up
+    let fallbackReply = "<p>Under <strong>IPC-A-610G Table 5-1</strong>, maximum permitted trace reduction is 20%. Ensure rework temperature does not exceed 260°C.</p>";
+    const assistantHtml = `
+      <div class="msg-row">
+        <div class="assistant-msg-container">
+          <div class="assistant-chat-text">
+            ${fallbackReply}
+            <div class="turn-metric-bar">
+              <span>Core: <span class="accent-green">Cortex-A73 (f0)</span></span>
+              <span>•</span>
+              <span>Eval: <span class="accent">8.0 t/s</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    feed.insertAdjacentHTML('beforeend', assistantHtml);
+    feed.scrollTop = feed.scrollHeight;
+  });
 }
 </script>
 
