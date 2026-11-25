@@ -2,92 +2,76 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BhAi-SoC Terminal UI — Pure Dark Gemini/ChatGPT Design</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>USi — Universal Silicon Inspection</title>
 <style>
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
   }
-  body {
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     background-color: #0d0d0d;
     color: #ececec;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
   }
   
-  /* Mobile Phone Frame - Pure Sleek Dark */
-  .device-frame {
-    width: 400px;
-    height: 840px;
-    background: #171717;
-    border: 10px solid #262626;
-    border-radius: 46px;
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.06);
-    overflow: hidden;
+  .app-container {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
+    background: #0d0d0d;
   }
 
   /* Minimalist Top App Header */
   .app-header {
-    height: 54px;
+    height: 52px;
     background: #171717;
     border-bottom: 1px solid #262626;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 16px;
     flex-shrink: 0;
-  }
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    z-index: 10;
   }
   .app-title-group {
     display: flex;
     align-items: center;
     gap: 6px;
-    cursor: pointer;
   }
   .app-title {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     color: #ffffff;
     letter-spacing: -0.2px;
   }
   .model-selector {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     color: #9ca3af;
     display: flex;
     align-items: center;
     gap: 4px;
-    transition: color 0.15s ease;
-  }
-  .model-selector:hover {
-    color: #ffffff;
   }
   .model-chevron {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     color: #71717a;
   }
   .header-badge {
     font-family: ui-monospace, SFMono-Regular, monospace;
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 9.5px;
+    font-weight: 600;
     color: #34d399;
     background: rgba(16, 185, 129, 0.10);
     border: 1px solid rgba(16, 185, 129, 0.25);
-    padding: 3px 9px;
+    padding: 3px 8px;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -99,26 +83,18 @@
     height: 5px;
     border-radius: 50%;
     background: #10b981;
-    box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+    box-shadow: 0 0 6px rgba(16, 185, 129, 0.8);
   }
 
   /* Full-Height Scrollable Chat Feed */
   .chat-feed {
     flex: 1;
     overflow-y: auto;
-    padding: 18px 16px;
+    padding: 14px 14px 10px 14px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    scrollbar-width: thin;
-    scrollbar-color: #333333 transparent;
-  }
-  .chat-feed::-webkit-scrollbar {
-    width: 4px;
-  }
-  .chat-feed::-webkit-scrollbar-thumb {
-    background: #333333;
-    border-radius: 4px;
+    gap: 16px;
+    -webkit-overflow-scrolling: touch;
   }
 
   /* Message Rows */
@@ -136,7 +112,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 8px;
-    max-width: 85%;
+    max-width: 88%;
   }
   .user-image-card {
     border-radius: 12px;
@@ -153,8 +129,8 @@
   }
   .image-meta-tag {
     padding: 5px 8px;
-    background: #212121;
-    font-size: 10px;
+    background: #1c1c1c;
+    font-size: 9.5px;
     color: #999999;
     font-family: ui-monospace, monospace;
     display: flex;
@@ -164,7 +140,7 @@
     background: #2f2f2f;
     color: #ececec;
     border-radius: 16px 16px 4px 16px;
-    padding: 10px 14px;
+    padding: 10px 13px;
     font-size: 13px;
     line-height: 1.45;
   }
@@ -175,42 +151,46 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
     width: 100%;
   }
 
   /* Optical Detection Output Card with Bounding Box */
   .detection-output-card {
     width: 100%;
-    background: #212121;
-    border: 1px solid #333333;
+    background: #181818;
+    border: 1px solid #2e2e2e;
     border-radius: 12px;
     overflow: hidden;
   }
   .output-header {
     padding: 8px 12px;
-    background: #1a1a1a;
-    border-bottom: 1px solid #2e2e2e;
+    background: #141414;
+    border-bottom: 1px solid #282828;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: ui-monospace, monospace;
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 600;
   }
   .output-header span.tag {
-    color: #ef4444;
+    color: #fb7185;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
   .output-image-view {
     width: 100%;
     background: #000;
     display: flex;
     justify-content: center;
-    padding: 6px;
+    position: relative;
+    padding: 4px;
   }
-  .output-image-view img {
+  .output-image-view canvas, .output-image-view img {
     max-width: 100%;
-    max-height: 240px;
+    max-height: 260px;
     border-radius: 6px;
     display: block;
   }
@@ -219,9 +199,9 @@
   .metrics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background: #171717;
-    border-top: 1px solid #2e2e2e;
-    padding: 8px 10px;
+    background: #141414;
+    border-top: 1px solid #282828;
+    padding: 8px 6px;
     text-align: center;
   }
   .metric-item {
@@ -230,39 +210,31 @@
     gap: 2px;
   }
   .metric-label {
-    font-size: 9px;
+    font-size: 8.5px;
     color: #737373;
     text-transform: uppercase;
     font-family: ui-monospace, monospace;
   }
   .metric-val {
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 600;
     color: #f3f4f6;
     font-family: ui-monospace, monospace;
   }
-  .metric-val.coral {
-    color: #fb7185;
-  }
-  .metric-val.emerald {
-    color: #34d399;
-  }
-  .metric-val.amber {
-    color: #fbbf24;
-  }
-  .metric-val.cyan {
-    color: #38bdf8;
-  }
+  .metric-val.coral { color: #fb7185; }
+  .metric-val.emerald { color: #34d399; }
+  .metric-val.amber { color: #fbbf24; }
+  .metric-val.cyan { color: #38bdf8; }
 
   /* Assistant Directive & Guidance Text Box */
   .assistant-guidance-box {
     width: 100%;
-    background: #1e1e1e;
-    border: 1px solid #2e2e2e;
+    background: #181818;
+    border: 1px solid #282828;
     border-radius: 12px;
-    padding: 14px 16px;
+    padding: 12px 14px;
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.55;
     color: #d4d4d4;
   }
   .assistant-guidance-box strong {
@@ -273,69 +245,113 @@
     background: rgba(244, 63, 94, 0.12);
     color: #fda4af;
     border: 1px solid rgba(244, 63, 94, 0.28);
-    padding: 2px 8px;
+    padding: 2px 7px;
     border-radius: 4px;
-    font-size: 10px;
+    font-size: 9.5px;
     font-weight: 600;
     font-family: ui-monospace, monospace;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     letter-spacing: 0.2px;
   }
   .guidance-list {
     margin-top: 6px;
-    padding-left: 16px;
+    padding-left: 14px;
   }
   .guidance-list li {
     margin-bottom: 4px;
+  }
+
+  /* Empty Welcome State */
+  .welcome-card {
+    text-align: center;
+    padding: 30px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .welcome-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #1c1c1c;
+    border: 1px solid #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #34d399;
+  }
+  .welcome-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .welcome-sub {
+    font-size: 12px;
+    color: #888888;
+    max-width: 280px;
+    line-height: 1.5;
+  }
+  .quick-sample-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .btn-sample {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    color: #d1d5db;
+    padding: 6px 12px;
+    border-radius: 14px;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: ui-monospace, monospace;
   }
 
   /* Bottom ChatGPT-Style Input Bar */
   .chat-input-bar {
     background: #171717;
     border-top: 1px solid #262626;
-    padding: 12px 14px;
+    padding: 10px 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     flex-shrink: 0;
   }
-  
   .btn-action-camera {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
-    background: #262626;
+    background: #242424;
     border: 1px solid #333333;
     color: #e5e5e5;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 16px;
     flex-shrink: 0;
-    transition: background 0.15s ease;
   }
-  .btn-action-camera:hover {
-    background: #333333;
+  .btn-action-camera:active {
+    background: #383838;
   }
-
   .chat-input {
     flex: 1;
     background: #212121;
     border: 1px solid #333333;
     border-radius: 20px;
-    padding: 10px 14px;
-    font-size: 12px;
+    padding: 9px 14px;
+    font-size: 12.5px;
     color: #f5f5f5;
     outline: none;
   }
   .chat-input::placeholder {
-    color: #737373;
+    color: #666666;
   }
-
   .btn-send {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background: #f5f5f5;
     border: none;
@@ -344,40 +360,174 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 700;
     flex-shrink: 0;
+  }
+  .btn-send:active {
+    background: #cccccc;
+  }
+
+  /* Hidden Native Camera Input */
+  #cameraFileInput {
+    display: none;
   }
 </style>
 </head>
 <body>
 
-<div class="device-frame">
-  <!-- Minimalist Pure Dark Header (ChatGPT Style with Model Selector) -->
+<div class="app-container">
+  
+  <!-- Minimalist Pure Dark Header -->
   <div class="app-header">
-    <div class="header-left">
-      <div class="app-title-group">
-        <span class="app-title">USi</span>
-        <span style="color: #4b5563; font-size: 13px;">/</span>
-        <div class="model-selector">
-          <span>Llama 3.2 1B</span>
-          <svg class="model-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </div>
+    <div class="app-title-group">
+      <span class="app-title">USi</span>
+      <span style="color: #4b5563; font-size: 12px;">/</span>
+      <div class="model-selector">
+        <span>Llama 3.2 1B</span>
+        <svg class="model-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
       </div>
     </div>
     <div class="header-badge">ON-CHIP • EXYNOS 9611</div>
   </div>
 
   <!-- Full-Height Scrollable Chat Feed -->
-  <div class="chat-feed">
+  <div class="chat-feed" id="chatFeed">
     
-    <!-- 1. USER INPUT MESSAGE: RAW CAPTURED IMAGE -->
+    <!-- Welcome Card -->
+    <div class="welcome-card" id="welcomeCard">
+      <div class="welcome-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+      </div>
+      <div class="welcome-title">On-Chip PCB Defect Inspection</div>
+      <div class="welcome-sub">Snap or upload a PCB image. Tier-1 INT8 Vision runs on Mali-G72 GPU in &lt;135ms, followed by Llama 3.2 IPC reasoning on Cortex-A73 Big-Cores.</div>
+      
+      <div class="quick-sample-row">
+        <button class="btn-sample" onclick="runSampleDefect('SH')">Test Short (SH)</button>
+        <button class="btn-sample" onclick="runSampleDefect('HB')">Test Hole Break (HB)</button>
+        <button class="btn-sample" onclick="runSampleDefect('OP')">Test Open (OP)</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Sticky ChatGPT/Gemini-Style Input Bar -->
+  <div class="chat-input-bar">
+    <input type="file" id="cameraFileInput" accept="image/*" capture="environment" onchange="handleImageSelected(event)">
+    
+    <!-- Camera/Upload Action Button -->
+    <button class="btn-action-camera" onclick="triggerCamera()" title="Capture PCB Frame">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+        <circle cx="12" cy="13" r="4"></circle>
+      </svg>
+    </button>
+    
+    <!-- Text Input -->
+    <input type="text" id="chatInput" class="chat-input" placeholder="Ask follow-up on rework, IPC-A-610..." onkeypress="handleKeyPress(event)">
+    
+    <!-- Send Button -->
+    <button class="btn-send" onclick="handleSendText()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
+  </div>
+
+</div>
+
+<script>
+const DEFECT_DATABASE = {
+  "SH": {
+    name: "Short Circuit",
+    layer: "Inner Conductive Layer 2",
+    conf: "94.2%",
+    gpuLat: "135.06 ms",
+    llmSpeed: "8.0 t/s",
+    ipcBadge: "IPC-A-610 CLASS 3 DEFECT — CRITICAL",
+    diagnosis: "Conductive copper/solder bridge spanning adjacent signal traces, violating minimum electrical clearance.",
+    actions: [
+      "Isolate assembly to prevent inadvertent power-up or ESD damage.",
+      "Apply RMA rosin flux and wick bridge using 0.8mm desoldering braid at 260°C.",
+      "Verify minimum conductor spacing under 10x magnification.",
+      "Perform digital multimeter continuity check before conformal re-coating."
+    ]
+  },
+  "HB": {
+    name: "Hole Break (HB)",
+    layer: "Plated Through-Hole (PTH)",
+    conf: "98.1%",
+    gpuLat: "135.06 ms",
+    llmSpeed: "8.0 t/s",
+    ipcBadge: "IPC-A-610 CLASS 3 VIOLATION — HIGH RISK",
+    diagnosis: "Radial barrel fracture in plated through-hole wall, violating 360-degree annular ring integrity.",
+    actions: [
+      "Quarantine assembly to prevent vibration crack propagation.",
+      "Inspect hole barrel under stereomicroscope to confirm copper barrel loss.",
+      "Install compliant copper eyelet or routed jumper wire bypass per IPC-7721.",
+      "Record defect in on-chip JSONL compliance log for QA review."
+    ]
+  },
+  "OP": {
+    name: "Open Circuit (OP)",
+    layer: "Signal Trace Layer 1",
+    conf: "91.5%",
+    gpuLat: "135.06 ms",
+    llmSpeed: "8.0 t/s",
+    ipcBadge: "IPC-A-610 CLASS 3 DEFECT — UNACCEPTABLE",
+    diagnosis: "Discontinuous conductor trace resulting in complete loss of signal continuity.",
+    actions: [
+      "Tag trace coordinates and clean region with 99% isopropyl alcohol (IPA).",
+      "Route AWG 30 Teflon-insulated solid jumper wire per IPC-7721 Section 5.",
+      "Tack wire with UV-curable structural adhesive every 25mm.",
+      "Perform low-resistance continuity test (threshold < 0.2 ohms)."
+    ]
+  }
+};
+
+function triggerCamera() {
+  document.getElementById('cameraFileInput').click();
+}
+
+function handleImageSelected(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const imageUrl = e.target.result;
+    processInspection(imageUrl, "SH");
+  };
+  reader.readAsDataURL(file);
+}
+
+function runSampleDefect(type) {
+  const sampleMap = {
+    "SH": "BhAi_SoC/assets/ui_demo/input_raw_user.jpg",
+    "HB": "BhAi_SoC/assets/ui_demo/input_raw_user.jpg",
+    "OP": "BhAi_SoC/assets/ui_demo/input_raw_user.jpg"
+  };
+  processInspection(sampleMap[type], type);
+}
+
+function processInspection(imageUrl, defectKey) {
+  const feed = document.getElementById('chatFeed');
+  const welcome = document.getElementById('welcomeCard');
+  if (welcome) welcome.style.display = 'none';
+
+  const data = DEFECT_DATABASE[defectKey] || DEFECT_DATABASE["SH"];
+
+  // 1. User Message (Raw Image)
+  const userHtml = `
     <div class="msg-row">
       <div class="user-msg-container">
         <div class="user-image-card">
-          <img src="BhAi_SoC/assets/ui_demo/input_raw_user.jpg" alt="User Raw Captured PCB Frame">
+          <img src="${imageUrl}" alt="Raw PCB Frame">
           <div class="image-meta-tag">
             <span>INPUT: RAW FRAME</span>
             <span>640 x 640</span>
@@ -388,103 +538,116 @@
         </div>
       </div>
     </div>
+  `;
+  feed.insertAdjacentHTML('beforeend', userHtml);
+  feed.scrollTop = feed.scrollHeight;
 
-    <!-- 2. ASSISTANT OUTPUT MESSAGE: DETECTED IMAGE + METRICS + REWORK DIRECTIVE -->
-    <div class="msg-row">
-      <div class="assistant-msg-container">
-        
-        <!-- Output Detected Image with Bounding Box Overlay -->
-        <div class="detection-output-card">
-          <div class="output-header">
-            <span class="tag">● DEFECT LOCALIZED</span>
-            <span style="color: #737373;">YOLO11n-INT8</span>
-          </div>
+  // 2. Assistant Message (Detected Image + Telemetry + IPC Directive)
+  setTimeout(() => {
+    let actionItems = data.actions.map(a => `<li>${a}</li>`).join("");
+
+    const assistantHtml = `
+      <div class="msg-row">
+        <div class="assistant-msg-container">
           
-          <div class="output-image-view">
-            <img src="BhAi_SoC/assets/ui_demo/output_detected_bbox.jpg" alt="Detected PCB Bounding Box">
+          <div class="detection-output-card">
+            <div class="output-header">
+              <span class="tag">● DEFECT LOCALIZED</span>
+              <span style="color: #737373;">YOLO11n-INT8</span>
+            </div>
+            
+            <div class="output-image-view">
+              <img src="BhAi_SoC/assets/ui_demo/output_detected_bbox.jpg" alt="Detected PCB Bounding Box">
+            </div>
+
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <span class="metric-label">Defect</span>
+                <span class="metric-val coral">${data.name}</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Confidence</span>
+                <span class="metric-val emerald">${data.conf}</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">GPU Latency</span>
+                <span class="metric-val amber">${data.gpuLat}</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">LLM Speed</span>
+                <span class="metric-val cyan">${data.llmSpeed}</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Key Metrics Strip -->
-          <div class="metrics-grid">
-            <div class="metric-item">
-              <span class="metric-label">Defect</span>
-              <span class="metric-val coral">Short (SH)</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">Confidence</span>
-              <span class="metric-val emerald">94.2%</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">GPU Latency</span>
-              <span class="metric-val amber">129.9 ms</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">LLM Speed</span>
-              <span class="metric-val cyan">8.6 t/s</span>
-            </div>
+          <div class="assistant-guidance-box">
+            <div class="badge-ipc">${data.ipcBadge}</div>
+            <p><strong>Diagnosis:</strong> ${data.diagnosis}</p>
+            <p style="margin-top: 8px;"><strong>Corrective Rework Directive:</strong></p>
+            <ul class="guidance-list">
+              ${actionItems}
+            </ul>
           </div>
-        </div>
 
-        <!-- Assistant IPC Rework Directive & Guidance -->
-        <div class="assistant-guidance-box">
-          <div class="badge-ipc">IPC-A-610 CLASS 3 DEFECT — CRITICAL</div>
-          <p><strong>Diagnosis:</strong> Conductive solder bridge spanning Inner Layer 2 traces, violating electrical clearance tolerances.</p>
-          
-          <p style="margin-top: 8px;"><strong>Corrective Rework Directive:</strong></p>
-          <ul class="guidance-list">
-            <li><strong>Handling:</strong> Isolate PCB immediately to avoid thermal stress damage.</li>
-            <li><strong>Tooling:</strong> Apply RMA liquid flux; wick bridge using 0.8mm desoldering braid at <strong>260°C</strong>.</li>
-            <li><strong>Verification:</strong> Perform digital multimeter continuity test across adjacent conductor pins before re-coating.</li>
-          </ul>
         </div>
-
       </div>
-    </div>
+    `;
+    feed.insertAdjacentHTML('beforeend', assistantHtml);
+    feed.scrollTop = feed.scrollHeight;
+  }, 300);
+}
 
-    <!-- 3. FOLLOW-UP USER QUESTION -->
+function handleKeyPress(e) {
+  if (e.key === 'Enter') handleSendText();
+}
+
+function handleSendText() {
+  const input = document.getElementById('chatInput');
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = "";
+
+  const feed = document.getElementById('chatFeed');
+  const welcome = document.getElementById('welcomeCard');
+  if (welcome) welcome.style.display = 'none';
+
+  // User question bubble
+  const userHtml = `
     <div class="msg-row">
       <div class="user-msg-container">
-        <div class="user-text-bubble">
-          What is the maximum allowable trace width reduction if mechanical scrape is needed?
-        </div>
+        <div class="user-text-bubble">${text}</div>
       </div>
     </div>
+  `;
+  feed.insertAdjacentHTML('beforeend', userHtml);
+  feed.scrollTop = feed.scrollHeight;
 
-    <!-- 3. ASSISTANT FOLLOW-UP ANSWER -->
-    <div class="msg-row">
-      <div class="assistant-msg-container">
-        <div class="assistant-guidance-box">
-          <p>Under <strong>IPC-A-610G Table 5-1</strong>:</p>
-          <p style="margin-top: 4px;">• Maximum permitted reduction in conductor width or cross-sectional area is <strong>20%</strong> for Class 2 and Class 3 products.</p>
-          <p style="margin-top: 4px;">• If copper trace loss exceeds 20%, mechanical scrape is prohibited; route board to jumper wire rework or scrap.</p>
+  // Assistant follow-up response
+  setTimeout(() => {
+    let reply = "";
+    const lower = text.toLowerCase();
+    if (lower.includes("scrape") || lower.includes("trace")) {
+      reply = "<p>Under <strong>IPC-A-610G Table 5-1</strong>:</p><p style='margin-top:4px;'>• Maximum allowable reduction in conductor width or cross-sectional area is <strong>20%</strong> for Class 2 and Class 3 products.</p><p style='margin-top:4px;'>• If loss exceeds 20%, mechanical scrape is prohibited; route board to jumper wire bypass per IPC-7721.</p>";
+    } else if (lower.includes("temp") || lower.includes("heat") || lower.includes("solder")) {
+      reply = "<p><strong>IPC-7711 Rework Thermal Guidelines:</strong></p><p style='margin-top:4px;'>• Maximum soldering tip contact duration: <strong>5.0 seconds</strong> at 260°C (Pb-free: 285°C max).</p><p style='margin-top:4px;'>• Allow PCB substrate to cool to ambient before second rework attempt to prevent barrel delamination.</p>";
+    } else {
+      reply = `<p>Under <strong>IPC-A-610 Class 3</strong> standards, verify all rework steps using 10x optical inspection and low-voltage multimeter continuity tests before updating the on-chip audit log.</p>`;
+    }
+
+    const assistantHtml = `
+      <div class="msg-row">
+        <div class="assistant-msg-container">
+          <div class="assistant-guidance-box">
+            ${reply}
+          </div>
         </div>
       </div>
-    </div>
-
-  </div>
-
-  <!-- Bottom Sticky ChatGPT/Gemini-Style Input Bar -->
-  <div class="chat-input-bar">
-    <!-- Camera/Upload Action Button (Clean SVG Vector Camera Icon) -->
-    <button class="btn-action-camera" title="Capture / Upload PCB">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-        <circle cx="12" cy="13" r="4"></circle>
-      </svg>
-    </button>
-    
-    <!-- Text Input -->
-    <input type="text" class="chat-input" placeholder="Ask about rework, soldering, IPC class...">
-    
-    <!-- Send Button (Clean SVG Arrow) -->
-    <button class="btn-send">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="12" y1="19" x2="12" y2="5"></line>
-        <polyline points="5 12 12 5 19 12"></polyline>
-      </svg>
-    </button>
-  </div>
-</div>
+    `;
+    feed.insertAdjacentHTML('beforeend', assistantHtml);
+    feed.scrollTop = feed.scrollHeight;
+  }, 400);
+}
+</script>
 
 </body>
 </html>
