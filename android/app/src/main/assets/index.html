@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+1<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -684,24 +684,6 @@ function processLiveInspection(rawImageUrl, annotatedImageUrl, defectKey) {
     feed.insertAdjacentHTML('beforeend', assistantHtml);
     feed.scrollTop = feed.scrollHeight;
   }, 250);
-}
-          </div>
-
-          <div class="assistant-chat-text">
-            <div class="badge-ipc">${data.ipcBadge}</div>
-            <p><strong>Diagnosis:</strong> ${data.diagnosis}</p>
-            <p><strong>Corrective Rework Directive:</strong></p>
-            <ul>
-              ${actionItems}
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    `;
-    feed.insertAdjacentHTML('beforeend', assistantHtml);
-    feed.scrollTop = feed.scrollHeight;
-  }, 300);
 }
 
 function handleKeyPress(e) {
