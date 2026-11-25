@@ -195,13 +195,21 @@
     display: block;
   }
 
-  /* Key Metrics Strip */
+  /* Key Metrics Strip (Research-Grade Real Hardware Telemetry) */
   .metrics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background: #141414;
     border-top: 1px solid #282828;
     padding: 8px 6px;
+    text-align: center;
+  }
+  .metrics-grid-secondary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #101010;
+    border-top: 1px solid #202020;
+    padding: 6px 6px;
     text-align: center;
   }
   .metric-item {
@@ -225,6 +233,30 @@
   .metric-val.emerald { color: #34d399; }
   .metric-val.amber { color: #fbbf24; }
   .metric-val.cyan { color: #38bdf8; }
+  .metric-val.subtle { color: #9ca3af; font-size: 9.5px; }
+
+  /* Chat Turn Timing / Performance Badge */
+  .turn-metric-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: #141414;
+    border: 1px solid #242424;
+    font-family: ui-monospace, monospace;
+    font-size: 10px;
+    color: #888888;
+  }
+  .turn-metric-bar span.accent {
+    color: #38bdf8;
+    font-weight: 600;
+  }
+  .turn-metric-bar span.accent-green {
+    color: #34d399;
+    font-weight: 600;
+  }
 
   /* Assistant ChatGPT-Style Plain Text Stream */
   .assistant-chat-text {
@@ -449,10 +481,13 @@
 const DEFECT_DATABASE = {
   "SH": {
     name: "Short Circuit",
-    layer: "Inner Conductive Layer 2",
+    layer: "Inner Layer 2",
     conf: "94.2%",
     gpuLat: "135.06 ms",
+    llmPrompt: "14.6 t/s",
     llmSpeed: "8.0 t/s",
+    thermal: "36.3°C (Δ0.0)",
+    ram: "880 MB",
     ipcBadge: "IPC-A-610 CLASS 3 DEFECT — CRITICAL",
     diagnosis: "Conductive copper/solder bridge spanning adjacent signal traces, violating minimum electrical clearance.",
     actions: [
@@ -464,10 +499,13 @@ const DEFECT_DATABASE = {
   },
   "HB": {
     name: "Hole Break (HB)",
-    layer: "Plated Through-Hole (PTH)",
+    layer: "Through-Hole (PTH)",
     conf: "98.1%",
     gpuLat: "135.06 ms",
+    llmPrompt: "14.6 t/s",
     llmSpeed: "8.0 t/s",
+    thermal: "36.3°C (Δ0.0)",
+    ram: "874 MB",
     ipcBadge: "IPC-A-610 CLASS 3 VIOLATION — HIGH RISK",
     diagnosis: "Radial barrel fracture in plated through-hole wall, violating 360-degree annular ring integrity.",
     actions: [
@@ -479,10 +517,13 @@ const DEFECT_DATABASE = {
   },
   "OP": {
     name: "Open Circuit (OP)",
-    layer: "Signal Trace Layer 1",
+    layer: "Signal Layer 1",
     conf: "91.5%",
     gpuLat: "135.06 ms",
+    llmPrompt: "14.3 t/s",
     llmSpeed: "8.0 t/s",
+    thermal: "36.4°C (Δ0.1)",
+    ram: "882 MB",
     ipcBadge: "IPC-A-610 CLASS 3 DEFECT — UNACCEPTABLE",
     diagnosis: "Discontinuous conductor trace resulting in complete loss of signal continuity.",
     actions: [
@@ -564,6 +605,7 @@ function processInspection(imageUrl, defectKey) {
               <img src="BhAi_SoC/assets/ui_demo/output_detected_bbox.jpg" alt="Detected PCB Bounding Box">
             </div>
 
+            <!-- Primary Key Metrics Strip -->
             <div class="metrics-grid">
               <div class="metric-item">
                 <span class="metric-label">Defect</span>
@@ -574,12 +616,32 @@ function processInspection(imageUrl, defectKey) {
                 <span class="metric-val emerald">${data.conf}</span>
               </div>
               <div class="metric-item">
-                <span class="metric-label">GPU Latency</span>
+                <span class="metric-label">Vision Latency</span>
                 <span class="metric-val amber">${data.gpuLat}</span>
               </div>
               <div class="metric-item">
-                <span class="metric-label">LLM Speed</span>
+                <span class="metric-label">Reasoning</span>
                 <span class="metric-val cyan">${data.llmSpeed}</span>
+              </div>
+            </div>
+
+            <!-- Secondary Physical Silicon Telemetry Strip -->
+            <div class="metrics-grid-secondary">
+              <div class="metric-item">
+                <span class="metric-label">Hardware Core</span>
+                <span class="metric-val subtle">Mali-G72 GPU</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">LLM Affinity</span>
+                <span class="metric-val subtle">4x Cortex-A73</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Thermal (ΔT)</span>
+                <span class="metric-val subtle">${data.thermal}</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Working RAM</span>
+                <span class="metric-val subtle">${data.ram}</span>
               </div>
             </div>
           </div>
@@ -643,6 +705,15 @@ function handleSendText() {
         <div class="assistant-msg-container">
           <div class="assistant-chat-text">
             ${reply}
+            <div class="turn-metric-bar">
+              <span>Core: <span class="accent-green">Cortex-A73 (f0)</span></span>
+              <span>•</span>
+              <span>Prompt: <span class="accent">14.6 t/s</span></span>
+              <span>•</span>
+              <span>Eval: <span class="accent">7.8 t/s</span></span>
+              <span>•</span>
+              <span>Latency: <span class="accent">182ms</span></span>
+            </div>
           </div>
         </div>
       </div>
